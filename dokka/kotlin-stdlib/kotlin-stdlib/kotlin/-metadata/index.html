@@ -1,0 +1,216 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Metadata</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><link href="../../../styles/prism.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script><script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>  </head>
+  <body>
+    <div class="navigation-wrapper" id="navigation-wrapper">
+      <div id="leftToggler"><span class="icon-toggler"></span></div>
+      <div class="library-name"><a href="../../../index.html">kotlin-stdlib</a></div>
+      <div></div>
+      <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section"><button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaStdlib/kotlin-stdlib-java-common">JRE</button></div>
+<button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+      </div>
+    </div>
+    <div id="container">
+      <div id="leftColumn">
+        <div id="sideMenu"></div>
+      </div>
+      <div id="main">
+        <div class="main-content" id="content" pageIds="kotlin-stdlib::kotlin/Metadata///PointingToDeclaration//-433573332">
+          <div class="breadcrumbs"><a href="../../../index.html">kotlin-stdlib</a><span class="delimiter">/</span><a href="../index.html">kotlin</a><span class="delimiter">/</span><a href="index.html">Metadata</a></div>
+          <div class="cover ">
+            <h1 class="cover"><span><span>Metadata</span></span></h1>
+            <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+              <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common" data-active="" data-toggle=":dokkaStdlib/kotlin-stdlib-java-common">JRE</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaStdlib/kotlin-stdlib-java-common"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../../kotlin.annotation/-target/index.html"><span class="token annotation">Target</span></a><span class="token punctuation">(</span><span>allowedTargets<span class="token operator"> = </span><span class="token punctuation">[</span><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.CLASS///PointingToDeclaration/">AnnotationTarget.CLASS</span></span><wbr></wbr><span class="token punctuation">]</span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword">annotation class </span><a href="index.html">Metadata</a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>kind<span class="token operator">: </span><a href="../-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">1</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>metadataVersion<span class="token operator">: </span><a href="../-int-array/index.html">IntArray</a><span class="token operator"> = </span>[]<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>bytecodeVersion<span class="token operator">: </span><a href="../-int-array/index.html">IntArray</a><span class="token operator"> = </span>[1, 0, 3]<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>data1<span class="token operator">: </span><a href="../-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator"> = </span>[]<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>data2<span class="token operator">: </span><a href="../-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator"> = </span>[]<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>extraString<span class="token operator">: </span><a href="../-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>packageName<span class="token operator">: </span><a href="../-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>extraInt<span class="token operator">: </span><a href="../-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">This annotation is present on any class file produced by the Kotlin compiler and is read by the compiler and reflection. Parameters have very short JVM names on purpose: these names appear in all generated class files, and we'd like to reduce their size.</p><div class="block"><h4 class="block">Since Kotlin</h4><div class="block">1.3</div></div></div>            </div>
+          </div>
+          <div class="tabbedcontent">
+            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Sources">Sources</button></div>
+            <div class="tabs-section-body">
+              <h2 class="tabbedcontent">Constructors</h2>
+              <div class="table" data-togglable="Constructors"><a data-name="785795287%2FConstructors%2F-433573332" anchor-label="Metadata" id="785795287%2FConstructors%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+                <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+                  <div class="main-subrow keyValue TabbedContent">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="-metadata.html"><span><span>Metadata</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="785795287%2FConstructors%2F-433573332"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common" data-active="" data-toggle=":dokkaStdlib/kotlin-stdlib-java-common">JRE</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaStdlib/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-metadata.html"><span class="token function">Metadata</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;kind<span class="token operator">: </span><a href="../-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">1</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;metadataVersion<span class="token operator">: </span><a href="../-int-array/index.html">IntArray</a><span class="token operator"> = </span>[]<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;bytecodeVersion<span class="token operator">: </span><a href="../-int-array/index.html">IntArray</a><span class="token operator"> = </span>[1, 0, 3]<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;data1<span class="token operator">: </span><a href="../-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator"> = </span>[]<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;data2<span class="token operator">: </span><a href="../-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator"> = </span>[]<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;extraString<span class="token operator">: </span><a href="../-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;packageName<span class="token operator">: </span><a href="../-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;extraInt<span class="token operator">: </span><a href="../-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Properties</h2>
+              <div class="table" data-togglable="Properties"><a data-name="-411556308%2FProperties%2F-433573332" anchor-label="bytecodeVersion" id="-411556308%2FProperties%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+                <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="bytecode-version.html">bytecodeVersion</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-411556308%2FProperties%2F-433573332"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common" data-active="" data-toggle=":dokkaStdlib/kotlin-stdlib-java-common">JRE</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaStdlib/kotlin-stdlib-java-common"><a data-name="-411556308%2FProperties%2F-433573332" anchor-label="bytecodeVersion" id="-411556308%2FProperties%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a><div class="symbol monospace strikethrough"><div class="block"><div class="block"><span class="token annotation">@get:</span><a href="../../kotlin.jvm/-jvm-name/index.html"><span class="token annotation">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;bv&quot;</span></span></span><wbr></wbr><span class="token punctuation">)</span></div></div><strike><span class="token keyword"></span></strike><strike><span class="token keyword">val </span></strike><a href="bytecode-version.html"><strike>bytecodeVersion</strike></a><strike><span class="token operator">: </span></strike><a href="../-int-array/index.html">IntArray</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-411556308%2FProperties%2F-433573332" anchor-label="bytecodeVersion" id="-411556308%2FProperties%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a><p class="paragraph">The version of the bytecode interface (naming conventions, signatures) of the class file annotated with this annotation.</p></div></div>                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="674239368%2FProperties%2F-433573332" anchor-label="data1" id="674239368%2FProperties%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+                <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="data1.html">data1</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="674239368%2FProperties%2F-433573332"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common" data-active="" data-toggle=":dokkaStdlib/kotlin-stdlib-java-common">JRE</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaStdlib/kotlin-stdlib-java-common"><a data-name="674239368%2FProperties%2F-433573332" anchor-label="data1" id="674239368%2FProperties%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@get:</span><a href="../../kotlin.jvm/-jvm-name/index.html"><span class="token annotation">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;d1&quot;</span></span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="data1.html">data1</a><span class="token operator">: </span><a href="../-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-string/index.html">String</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="674239368%2FProperties%2F-433573332" anchor-label="data1" id="674239368%2FProperties%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a><p class="paragraph">Metadata in a custom format. The format may be different (or even absent) for different kinds.</p></div></div>                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="705259175%2FProperties%2F-433573332" anchor-label="data2" id="705259175%2FProperties%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+                <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="data2.html">data2</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="705259175%2FProperties%2F-433573332"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common" data-active="" data-toggle=":dokkaStdlib/kotlin-stdlib-java-common">JRE</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaStdlib/kotlin-stdlib-java-common"><a data-name="705259175%2FProperties%2F-433573332" anchor-label="data2" id="705259175%2FProperties%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@get:</span><a href="../../kotlin.jvm/-jvm-name/index.html"><span class="token annotation">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;d2&quot;</span></span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="data2.html">data2</a><span class="token operator">: </span><a href="../-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-string/index.html">String</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="705259175%2FProperties%2F-433573332" anchor-label="data2" id="705259175%2FProperties%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a><p class="paragraph">An addition to <a href="data1.html">data1</a>: array of strings which occur in metadata, written in plain text so that strings already present in the constant pool are reused. These strings may be then indexed in the metadata by an integer index in this array.</p></div></div>                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1227175444%2FProperties%2F-433573332" anchor-label="extraInt" id="-1227175444%2FProperties%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+                <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="extra-int.html">extraInt</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1227175444%2FProperties%2F-433573332"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common" data-active="" data-toggle=":dokkaStdlib/kotlin-stdlib-java-common">JRE</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaStdlib/kotlin-stdlib-java-common"><a data-name="-1227175444%2FProperties%2F-433573332" anchor-label="extraInt" id="-1227175444%2FProperties%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@get:</span><a href="../../kotlin.jvm/-jvm-name/index.html"><span class="token annotation">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;xi&quot;</span></span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="extra-int.html">extraInt</a><span class="token operator">: </span><a href="../-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1227175444%2FProperties%2F-433573332" anchor-label="extraInt" id="-1227175444%2FProperties%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a><p class="paragraph">An extra int. Bits of this number represent the following flags:</p></div></div>                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="47568078%2FProperties%2F-433573332" anchor-label="extraString" id="47568078%2FProperties%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+                <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="extra-string.html">extraString</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="47568078%2FProperties%2F-433573332"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common" data-active="" data-toggle=":dokkaStdlib/kotlin-stdlib-java-common">JRE</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaStdlib/kotlin-stdlib-java-common"><a data-name="47568078%2FProperties%2F-433573332" anchor-label="extraString" id="47568078%2FProperties%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@get:</span><a href="../../kotlin.jvm/-jvm-name/index.html"><span class="token annotation">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;xs&quot;</span></span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="extra-string.html">extraString</a><span class="token operator">: </span><a href="../-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="47568078%2FProperties%2F-433573332" anchor-label="extraString" id="47568078%2FProperties%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a><p class="paragraph">An extra string. For a multi-file part class, internal name of the facade class.</p></div></div>                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-331685705%2FProperties%2F-433573332" anchor-label="kind" id="-331685705%2FProperties%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+                <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="kind.html">kind</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-331685705%2FProperties%2F-433573332"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common" data-active="" data-toggle=":dokkaStdlib/kotlin-stdlib-java-common">JRE</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaStdlib/kotlin-stdlib-java-common"><a data-name="-331685705%2FProperties%2F-433573332" anchor-label="kind" id="-331685705%2FProperties%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@get:</span><a href="../../kotlin.jvm/-jvm-name/index.html"><span class="token annotation">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;k&quot;</span></span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="kind.html">kind</a><span class="token operator">: </span><a href="../-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">1</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-331685705%2FProperties%2F-433573332" anchor-label="kind" id="-331685705%2FProperties%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a><p class="paragraph">A kind of the metadata this annotation encodes. Kotlin compiler recognizes the following kinds (see KotlinClassHeader.Kind):</p></div></div>                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1376841318%2FProperties%2F-433573332" anchor-label="metadataVersion" id="1376841318%2FProperties%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+                <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="metadata-version.html">metadataVersion</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1376841318%2FProperties%2F-433573332"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common" data-active="" data-toggle=":dokkaStdlib/kotlin-stdlib-java-common">JRE</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaStdlib/kotlin-stdlib-java-common"><a data-name="1376841318%2FProperties%2F-433573332" anchor-label="metadataVersion" id="1376841318%2FProperties%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@get:</span><a href="../../kotlin.jvm/-jvm-name/index.html"><span class="token annotation">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;mv&quot;</span></span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="metadata-version.html">metadataVersion</a><span class="token operator">: </span><a href="../-int-array/index.html">IntArray</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1376841318%2FProperties%2F-433573332" anchor-label="metadataVersion" id="1376841318%2FProperties%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a><p class="paragraph">The version of the metadata provided in the arguments of this annotation.</p></div></div>                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1230724894%2FProperties%2F-433573332" anchor-label="packageName" id="1230724894%2FProperties%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+                <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="package-name.html">packageName</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1230724894%2FProperties%2F-433573332"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common" data-active="" data-toggle=":dokkaStdlib/kotlin-stdlib-java-common">JRE</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaStdlib/kotlin-stdlib-java-common"><a data-name="1230724894%2FProperties%2F-433573332" anchor-label="packageName" id="1230724894%2FProperties%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@get:</span><a href="../../kotlin.jvm/-jvm-name/index.html"><span class="token annotation">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;pn&quot;</span></span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="package-name.html">packageName</a><span class="token operator">: </span><a href="../-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1230724894%2FProperties%2F-433573332" anchor-label="packageName" id="1230724894%2FProperties%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a><p class="paragraph">Fully qualified name of the package this class is located in, from Kotlin's point of view, or empty string if this name does not differ from the JVM's package FQ name. These names can be different in case the <span data-unresolved-link="kotlin.jvm/JvmPackageName///PointingToDeclaration/">JvmPackageName</span> annotation is used. Note that this information is also stored in the corresponding module's <code class="lang-kotlin">.kotlin_module</code> file.</p></div></div>                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Sources</h2>
+              <div class="table" data-togglable="Sources"><a data-name="-1655924684%2FSource%2F-433573332" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/kotlin/Metadata.kt#L8" id="-1655924684%2FSource%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+                <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/kotlin/Metadata.kt#L8">JRE source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1655924684%2FSource%2F-433573332"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+      </div>
+    </div>
+  </body>
+</html>
+

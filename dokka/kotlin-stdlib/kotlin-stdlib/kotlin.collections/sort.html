@@ -1,0 +1,915 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>sort</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+<script src="https://unpkg.com/kotlin-playground@1"></script><script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../styles/style.css" rel="Stylesheet"><link href="../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../styles/main.css" rel="Stylesheet"><link href="../../styles/prism.css" rel="Stylesheet"><link href="../../styles/logo-styles.css" rel="Stylesheet"><script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../scripts/main.js" defer="defer"></script><script type="text/javascript" src="../../scripts/prism.js" async="async"></script>  </head>
+  <body>
+    <div class="navigation-wrapper" id="navigation-wrapper">
+      <div id="leftToggler"><span class="icon-toggler"></span></div>
+      <div class="library-name"><a href="../../index.html">kotlin-stdlib</a></div>
+      <div></div>
+      <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section"><button class="platform-tag platform-selector common-like" data-active="" data-filter=":dokkaStdlib/kotlin-stdlib-common">Common</button><button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaStdlib/kotlin-stdlib-java-common">JRE</button><button class="platform-tag platform-selector js-like" data-active="" data-filter=":dokkaStdlib/kotlin-stdlib-js">JS</button><button class="platform-tag platform-selector native-like" data-active="" data-filter=":dokkaStdlib/kotlin-stdlib-native">Native</button></div>
+<button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+      </div>
+    </div>
+    <div id="container">
+      <div id="leftColumn">
+        <div id="sideMenu"></div>
+      </div>
+      <div id="main">
+        <div class="main-content" id="content" pageIds="kotlin-stdlib::kotlin.collections//sort/kotlin.UIntArray#/PointingToDeclaration//1720017245">
+          <div class="breadcrumbs"><a href="../../index.html">kotlin-stdlib</a><span class="delimiter">/</span><a href="index.html">kotlin.collections</a><span class="delimiter">/</span><a href="sort.html">sort</a></div>
+          <div class="cover ">
+            <h1 class="cover"><span><span>sort</span></span></h1>
+          </div>
+          <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+            <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common" data-active="" data-toggle=":dokkaStdlib/kotlin-stdlib-common">Common</button><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common" data-toggle=":dokkaStdlib/kotlin-stdlib-java-common">JRE</button><button class="platform-bookmark js-like" data-filterable-current=":dokkaStdlib/kotlin-stdlib-js" data-filterable-set=":dokkaStdlib/kotlin-stdlib-js" data-toggle=":dokkaStdlib/kotlin-stdlib-js">JS</button><button class="platform-bookmark native-like" data-filterable-current=":dokkaStdlib/kotlin-stdlib-native" data-filterable-set=":dokkaStdlib/kotlin-stdlib-native" data-toggle=":dokkaStdlib/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaStdlib/kotlin-stdlib-common"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../kotlin/-experimental-unsigned-types/index.html"><span class="token annotation">ExperimentalUnsignedTypes</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-u-int-array/index.html">UIntArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../kotlin/-experimental-unsigned-types/index.html"><span class="token annotation">ExperimentalUnsignedTypes</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-u-long-array/index.html">ULongArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../kotlin/-experimental-unsigned-types/index.html"><span class="token annotation">ExperimentalUnsignedTypes</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-u-byte-array/index.html">UByteArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../kotlin/-experimental-unsigned-types/index.html"><span class="token annotation">ExperimentalUnsignedTypes</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-u-short-array/index.html">UShortArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Sorts the array in-place.</p><div class="block"><h4 class="block">Since Kotlin</h4><div class="block">1.3</div></div><h2 class="">Samples</h2><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+import kotlin.test.*
+fun main() { 
+   //sampleStart 
+   val intArray = intArrayOf(4, 3, 2, 1)
+
+// before sorting
+println(intArray.joinToString()) // 4, 3, 2, 1
+
+intArray.sort()
+
+// after sorting
+println(intArray.joinToString()) // 1, 2, 3, 4 
+   //sampleEnd
+}</code></pre></div><br><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../kotlin/-experimental-unsigned-types/index.html"><span class="token annotation">ExperimentalUnsignedTypes</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-u-int-array/index.html">UIntArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token operator"> = </span>size</span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../kotlin/-experimental-unsigned-types/index.html"><span class="token annotation">ExperimentalUnsignedTypes</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-u-long-array/index.html">ULongArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token operator"> = </span>size</span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../kotlin/-experimental-unsigned-types/index.html"><span class="token annotation">ExperimentalUnsignedTypes</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-u-byte-array/index.html">UByteArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token operator"> = </span>size</span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../kotlin/-experimental-unsigned-types/index.html"><span class="token annotation">ExperimentalUnsignedTypes</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-u-short-array/index.html">UShortArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token operator"> = </span>size</span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-short-array/index.html">ShortArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-int-array/index.html">IntArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-long-array/index.html">LongArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-float-array/index.html">FloatArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-double-array/index.html">DoubleArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-char-array/index.html">CharArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Sorts a range in the array in-place.</p><div class="block"><h4 class="block">Since Kotlin</h4><div class="block">1.4</div></div><h2 class="">Samples</h2><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+import kotlin.test.*
+fun main() { 
+   //sampleStart 
+   val intArray = intArrayOf(4, 3, 2, 1)
+
+// before sorting
+println(intArray.joinToString()) // 4, 3, 2, 1
+
+intArray.sort(0, 3)
+
+// after sorting
+println(intArray.joinToString()) // 2, 3, 4, 1 
+   //sampleEnd
+}</code></pre></div><h2 class="">Parameters</h2><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span>from</span><wbr></wbr><span><span>Index</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">the start of the range (inclusive) to sort, 0 by default.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span>to</span><wbr></wbr><span><span>Index</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">the end of the range (exclusive) to sort, size of this array by default.</p></div></div></div></div></div></div></div><h2 class="">Throws</h2><div class="table"><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../kotlin/-index-out-of-bounds-exception/index.html"><span>kotlin.</span><wbr></wbr><span>Index</span><wbr></wbr><span>Out</span><wbr></wbr><span>Of</span><wbr></wbr><span>Bounds</span><wbr></wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">if <a href="sort.html">fromIndex</a> is less than zero or <a href="sort.html">toIndex</a> is greater than the size of this array.</p></div></div></div></div><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../kotlin/-illegal-argument-exception/index.html"><span>kotlin.</span><wbr></wbr><span>Illegal</span><wbr></wbr><span>Argument</span><wbr></wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">if <a href="sort.html">fromIndex</a> is greater than <a href="sort.html">toIndex</a>.</p></div></div></div></div></div><br><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-int-array/index.html">IntArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-long-array/index.html">LongArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-short-array/index.html">ShortArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-double-array/index.html">DoubleArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-float-array/index.html">FloatArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-char-array/index.html">CharArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Sorts the array in-place.</p><h2 class="">Samples</h2><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+import kotlin.test.*
+fun main() { 
+   //sampleStart 
+   val intArray = intArrayOf(4, 3, 2, 1)
+
+// before sorting
+println(intArray.joinToString()) // 4, 3, 2, 1
+
+intArray.sort()
+
+// after sorting
+println(intArray.joinToString()) // 1, 2, 3, 4 
+   //sampleEnd
+}</code></pre></div><br><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator"> : </span><a href="../kotlin/-comparable/index.html">Comparable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><a href="../kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="sort.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Sorts the array in-place according to the natural order of its elements.</p><p class="paragraph">The sort is <i>stable</i>. It means that equal elements preserve their order relative to each other after sorting.</p><h2 class="">Samples</h2><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+import kotlin.test.*
+fun main() { 
+   //sampleStart 
+   class Person(val firstName: String, val lastName: String) : Comparable&lt;Person&gt; {
+    override fun compareTo(other: Person): Int = this.lastName.compareTo(other.lastName)
+    override fun toString(): String = &quot;$firstName $lastName&quot;
+}
+
+val people = arrayOf(
+    Person(&quot;Ragnar&quot;, &quot;Lodbrok&quot;),
+    Person(&quot;Bjorn&quot;, &quot;Ironside&quot;),
+    Person(&quot;Sweyn&quot;, &quot;Forkbeard&quot;)
+)
+
+// before sorting
+println(people.joinToString()) // Ragnar Lodbrok, Bjorn Ironside, Sweyn Forkbeard
+
+people.sort()
+
+// after sorting
+println(people.joinToString()) // Sweyn Forkbeard, Bjorn Ironside, Ragnar Lodbrok 
+   //sampleEnd
+}</code></pre></div><br><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator"> : </span><a href="../kotlin/-comparable/index.html">Comparable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><a href="../kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="sort.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Sorts a range in the array in-place.</p><p class="paragraph">The sort is <i>stable</i>. It means that equal elements preserve their order relative to each other after sorting.</p><div class="block"><h4 class="block">Since Kotlin</h4><div class="block">1.4</div></div><h2 class="">Samples</h2><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+import kotlin.test.*
+fun main() { 
+   //sampleStart 
+   class Person(val firstName: String, val lastName: String) : Comparable&lt;Person&gt; {
+    override fun compareTo(other: Person): Int = this.lastName.compareTo(other.lastName)
+    override fun toString(): String = &quot;$firstName $lastName&quot;
+}
+
+val people = arrayOf(
+    Person(&quot;Ragnar&quot;, &quot;Lodbrok&quot;),
+    Person(&quot;Bjorn&quot;, &quot;Ironside&quot;),
+    Person(&quot;Sweyn&quot;, &quot;Forkbeard&quot;)
+)
+
+// before sorting
+println(people.joinToString()) // Ragnar Lodbrok, Bjorn Ironside, Sweyn Forkbeard
+
+people.sort(0, 2)
+
+// after sorting
+println(people.joinToString()) // Bjorn Ironside, Ragnar Lodbrok, Sweyn Forkbeard 
+   //sampleEnd
+}</code></pre></div><h2 class="">Parameters</h2><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span>from</span><wbr></wbr><span><span>Index</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">the start of the range (inclusive) to sort, 0 by default.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span>to</span><wbr></wbr><span><span>Index</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">the end of the range (exclusive) to sort, size of this array by default.</p></div></div></div></div></div></div></div><h2 class="">Throws</h2><div class="table"><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../kotlin/-index-out-of-bounds-exception/index.html"><span>kotlin.</span><wbr></wbr><span>Index</span><wbr></wbr><span>Out</span><wbr></wbr><span>Of</span><wbr></wbr><span>Bounds</span><wbr></wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">if <a href="sort.html">fromIndex</a> is less than zero or <a href="sort.html">toIndex</a> is greater than the size of this array.</p></div></div></div></div><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../kotlin/-illegal-argument-exception/index.html"><span>kotlin.</span><wbr></wbr><span>Illegal</span><wbr></wbr><span>Argument</span><wbr></wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">if <a href="sort.html">fromIndex</a> is greater than <a href="sort.html">toIndex</a>.</p></div></div></div></div></div><br><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator"> : </span><a href="../kotlin/-comparable/index.html">Comparable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><a href="-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div><div class="content sourceset-depenent-content" data-togglable=":dokkaStdlib/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator">&gt; </span><a href="../kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="sort.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Sorts the array in-place according to the natural order of its elements.</p><p class="paragraph">The sort is <i>stable</i>. It means that equal elements preserve their order relative to each other after sorting.</p><h2 class="">Throws</h2><div class="table"><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../kotlin/-class-cast-exception/index.html"><span>kotlin.</span><wbr></wbr><span>Class</span><wbr></wbr><span>Cast</span><wbr></wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">if any element of the array is not <a href="../kotlin/-comparable/index.html">Comparable</a>.</p></div></div></div></div></div><br><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator">&gt; </span><a href="../kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="sort.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token operator"> = </span>size</span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Sorts a range in the array in-place.</p><p class="paragraph">The sort is <i>stable</i>. It means that equal elements preserve their order relative to each other after sorting.</p><h2 class="">Samples</h2><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+import kotlin.test.*
+fun main() { 
+   //sampleStart 
+   class Person(val firstName: String, val lastName: String) : Comparable&lt;Person&gt; {
+    override fun compareTo(other: Person): Int = this.lastName.compareTo(other.lastName)
+    override fun toString(): String = &quot;$firstName $lastName&quot;
+}
+
+val people = arrayOf(
+    Person(&quot;Ragnar&quot;, &quot;Lodbrok&quot;),
+    Person(&quot;Bjorn&quot;, &quot;Ironside&quot;),
+    Person(&quot;Sweyn&quot;, &quot;Forkbeard&quot;)
+)
+
+// before sorting
+println(people.joinToString()) // Ragnar Lodbrok, Bjorn Ironside, Sweyn Forkbeard
+
+people.sort(0, 2)
+
+// after sorting
+println(people.joinToString()) // Bjorn Ironside, Ragnar Lodbrok, Sweyn Forkbeard 
+   //sampleEnd
+}</code></pre></div><h2 class="">Parameters</h2><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span>from</span><wbr></wbr><span><span>Index</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">the start of the range (inclusive) to sort, 0 by default.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span>to</span><wbr></wbr><span><span>Index</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">the end of the range (exclusive) to sort, size of this array by default.</p></div></div></div></div></div></div></div><h2 class="">Throws</h2><div class="table"><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../kotlin/-index-out-of-bounds-exception/index.html"><span>kotlin.</span><wbr></wbr><span>Index</span><wbr></wbr><span>Out</span><wbr></wbr><span>Of</span><wbr></wbr><span>Bounds</span><wbr></wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">if <a href="sort.html">fromIndex</a> is less than zero or <a href="sort.html">toIndex</a> is greater than the size of this array.</p></div></div></div></div><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../kotlin/-illegal-argument-exception/index.html"><span>kotlin.</span><wbr></wbr><span>Illegal</span><wbr></wbr><span>Argument</span><wbr></wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">if <a href="sort.html">fromIndex</a> is greater than <a href="sort.html">toIndex</a>.</p></div></div></div></div></div><br><div class="symbol monospace strikethrough"><strike><span class="token keyword">inline </span></strike><strike><span class="token keyword">fun </span></strike><strike><span class="token operator">&lt;</span></strike><span class="token keyword"></span><a href="sort.html">T</a><strike><span class="token operator">&gt; </span></strike><a href="-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator">&gt;</span><strike><span class="token punctuation">.</span></strike><a href="sort.html"><strike><span class="token function">sort</span></strike></a><strike><span class="token punctuation">(</span></strike><span class="parameters "><span class="parameter ">comparator<span class="token operator">: </span><a href="../kotlin/-comparator/index.html">Comparator</a><span class="token operator">&lt;</span><span class="token keyword">in </span><a href="sort.html">T</a><span class="token operator">&gt;</span></span></span><strike><span class="token punctuation">)</span></strike><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace strikethrough"><strike><span class="token keyword">inline </span></strike><strike><span class="token keyword">fun </span></strike><strike><span class="token operator">&lt;</span></strike><span class="token keyword"></span><a href="sort.html">T</a><strike><span class="token operator">&gt; </span></strike><a href="-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator">&gt;</span><strike><span class="token punctuation">.</span></strike><a href="sort.html"><strike><span class="token function">sort</span></strike></a><strike><span class="token punctuation">(</span></strike><span class="parameters "><span class="parameter ">comparison<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="sort.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../kotlin/-int/index.html">Int</a></span></span><strike><span class="token punctuation">)</span></strike><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><br><br><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-int-array/index.html">IntArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-long-array/index.html">LongArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-short-array/index.html">ShortArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-double-array/index.html">DoubleArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-float-array/index.html">FloatArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-char-array/index.html">CharArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Sorts the array in-place.</p><h2 class="">Samples</h2><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+import kotlin.test.*
+fun main() { 
+   //sampleStart 
+   val intArray = intArrayOf(4, 3, 2, 1)
+
+// before sorting
+println(intArray.joinToString()) // 4, 3, 2, 1
+
+intArray.sort()
+
+// after sorting
+println(intArray.joinToString()) // 1, 2, 3, 4 
+   //sampleEnd
+}</code></pre></div><br><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator"> : </span><a href="../kotlin/-comparable/index.html">Comparable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><a href="../kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="sort.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Sorts the array in-place according to the natural order of its elements.</p><p class="paragraph">The sort is <i>stable</i>. It means that equal elements preserve their order relative to each other after sorting.</p><h2 class="">Samples</h2><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+import kotlin.test.*
+fun main() { 
+   //sampleStart 
+   class Person(val firstName: String, val lastName: String) : Comparable&lt;Person&gt; {
+    override fun compareTo(other: Person): Int = this.lastName.compareTo(other.lastName)
+    override fun toString(): String = &quot;$firstName $lastName&quot;
+}
+
+val people = arrayOf(
+    Person(&quot;Ragnar&quot;, &quot;Lodbrok&quot;),
+    Person(&quot;Bjorn&quot;, &quot;Ironside&quot;),
+    Person(&quot;Sweyn&quot;, &quot;Forkbeard&quot;)
+)
+
+// before sorting
+println(people.joinToString()) // Ragnar Lodbrok, Bjorn Ironside, Sweyn Forkbeard
+
+people.sort()
+
+// after sorting
+println(people.joinToString()) // Sweyn Forkbeard, Bjorn Ironside, Ragnar Lodbrok 
+   //sampleEnd
+}</code></pre></div><br><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator"> : </span><a href="../kotlin/-comparable/index.html">Comparable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><a href="../kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="sort.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Sorts a range in the array in-place.</p><p class="paragraph">The sort is <i>stable</i>. It means that equal elements preserve their order relative to each other after sorting.</p><div class="block"><h4 class="block">Since Kotlin</h4><div class="block">1.4</div></div><h2 class="">Samples</h2><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+import kotlin.test.*
+fun main() { 
+   //sampleStart 
+   class Person(val firstName: String, val lastName: String) : Comparable&lt;Person&gt; {
+    override fun compareTo(other: Person): Int = this.lastName.compareTo(other.lastName)
+    override fun toString(): String = &quot;$firstName $lastName&quot;
+}
+
+val people = arrayOf(
+    Person(&quot;Ragnar&quot;, &quot;Lodbrok&quot;),
+    Person(&quot;Bjorn&quot;, &quot;Ironside&quot;),
+    Person(&quot;Sweyn&quot;, &quot;Forkbeard&quot;)
+)
+
+// before sorting
+println(people.joinToString()) // Ragnar Lodbrok, Bjorn Ironside, Sweyn Forkbeard
+
+people.sort(0, 2)
+
+// after sorting
+println(people.joinToString()) // Bjorn Ironside, Ragnar Lodbrok, Sweyn Forkbeard 
+   //sampleEnd
+}</code></pre></div><h2 class="">Parameters</h2><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span>from</span><wbr></wbr><span><span>Index</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">the start of the range (inclusive) to sort, 0 by default.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span>to</span><wbr></wbr><span><span>Index</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">the end of the range (exclusive) to sort, size of this array by default.</p></div></div></div></div></div></div></div><h2 class="">Throws</h2><div class="table"><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../kotlin/-index-out-of-bounds-exception/index.html"><span>kotlin.</span><wbr></wbr><span>Index</span><wbr></wbr><span>Out</span><wbr></wbr><span>Of</span><wbr></wbr><span>Bounds</span><wbr></wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">if <a href="sort.html">fromIndex</a> is less than zero or <a href="sort.html">toIndex</a> is greater than the size of this array.</p></div></div></div></div><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../kotlin/-illegal-argument-exception/index.html"><span>kotlin.</span><wbr></wbr><span>Illegal</span><wbr></wbr><span>Argument</span><wbr></wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">if <a href="sort.html">fromIndex</a> is greater than <a href="sort.html">toIndex</a>.</p></div></div></div></div></div><br><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-short-array/index.html">ShortArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-int-array/index.html">IntArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-long-array/index.html">LongArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-float-array/index.html">FloatArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-double-array/index.html">DoubleArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-char-array/index.html">CharArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Sorts a range in the array in-place.</p><h2 class="">Samples</h2><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+import kotlin.test.*
+fun main() { 
+   //sampleStart 
+   val intArray = intArrayOf(4, 3, 2, 1)
+
+// before sorting
+println(intArray.joinToString()) // 4, 3, 2, 1
+
+intArray.sort(0, 3)
+
+// after sorting
+println(intArray.joinToString()) // 2, 3, 4, 1 
+   //sampleEnd
+}</code></pre></div><h2 class="">Parameters</h2><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span>from</span><wbr></wbr><span><span>Index</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">the start of the range (inclusive) to sort, 0 by default.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span>to</span><wbr></wbr><span><span>Index</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">the end of the range (exclusive) to sort, size of this array by default.</p></div></div></div></div></div></div></div><h2 class="">Throws</h2><div class="table"><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../kotlin/-index-out-of-bounds-exception/index.html"><span>kotlin.</span><wbr></wbr><span>Index</span><wbr></wbr><span>Out</span><wbr></wbr><span>Of</span><wbr></wbr><span>Bounds</span><wbr></wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">if <a href="sort.html">fromIndex</a> is less than zero or <a href="sort.html">toIndex</a> is greater than the size of this array.</p></div></div></div></div><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../kotlin/-illegal-argument-exception/index.html"><span>kotlin.</span><wbr></wbr><span>Illegal</span><wbr></wbr><span>Argument</span><wbr></wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">if <a href="sort.html">fromIndex</a> is greater than <a href="sort.html">toIndex</a>.</p></div></div></div></div></div><br><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator"> : </span><a href="../kotlin/-comparable/index.html">Comparable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><a href="-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Sorts elements in the list in-place according to their natural sort order.</p><p class="paragraph">The sort is <i>stable</i>. It means that equal elements preserve their order relative to each other after sorting.</p><h2 class="">Samples</h2><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+import kotlin.test.*
+fun main() { 
+   //sampleStart 
+   val mutableList = mutableListOf(4, 3, 2, 1)
+
+// before sorting
+println(mutableList.joinToString()) // 4, 3, 2, 1
+
+mutableList.sort()
+
+// after sorting
+println(mutableList.joinToString()) // 1, 2, 3, 4 
+   //sampleEnd
+}</code></pre></div></div><div class="content sourceset-depenent-content" data-togglable=":dokkaStdlib/kotlin-stdlib-js"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator">&gt; </span><a href="../kotlin/-array/index.html#-1829019418%2FExtensions%2F1801545997">Array</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="sort.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">comparison<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="sort.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../kotlin/-int/index.html#-1079676016%2FExtensions%2F1801545997">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Sorts the array in-place according to the order specified by the given <a href="sort.html">comparison</a> function.</p><p class="paragraph">The sort is <i>stable</i>. It means that equal elements preserve their order relative to each other after sorting.</p><br><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html#1606002958%2FExtensions%2F1801545997">ByteArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">noinline </span>comparison<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span>a<span class="token operator">: </span><a href="../kotlin/-byte/index.html#1310507387%2FExtensions%2F1801545997">Byte</a><span class="token punctuation">, </span><span class="token keyword"></span>b<span class="token operator">: </span><a href="../kotlin/-byte/index.html#1310507387%2FExtensions%2F1801545997">Byte</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../kotlin/-int/index.html#-1079676016%2FExtensions%2F1801545997">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="../kotlin/-short-array/index.html#2145249126%2FExtensions%2F1801545997">ShortArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">noinline </span>comparison<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span>a<span class="token operator">: </span><a href="../kotlin/-short/index.html#-189731805%2FExtensions%2F1801545997">Short</a><span class="token punctuation">, </span><span class="token keyword"></span>b<span class="token operator">: </span><a href="../kotlin/-short/index.html#-189731805%2FExtensions%2F1801545997">Short</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../kotlin/-int/index.html#-1079676016%2FExtensions%2F1801545997">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="../kotlin/-int-array/index.html#-2052719591%2FExtensions%2F1801545997">IntArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">noinline </span>comparison<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span>a<span class="token operator">: </span><a href="../kotlin/-int/index.html#-1079676016%2FExtensions%2F1801545997">Int</a><span class="token punctuation">, </span><span class="token keyword"></span>b<span class="token operator">: </span><a href="../kotlin/-int/index.html#-1079676016%2FExtensions%2F1801545997">Int</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../kotlin/-int/index.html#-1079676016%2FExtensions%2F1801545997">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="../kotlin/-long-array/index.html#-784725118%2FExtensions%2F1801545997">LongArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">noinline </span>comparison<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span>a<span class="token operator">: </span><a href="../kotlin/-long/index.html#786278023%2FExtensions%2F1801545997">Long</a><span class="token punctuation">, </span><span class="token keyword"></span>b<span class="token operator">: </span><a href="../kotlin/-long/index.html#786278023%2FExtensions%2F1801545997">Long</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../kotlin/-int/index.html#-1079676016%2FExtensions%2F1801545997">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="../kotlin/-float-array/index.html#807861574%2FExtensions%2F1801545997">FloatArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">noinline </span>comparison<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span>a<span class="token operator">: </span><a href="../kotlin/-float/index.html#-1026971069%2FExtensions%2F1801545997">Float</a><span class="token punctuation">, </span><span class="token keyword"></span>b<span class="token operator">: </span><a href="../kotlin/-float/index.html#-1026971069%2FExtensions%2F1801545997">Float</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../kotlin/-int/index.html#-1079676016%2FExtensions%2F1801545997">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="../kotlin/-double-array/index.html#1074936471%2FExtensions%2F1801545997">DoubleArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">noinline </span>comparison<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span>a<span class="token operator">: </span><a href="../kotlin/-double/index.html#1846517330%2FExtensions%2F1801545997">Double</a><span class="token punctuation">, </span><span class="token keyword"></span>b<span class="token operator">: </span><a href="../kotlin/-double/index.html#1846517330%2FExtensions%2F1801545997">Double</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../kotlin/-int/index.html#-1079676016%2FExtensions%2F1801545997">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="../kotlin/-char-array/index.html#901996252%2FExtensions%2F1801545997">CharArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">noinline </span>comparison<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span>a<span class="token operator">: </span><a href="../kotlin/-char/index.html#1351623405%2FExtensions%2F1801545997">Char</a><span class="token punctuation">, </span><span class="token keyword"></span>b<span class="token operator">: </span><a href="../kotlin/-char/index.html#1351623405%2FExtensions%2F1801545997">Char</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../kotlin/-int/index.html#-1079676016%2FExtensions%2F1801545997">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Sorts the array in-place according to the order specified by the given <a href="sort.html">comparison</a> function.</p><br><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-int-array/index.html#-2052719591%2FExtensions%2F1801545997">IntArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-long-array/index.html#-784725118%2FExtensions%2F1801545997">LongArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html#1606002958%2FExtensions%2F1801545997">ByteArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-short-array/index.html#2145249126%2FExtensions%2F1801545997">ShortArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-double-array/index.html#1074936471%2FExtensions%2F1801545997">DoubleArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-float-array/index.html#807861574%2FExtensions%2F1801545997">FloatArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-char-array/index.html#901996252%2FExtensions%2F1801545997">CharArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Sorts the array in-place.</p><h2 class="">Samples</h2><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+import kotlin.test.*
+fun main() { 
+   //sampleStart 
+   val intArray = intArrayOf(4, 3, 2, 1)
+
+// before sorting
+println(intArray.joinToString()) // 4, 3, 2, 1
+
+intArray.sort()
+
+// after sorting
+println(intArray.joinToString()) // 1, 2, 3, 4 
+   //sampleEnd
+}</code></pre></div><br><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator"> : </span><a href="../kotlin/-comparable/index.html">Comparable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><a href="../kotlin/-array/index.html#-1829019418%2FExtensions%2F1801545997">Array</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="sort.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Sorts the array in-place according to the natural order of its elements.</p><p class="paragraph">The sort is <i>stable</i>. It means that equal elements preserve their order relative to each other after sorting.</p><h2 class="">Samples</h2><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+import kotlin.test.*
+fun main() { 
+   //sampleStart 
+   class Person(val firstName: String, val lastName: String) : Comparable&lt;Person&gt; {
+    override fun compareTo(other: Person): Int = this.lastName.compareTo(other.lastName)
+    override fun toString(): String = &quot;$firstName $lastName&quot;
+}
+
+val people = arrayOf(
+    Person(&quot;Ragnar&quot;, &quot;Lodbrok&quot;),
+    Person(&quot;Bjorn&quot;, &quot;Ironside&quot;),
+    Person(&quot;Sweyn&quot;, &quot;Forkbeard&quot;)
+)
+
+// before sorting
+println(people.joinToString()) // Ragnar Lodbrok, Bjorn Ironside, Sweyn Forkbeard
+
+people.sort()
+
+// after sorting
+println(people.joinToString()) // Sweyn Forkbeard, Bjorn Ironside, Ragnar Lodbrok 
+   //sampleEnd
+}</code></pre></div><br><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator"> : </span><a href="../kotlin/-comparable/index.html">Comparable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><a href="../kotlin/-array/index.html#-1829019418%2FExtensions%2F1801545997">Array</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="sort.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html#-1079676016%2FExtensions%2F1801545997">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html#-1079676016%2FExtensions%2F1801545997">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Sorts a range in the array in-place.</p><p class="paragraph">The sort is <i>stable</i>. It means that equal elements preserve their order relative to each other after sorting.</p><div class="block"><h4 class="block">Since Kotlin</h4><div class="block">1.4</div></div><h2 class="">Samples</h2><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+import kotlin.test.*
+fun main() { 
+   //sampleStart 
+   class Person(val firstName: String, val lastName: String) : Comparable&lt;Person&gt; {
+    override fun compareTo(other: Person): Int = this.lastName.compareTo(other.lastName)
+    override fun toString(): String = &quot;$firstName $lastName&quot;
+}
+
+val people = arrayOf(
+    Person(&quot;Ragnar&quot;, &quot;Lodbrok&quot;),
+    Person(&quot;Bjorn&quot;, &quot;Ironside&quot;),
+    Person(&quot;Sweyn&quot;, &quot;Forkbeard&quot;)
+)
+
+// before sorting
+println(people.joinToString()) // Ragnar Lodbrok, Bjorn Ironside, Sweyn Forkbeard
+
+people.sort(0, 2)
+
+// after sorting
+println(people.joinToString()) // Bjorn Ironside, Ragnar Lodbrok, Sweyn Forkbeard 
+   //sampleEnd
+}</code></pre></div><h2 class="">Parameters</h2><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-js" data-filterable-set=":dokkaStdlib/kotlin-stdlib-js"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span>from</span><wbr></wbr><span><span>Index</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">the start of the range (inclusive) to sort, 0 by default.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-js" data-filterable-set=":dokkaStdlib/kotlin-stdlib-js"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span>to</span><wbr></wbr><span><span>Index</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">the end of the range (exclusive) to sort, size of this array by default.</p></div></div></div></div></div></div></div><h2 class="">Throws</h2><div class="table"><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-js" data-filterable-set=":dokkaStdlib/kotlin-stdlib-js"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../kotlin/-index-out-of-bounds-exception/index.html"><span>kotlin.</span><wbr></wbr><span>Index</span><wbr></wbr><span>Out</span><wbr></wbr><span>Of</span><wbr></wbr><span>Bounds</span><wbr></wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">if <a href="sort.html">fromIndex</a> is less than zero or <a href="sort.html">toIndex</a> is greater than the size of this array.</p></div></div></div></div><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-js" data-filterable-set=":dokkaStdlib/kotlin-stdlib-js"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../kotlin/-illegal-argument-exception/index.html"><span>kotlin.</span><wbr></wbr><span>Illegal</span><wbr></wbr><span>Argument</span><wbr></wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">if <a href="sort.html">fromIndex</a> is greater than <a href="sort.html">toIndex</a>.</p></div></div></div></div></div><br><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html#1606002958%2FExtensions%2F1801545997">ByteArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html#-1079676016%2FExtensions%2F1801545997">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html#-1079676016%2FExtensions%2F1801545997">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-short-array/index.html#2145249126%2FExtensions%2F1801545997">ShortArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html#-1079676016%2FExtensions%2F1801545997">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html#-1079676016%2FExtensions%2F1801545997">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-int-array/index.html#-2052719591%2FExtensions%2F1801545997">IntArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html#-1079676016%2FExtensions%2F1801545997">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html#-1079676016%2FExtensions%2F1801545997">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-long-array/index.html#-784725118%2FExtensions%2F1801545997">LongArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html#-1079676016%2FExtensions%2F1801545997">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html#-1079676016%2FExtensions%2F1801545997">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-float-array/index.html#807861574%2FExtensions%2F1801545997">FloatArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html#-1079676016%2FExtensions%2F1801545997">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html#-1079676016%2FExtensions%2F1801545997">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-double-array/index.html#1074936471%2FExtensions%2F1801545997">DoubleArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html#-1079676016%2FExtensions%2F1801545997">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html#-1079676016%2FExtensions%2F1801545997">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-char-array/index.html#901996252%2FExtensions%2F1801545997">CharArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html#-1079676016%2FExtensions%2F1801545997">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html#-1079676016%2FExtensions%2F1801545997">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Sorts a range in the array in-place.</p><div class="block"><h4 class="block">Since Kotlin</h4><div class="block">1.4</div></div><h2 class="">Samples</h2><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+import kotlin.test.*
+fun main() { 
+   //sampleStart 
+   val intArray = intArrayOf(4, 3, 2, 1)
+
+// before sorting
+println(intArray.joinToString()) // 4, 3, 2, 1
+
+intArray.sort(0, 3)
+
+// after sorting
+println(intArray.joinToString()) // 2, 3, 4, 1 
+   //sampleEnd
+}</code></pre></div><h2 class="">Parameters</h2><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-js" data-filterable-set=":dokkaStdlib/kotlin-stdlib-js"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span>from</span><wbr></wbr><span><span>Index</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">the start of the range (inclusive) to sort, 0 by default.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-js" data-filterable-set=":dokkaStdlib/kotlin-stdlib-js"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span>to</span><wbr></wbr><span><span>Index</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">the end of the range (exclusive) to sort, size of this array by default.</p></div></div></div></div></div></div></div><h2 class="">Throws</h2><div class="table"><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-js" data-filterable-set=":dokkaStdlib/kotlin-stdlib-js"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../kotlin/-index-out-of-bounds-exception/index.html"><span>kotlin.</span><wbr></wbr><span>Index</span><wbr></wbr><span>Out</span><wbr></wbr><span>Of</span><wbr></wbr><span>Bounds</span><wbr></wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">if <a href="sort.html">fromIndex</a> is less than zero or <a href="sort.html">toIndex</a> is greater than the size of this array.</p></div></div></div></div><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-js" data-filterable-set=":dokkaStdlib/kotlin-stdlib-js"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../kotlin/-illegal-argument-exception/index.html"><span>kotlin.</span><wbr></wbr><span>Illegal</span><wbr></wbr><span>Argument</span><wbr></wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">if <a href="sort.html">fromIndex</a> is greater than <a href="sort.html">toIndex</a>.</p></div></div></div></div></div><br><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator"> : </span><a href="../kotlin/-comparable/index.html">Comparable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><a href="-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Sorts elements in the list in-place according to their natural sort order.</p><p class="paragraph">The sort is <i>stable</i>. It means that equal elements preserve their order relative to each other after sorting.</p></div><div class="content sourceset-depenent-content" data-togglable=":dokkaStdlib/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-int-array/index.html">IntArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-long-array/index.html">LongArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-short-array/index.html">ShortArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-double-array/index.html">DoubleArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-float-array/index.html">FloatArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-char-array/index.html">CharArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Sorts the array in-place.</p><h2 class="">Samples</h2><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+import kotlin.test.*
+fun main() { 
+   //sampleStart 
+   val intArray = intArrayOf(4, 3, 2, 1)
+
+// before sorting
+println(intArray.joinToString()) // 4, 3, 2, 1
+
+intArray.sort()
+
+// after sorting
+println(intArray.joinToString()) // 1, 2, 3, 4 
+   //sampleEnd
+}</code></pre></div><br><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator"> : </span><a href="../kotlin/-comparable/index.html">Comparable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><a href="../kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="sort.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Sorts the array in-place according to the natural order of its elements.</p><p class="paragraph">The sort is <i>stable</i>. It means that equal elements preserve their order relative to each other after sorting.</p><h2 class="">Samples</h2><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+import kotlin.test.*
+fun main() { 
+   //sampleStart 
+   class Person(val firstName: String, val lastName: String) : Comparable&lt;Person&gt; {
+    override fun compareTo(other: Person): Int = this.lastName.compareTo(other.lastName)
+    override fun toString(): String = &quot;$firstName $lastName&quot;
+}
+
+val people = arrayOf(
+    Person(&quot;Ragnar&quot;, &quot;Lodbrok&quot;),
+    Person(&quot;Bjorn&quot;, &quot;Ironside&quot;),
+    Person(&quot;Sweyn&quot;, &quot;Forkbeard&quot;)
+)
+
+// before sorting
+println(people.joinToString()) // Ragnar Lodbrok, Bjorn Ironside, Sweyn Forkbeard
+
+people.sort()
+
+// after sorting
+println(people.joinToString()) // Sweyn Forkbeard, Bjorn Ironside, Ragnar Lodbrok 
+   //sampleEnd
+}</code></pre></div><br><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator"> : </span><a href="../kotlin/-comparable/index.html">Comparable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><a href="../kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="sort.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Sorts a range in the array in-place.</p><p class="paragraph">The sort is <i>stable</i>. It means that equal elements preserve their order relative to each other after sorting.</p><div class="block"><h4 class="block">Since Kotlin</h4><div class="block">1.4</div></div><h2 class="">Samples</h2><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+import kotlin.test.*
+fun main() { 
+   //sampleStart 
+   class Person(val firstName: String, val lastName: String) : Comparable&lt;Person&gt; {
+    override fun compareTo(other: Person): Int = this.lastName.compareTo(other.lastName)
+    override fun toString(): String = &quot;$firstName $lastName&quot;
+}
+
+val people = arrayOf(
+    Person(&quot;Ragnar&quot;, &quot;Lodbrok&quot;),
+    Person(&quot;Bjorn&quot;, &quot;Ironside&quot;),
+    Person(&quot;Sweyn&quot;, &quot;Forkbeard&quot;)
+)
+
+// before sorting
+println(people.joinToString()) // Ragnar Lodbrok, Bjorn Ironside, Sweyn Forkbeard
+
+people.sort(0, 2)
+
+// after sorting
+println(people.joinToString()) // Bjorn Ironside, Ragnar Lodbrok, Sweyn Forkbeard 
+   //sampleEnd
+}</code></pre></div><h2 class="">Parameters</h2><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-native" data-filterable-set=":dokkaStdlib/kotlin-stdlib-native"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span>from</span><wbr></wbr><span><span>Index</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">the start of the range (inclusive) to sort, 0 by default.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-native" data-filterable-set=":dokkaStdlib/kotlin-stdlib-native"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span>to</span><wbr></wbr><span><span>Index</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">the end of the range (exclusive) to sort, size of this array by default.</p></div></div></div></div></div></div></div><h2 class="">Throws</h2><div class="table"><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-native" data-filterable-set=":dokkaStdlib/kotlin-stdlib-native"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../kotlin/-index-out-of-bounds-exception/index.html"><span>kotlin.</span><wbr></wbr><span>Index</span><wbr></wbr><span>Out</span><wbr></wbr><span>Of</span><wbr></wbr><span>Bounds</span><wbr></wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">if <a href="sort.html">fromIndex</a> is less than zero or <a href="sort.html">toIndex</a> is greater than the size of this array.</p></div></div></div></div><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-native" data-filterable-set=":dokkaStdlib/kotlin-stdlib-native"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../kotlin/-illegal-argument-exception/index.html"><span>kotlin.</span><wbr></wbr><span>Illegal</span><wbr></wbr><span>Argument</span><wbr></wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">if <a href="sort.html">fromIndex</a> is greater than <a href="sort.html">toIndex</a>.</p></div></div></div></div></div><br><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-short-array/index.html">ShortArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-int-array/index.html">IntArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-long-array/index.html">LongArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-float-array/index.html">FloatArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-double-array/index.html">DoubleArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-char-array/index.html">CharArray</a><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">toIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Sorts a range in the array in-place.</p><div class="block"><h4 class="block">Since Kotlin</h4><div class="block">1.4</div></div><h2 class="">Samples</h2><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+import kotlin.test.*
+fun main() { 
+   //sampleStart 
+   val intArray = intArrayOf(4, 3, 2, 1)
+
+// before sorting
+println(intArray.joinToString()) // 4, 3, 2, 1
+
+intArray.sort(0, 3)
+
+// after sorting
+println(intArray.joinToString()) // 2, 3, 4, 1 
+   //sampleEnd
+}</code></pre></div><h2 class="">Parameters</h2><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-native" data-filterable-set=":dokkaStdlib/kotlin-stdlib-native"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span>from</span><wbr></wbr><span><span>Index</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">the start of the range (inclusive) to sort, 0 by default.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-native" data-filterable-set=":dokkaStdlib/kotlin-stdlib-native"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span>to</span><wbr></wbr><span><span>Index</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">the end of the range (exclusive) to sort, size of this array by default.</p></div></div></div></div></div></div></div><h2 class="">Throws</h2><div class="table"><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-native" data-filterable-set=":dokkaStdlib/kotlin-stdlib-native"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../kotlin/-index-out-of-bounds-exception/index.html"><span>kotlin.</span><wbr></wbr><span>Index</span><wbr></wbr><span>Out</span><wbr></wbr><span>Of</span><wbr></wbr><span>Bounds</span><wbr></wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">if <a href="sort.html">fromIndex</a> is less than zero or <a href="sort.html">toIndex</a> is greater than the size of this array.</p></div></div></div></div><div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-native" data-filterable-set=":dokkaStdlib/kotlin-stdlib-native"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../kotlin/-illegal-argument-exception/index.html"><span>kotlin.</span><wbr></wbr><span>Illegal</span><wbr></wbr><span>Argument</span><wbr></wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">if <a href="sort.html">fromIndex</a> is greater than <a href="sort.html">toIndex</a>.</p></div></div></div></div></div><br><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator"> : </span><a href="../kotlin/-comparable/index.html">Comparable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><a href="-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Sorts elements in the list in-place according to their natural sort order.</p><p class="paragraph">The sort is <i>stable</i>. It means that equal elements preserve their order relative to each other after sorting.</p></div>          </div>
+          <h2 class="">Sources</h2>
+          <div class="table" data-togglable="Sources"><a data-name="-392845548%2FSource%2F-62077813" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_UArrays.kt#L4069" id="-392845548%2FSource%2F-62077813" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_UArrays.kt#L4069">Common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-62077813"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-62077813" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_UArrays.kt#L4080" id="-392845548%2FSource%2F-62077813" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_UArrays.kt#L4080">Common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-62077813"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-62077813" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_UArrays.kt#L4091" id="-392845548%2FSource%2F-62077813" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_UArrays.kt#L4091">Common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-62077813"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-62077813" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_UArrays.kt#L4102" id="-392845548%2FSource%2F-62077813" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_UArrays.kt#L4102">Common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-62077813"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-62077813" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_UArrays.kt#L4113" id="-392845548%2FSource%2F-62077813" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_UArrays.kt#L4113">Common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-62077813"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-62077813" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_UArrays.kt#L4131" id="-392845548%2FSource%2F-62077813" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_UArrays.kt#L4131">Common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-62077813"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-62077813" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_UArrays.kt#L4149" id="-392845548%2FSource%2F-62077813" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_UArrays.kt#L4149">Common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-62077813"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-62077813" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_UArrays.kt#L4167" id="-392845548%2FSource%2F-62077813" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_UArrays.kt#L4167">Common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-62077813"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-433573332" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2392" id="-392845548%2FSource%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2392">JRE source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-433573332"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-433573332" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2534" id="-392845548%2FSource%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2534">JRE source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-433573332"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-433573332" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/kotlin/collections/MutableCollectionsJVM.kt#L12" id="-392845548%2FSource%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/kotlin/collections/MutableCollectionsJVM.kt#L12">JRE source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-433573332"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-433573332" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/kotlin/collections/MutableCollectionsJVM.kt#L17" id="-392845548%2FSource%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/kotlin/collections/MutableCollectionsJVM.kt#L17">JRE source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-433573332"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-62077813" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8241" id="-392845548%2FSource%2F-62077813" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8241">Common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-62077813"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-433573332" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2316" id="-392845548%2FSource%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2316">JRE source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-433573332"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-62077813" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8248" id="-392845548%2FSource%2F-62077813" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8248">Common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-62077813"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-433573332" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2325" id="-392845548%2FSource%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2325">JRE source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-433573332"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-62077813" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8255" id="-392845548%2FSource%2F-62077813" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8255">Common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-62077813"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-433573332" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2334" id="-392845548%2FSource%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2334">JRE source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-433573332"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-62077813" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8262" id="-392845548%2FSource%2F-62077813" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8262">Common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-62077813"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-433573332" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2343" id="-392845548%2FSource%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2343">JRE source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-433573332"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-62077813" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8269" id="-392845548%2FSource%2F-62077813" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8269">Common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-62077813"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-433573332" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2352" id="-392845548%2FSource%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2352">JRE source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-433573332"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-62077813" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8276" id="-392845548%2FSource%2F-62077813" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8276">Common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-62077813"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-433573332" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2361" id="-392845548%2FSource%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2361">JRE source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-433573332"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-62077813" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8283" id="-392845548%2FSource%2F-62077813" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8283">Common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-62077813"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-433573332" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2370" id="-392845548%2FSource%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2370">JRE source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-433573332"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-62077813" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8290" id="-392845548%2FSource%2F-62077813" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8290">Common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-62077813"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-433573332" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2379" id="-392845548%2FSource%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2379">JRE source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-433573332"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-62077813" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8299" id="-392845548%2FSource%2F-62077813" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8299">Common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-62077813"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-433573332" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2403" id="-392845548%2FSource%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2403">JRE source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-433573332"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-62077813" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8315" id="-392845548%2FSource%2F-62077813" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8315">Common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-62077813"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-433573332" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2422" id="-392845548%2FSource%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2422">JRE source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-433573332"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-62077813" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8329" id="-392845548%2FSource%2F-62077813" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8329">Common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-62077813"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-433573332" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2438" id="-392845548%2FSource%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2438">JRE source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-433573332"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-62077813" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8343" id="-392845548%2FSource%2F-62077813" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8343">Common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-62077813"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-433573332" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2454" id="-392845548%2FSource%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2454">JRE source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-433573332"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-62077813" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8357" id="-392845548%2FSource%2F-62077813" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8357">Common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-62077813"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-433573332" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2470" id="-392845548%2FSource%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2470">JRE source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-433573332"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-62077813" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8371" id="-392845548%2FSource%2F-62077813" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8371">Common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-62077813"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-433573332" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2486" id="-392845548%2FSource%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2486">JRE source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-433573332"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-62077813" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8385" id="-392845548%2FSource%2F-62077813" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8385">Common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-62077813"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-433573332" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2502" id="-392845548%2FSource%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2502">JRE source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-433573332"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-62077813" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8399" id="-392845548%2FSource%2F-62077813" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L8399">Common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-62077813"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-433573332" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2518" id="-392845548%2FSource%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/generated/_ArraysJvm.kt#L2518">JRE source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-433573332"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-62077813" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/kotlin/collections/CollectionsH.kt#L25" id="-392845548%2FSource%2F-62077813" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/kotlin/collections/CollectionsH.kt#L25">Common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-62077813"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-392845548%2FSource%2F-433573332" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/kotlin/collections/MutableCollectionsJVM.kt#L23" id="-392845548%2FSource%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/kotlin/collections/MutableCollectionsJVM.kt#L23">JRE source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392845548%2FSource%2F-433573332"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>toIsoString</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+<script src="https://unpkg.com/kotlin-playground@1"></script><script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><link href="../../../styles/prism.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script><script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>  </head>
+  <body>
+    <div class="navigation-wrapper" id="navigation-wrapper">
+      <div id="leftToggler"><span class="icon-toggler"></span></div>
+      <div class="library-name"><a href="../../../index.html">kotlin-stdlib</a></div>
+      <div></div>
+      <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section"><button class="platform-tag platform-selector common-like" data-active="" data-filter=":dokkaStdlib/kotlin-stdlib-common">Common</button></div>
+<button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+      </div>
+    </div>
+    <div id="container">
+      <div id="leftColumn">
+        <div id="sideMenu"></div>
+      </div>
+      <div id="main">
+        <div class="main-content" id="content" pageIds="kotlin-stdlib::kotlin.time/Duration/toIsoString/#/PointingToDeclaration//-62077813">
+          <div class="breadcrumbs"><a href="../../../index.html">kotlin-stdlib</a><span class="delimiter">/</span><a href="../index.html">kotlin.time</a><span class="delimiter">/</span><a href="index.html">Duration</a><span class="delimiter">/</span><a href="to-iso-string.html">toIsoString</a></div>
+          <div class="cover ">
+            <h1 class="cover"><span>to</span><wbr></wbr><span>Iso</span><wbr></wbr><span><span>String</span></span></h1>
+          </div>
+          <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+            <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common" data-active="" data-toggle=":dokkaStdlib/kotlin-stdlib-common">Common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaStdlib/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="to-iso-string.html"><span class="token function">toIsoString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Returns an ISO-8601 based string representation of this duration.</p><p class="paragraph">The returned value is presented in the format <code class="lang-kotlin">PThHmMs.fS</code>, where <code class="lang-kotlin">h</code>, <code class="lang-kotlin">m</code>, <code class="lang-kotlin">s</code> are the integer components of this duration (see <a href="to-components.html">toComponents</a>) and <code class="lang-kotlin">f</code> is a fractional part of second. Depending on the roundness of the value the fractional part can be formatted with either 0, 3, 6, or 9 decimal digits.</p><p class="paragraph">If the hours component absolute value of this duration is greater than <a href="../../kotlin/-int/-companion/-m-a-x_-v-a-l-u-e.html">Int.MAX_VALUE</a>, it is replaced with <a href="../../kotlin/-int/-companion/-m-a-x_-v-a-l-u-e.html">Int.MAX_VALUE</a>, so the infinite duration is formatted as `&quot;PT2147483647H&quot;.</p><p class="paragraph">Negative durations are indicated with the sign <code class="lang-kotlin">-</code> in the beginning of the returned string, for example, <code class="lang-kotlin">&quot;-PT5M30S&quot;</code>.</p><h2 class="">Samples</h2><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+
+import kotlin.time.*
+fun main() { 
+   //sampleStart 
+   println(Duration.nanoseconds(25).toIsoString()) // PT0.000000025S
+println(Duration.milliseconds(120.3).toIsoString()) // PT0.120300S
+println(Duration.seconds(30.5).toIsoString()) // PT30.500S
+println(Duration.minutes(30.5).toIsoString()) // PT30M30S
+println(Duration.seconds(86420).toIsoString()) // PT24H0M20S
+println(Duration.days(2).toIsoString()) // PT48H
+println(Duration.ZERO.toIsoString()) // PT0S
+println(Duration.INFINITE.toIsoString()) // PT2147483647H 
+   //sampleEnd
+}</code></pre></div></div>          </div>
+          <h2 class="">Sources</h2>
+          <div class="table" data-togglable="Sources"><a data-name="1838617896%2FSource%2F-62077813" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/kotlin/time/Duration.kt#L714" id="1838617896%2FSource%2F-62077813" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common"></a>
+            <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-common">
+              <div class="main-subrow keyValue ">
+                <div class=""><span class="inline-flex">
+                    <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/kotlin/time/Duration.kt#L714">Common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1838617896%2FSource%2F-62077813"></span>
+                      <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                    </span></span></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+      </div>
+    </div>
+  </body>
+</html>
+

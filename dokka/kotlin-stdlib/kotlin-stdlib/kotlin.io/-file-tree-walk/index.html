@@ -1,0 +1,146 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>FileTreeWalk</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><link href="../../../styles/prism.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script><script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>  </head>
+  <body>
+    <div class="navigation-wrapper" id="navigation-wrapper">
+      <div id="leftToggler"><span class="icon-toggler"></span></div>
+      <div class="library-name"><a href="../../../index.html">kotlin-stdlib</a></div>
+      <div></div>
+      <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section"><button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaStdlib/kotlin-stdlib-java-common">JRE</button></div>
+<button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+      </div>
+    </div>
+    <div id="container">
+      <div id="leftColumn">
+        <div id="sideMenu"></div>
+      </div>
+      <div id="main">
+        <div class="main-content" id="content" pageIds="kotlin-stdlib::kotlin.io/FileTreeWalk///PointingToDeclaration//-433573332">
+          <div class="breadcrumbs"><a href="../../../index.html">kotlin-stdlib</a><span class="delimiter">/</span><a href="../index.html">kotlin.io</a><span class="delimiter">/</span><a href="index.html">FileTreeWalk</a></div>
+          <div class="cover ">
+            <h1 class="cover"><span>File</span><wbr></wbr><span>Tree</span><wbr></wbr><span><span>Walk</span></span></h1>
+            <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+              <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common" data-active="" data-toggle=":dokkaStdlib/kotlin-stdlib-java-common">JRE</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaStdlib/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">FileTreeWalk</a> : <a href="../../kotlin.sequences/-sequence/index.html#-752745978%2FExtensions%2F-433573332">Sequence</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html">File</a><span class="token operator">&gt; </span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">This class is intended to implement different file traversal methods. It allows to iterate through all files inside a given directory.</p><p class="paragraph">Use <a href="../walk.html">File.walk</a>, <a href="../walk-top-down.html">File.walkTopDown</a> or <a href="../walk-bottom-up.html">File.walkBottomUp</a> extension functions to instantiate a <code class="lang-kotlin">FileTreeWalk</code> instance.</p><p class="paragraph">If the file path given is just a file, walker iterates only it. If the file path given does not exist, walker iterates nothing, i.e. it's equivalent to an empty sequence.</p></div>            </div>
+          </div>
+          <div class="tabbedcontent">
+            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Sources">Sources</button></div>
+            <div class="tabs-section-body">
+              <h2 class="">Functions</h2>
+              <div class="table" data-togglable="Functions"><a data-name="-1965907809%2FFunctions%2F-433573332" anchor-label="iterator" id="-1965907809%2FFunctions%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+                <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="iterator.html"><span><span>iterator</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1965907809%2FFunctions%2F-433573332"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common" data-active="" data-toggle=":dokkaStdlib/kotlin-stdlib-java-common">JRE</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaStdlib/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator override </span><span class="token keyword">fun </span><a href="iterator.html"><span class="token function">iterator</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlin.collections/-iterator/index.html">Iterator</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html">File</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Returns an iterator walking through files.</p></div></div>                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="482912908%2FFunctions%2F-433573332" anchor-label="maxDepth" id="482912908%2FFunctions%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+                <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="max-depth.html"><span>max</span><wbr></wbr><span><span>Depth</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="482912908%2FFunctions%2F-433573332"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common" data-active="" data-toggle=":dokkaStdlib/kotlin-stdlib-java-common">JRE</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaStdlib/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="max-depth.html"><span class="token function">maxDepth</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">depth<span class="token operator">: </span><a href="../../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FileTreeWalk</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Sets the maximum <a href="max-depth.html">depth</a> of a directory tree to traverse. By default there is no limit.</p></div></div>                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1295284209%2FFunctions%2F-433573332" anchor-label="onEnter" id="1295284209%2FFunctions%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+                <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="on-enter.html"><span>on</span><wbr></wbr><span><span>Enter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1295284209%2FFunctions%2F-433573332"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common" data-active="" data-toggle=":dokkaStdlib/kotlin-stdlib-java-common">JRE</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaStdlib/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-enter.html"><span class="token function">onEnter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">function<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html">File</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../../kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FileTreeWalk</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Sets a predicate <a href="on-enter.html">function</a>, that is called on any entered directory before its files are visited and before it is visited itself.</p></div></div>                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1924360961%2FFunctions%2F-433573332" anchor-label="onFail" id="-1924360961%2FFunctions%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+                <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="on-fail.html"><span>on</span><wbr></wbr><span><span>Fail</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1924360961%2FFunctions%2F-433573332"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common" data-active="" data-toggle=":dokkaStdlib/kotlin-stdlib-java-common">JRE</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaStdlib/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-fail.html"><span class="token function">onFail</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">function<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html">File</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html">IOException</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../../kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FileTreeWalk</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Set a callback <a href="on-fail.html">function</a>, that is called on a directory when it's impossible to get its file list.</p></div></div>                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1657912260%2FFunctions%2F-433573332" anchor-label="onLeave" id="1657912260%2FFunctions%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+                <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="on-leave.html"><span>on</span><wbr></wbr><span><span>Leave</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1657912260%2FFunctions%2F-433573332"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark jvm-like" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common" data-active="" data-toggle=":dokkaStdlib/kotlin-stdlib-java-common">JRE</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaStdlib/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-leave.html"><span class="token function">onLeave</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">function<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html">File</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../../kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FileTreeWalk</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Sets a callback <a href="on-leave.html">function</a>, that is called on any left directory after its files are visited and after it is visited itself.</p></div></div>                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Sources</h2>
+              <div class="table" data-togglable="Sources"><a data-name="2126996338%2FSource%2F-433573332" anchor-label="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/kotlin/io/files/FileTreeWalk.kt#L28" id="2126996338%2FSource%2F-433573332" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common"></a>
+                <div class="table-row" data-filterable-current=":dokkaStdlib/kotlin-stdlib-java-common" data-filterable-set=":dokkaStdlib/kotlin-stdlib-java-common">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/kotlin/io/files/FileTreeWalk.kt#L28">JRE source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2126996338%2FSource%2F-433573332"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+      </div>
+    </div>
+  </body>
+</html>
+

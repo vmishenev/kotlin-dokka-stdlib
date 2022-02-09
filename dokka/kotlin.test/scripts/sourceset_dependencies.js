@@ -1,0 +1,1 @@
+sourceset_dependencies='{":dokkaKotlinTest/kotlin-test-JUnit":[],":dokkaKotlinTest/kotlin-test-JUnit5":[],":dokkaKotlinTest/kotlin-test-TestNG":[],":dokkaKotlinTest/kotlin-test-common":[],":dokkaKotlinTest/kotlin-test-js":[],":dokkaKotlinTest/kotlin-test-jvm":[],":dokkaKotlinTest/kotlin-test-native":[]}'
