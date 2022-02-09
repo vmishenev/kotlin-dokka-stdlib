@@ -890,7 +890,8 @@ td.content {
     display: block;
 }
 
-.table-row .with-platform-tabs .sourceset-depenent-content .brief {
+.table-row .with-platform-tabs .sourceset-depenent-content .brief,
+.table-row .inline-comment {
     padding: 8px;
 }
 
