@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>sortedArrayDescending</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+        <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<link href="../../styles/multimodule.css" rel="Stylesheet">
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../index.html">
+                    <span>stdlib</span>
+            </a>
+    </div>
+    <div>
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;stdlib/kotlin.collections/sorted-array-descending.html&quot;}"><div class="versions-dropdown">
+  <div class="versions-dropdown-button">1.5</div>
+  <div class="versions-dropdown-data"><a href="../../../../stdlib/kotlin.collections/sorted-array-descending.html">1.7</a><a href="../../../1.6/stdlib/kotlin.collections/sorted-array-descending.html">1.6</a><a href="sorted-array-descending.html">1.5</a><a href="../../../1.4/stdlib/kotlin.collections/sorted-array-descending.html">1.4</a><a href="../../../1.3/stdlib/kotlin.collections/sorted-array-descending.html">1.3</a><a href="../../../1.2/stdlib/kotlin.collections/sorted-array-descending.html">1.2</a><a href="../../../1.1/stdlib/kotlin.collections/sorted-array-descending.html">1.1</a><a href="../../../1.0/stdlib/kotlin.collections/sorted-array-descending.html">1.0</a></div>
+</div>
+</dokka-template-command>    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":stdlib_1.5/kotlin-stdlib-common">Common</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="stdlib::kotlin.collections//sortedArrayDescending/kotlin.Array[TypeParam(bounds=[kotlin.Comparable[^]])]#/PointingToDeclaration//64241440">
+  <div class="breadcrumbs"><a href="../../index.html">stdlib</a><span class="delimiter">/</span><a href="index.html">kotlin.collections</a><span class="delimiter">/</span><span class="current">sortedArrayDescending</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>sorted</span><wbr><span>Array</span><wbr><span><span>Descending</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.5/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sorted-array-descending.html">T</a><span class="token operator"> : </span><a href="../kotlin/-comparable/index.html">Comparable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sorted-array-descending.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><a href="../kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sorted-array-descending.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="sorted-array-descending.html"><span class="token function">sortedArrayDescending</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sorted-array-descending.html">T</a><span class="token operator">&gt;</span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L6358">source</a>)</span></span></div><p class="paragraph">Returns an array with all elements of this array sorted descending according to their natural sort order.</p><p class="paragraph">The sort is <i>stable</i>. It means that equal elements preserve their order relative to each other after sorting.</p><hr><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">.</span><a href="sorted-array-descending.html"><span class="token function">sortedArrayDescending</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlin/-byte-array/index.html">ByteArray</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L6368">source</a>)</span></span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-short-array/index.html">ShortArray</a><span class="token punctuation">.</span><a href="sorted-array-descending.html"><span class="token function">sortedArrayDescending</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlin/-short-array/index.html">ShortArray</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L6376">source</a>)</span></span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-int-array/index.html">IntArray</a><span class="token punctuation">.</span><a href="sorted-array-descending.html"><span class="token function">sortedArrayDescending</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlin/-int-array/index.html">IntArray</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L6384">source</a>)</span></span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-long-array/index.html">LongArray</a><span class="token punctuation">.</span><a href="sorted-array-descending.html"><span class="token function">sortedArrayDescending</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlin/-long-array/index.html">LongArray</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L6392">source</a>)</span></span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-float-array/index.html">FloatArray</a><span class="token punctuation">.</span><a href="sorted-array-descending.html"><span class="token function">sortedArrayDescending</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlin/-float-array/index.html">FloatArray</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L6400">source</a>)</span></span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-double-array/index.html">DoubleArray</a><span class="token punctuation">.</span><a href="sorted-array-descending.html"><span class="token function">sortedArrayDescending</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlin/-double-array/index.html">DoubleArray</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L6408">source</a>)</span></span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-char-array/index.html">CharArray</a><span class="token punctuation">.</span><a href="sorted-array-descending.html"><span class="token function">sortedArrayDescending</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlin/-char-array/index.html">CharArray</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_Arrays.kt#L6416">source</a>)</span></span></div><p class="paragraph">Returns an array with all elements of this array sorted descending according to their natural sort order.</p><hr><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../kotlin/-experimental-unsigned-types/index.html"><span class="token annotation">ExperimentalUnsignedTypes</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-u-int-array/index.html">UIntArray</a><span class="token punctuation">.</span><a href="sorted-array-descending.html"><span class="token function">sortedArrayDescending</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlin/-u-int-array/index.html">UIntArray</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_UArrays.kt#L3093">source</a>)</span></span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../kotlin/-experimental-unsigned-types/index.html"><span class="token annotation">ExperimentalUnsignedTypes</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-u-long-array/index.html">ULongArray</a><span class="token punctuation">.</span><a href="sorted-array-descending.html"><span class="token function">sortedArrayDescending</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlin/-u-long-array/index.html">ULongArray</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_UArrays.kt#L3103">source</a>)</span></span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../kotlin/-experimental-unsigned-types/index.html"><span class="token annotation">ExperimentalUnsignedTypes</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-u-byte-array/index.html">UByteArray</a><span class="token punctuation">.</span><a href="sorted-array-descending.html"><span class="token function">sortedArrayDescending</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlin/-u-byte-array/index.html">UByteArray</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_UArrays.kt#L3113">source</a>)</span></span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../kotlin/-experimental-unsigned-types/index.html"><span class="token annotation">ExperimentalUnsignedTypes</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-u-short-array/index.html">UShortArray</a><span class="token punctuation">.</span><a href="sorted-array-descending.html"><span class="token function">sortedArrayDescending</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlin/-u-short-array/index.html">UShortArray</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/common/src/generated/_UArrays.kt#L3123">source</a>)</span></span></div><p class="paragraph">Returns an array with all elements of this array sorted descending according to their natural sort order.</p><span class="kdoc-tag"><h4 class="">Since Kotlin</h4>1.3</span></div></div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+
+</body></html>
+
+

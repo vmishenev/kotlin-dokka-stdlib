@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>nextDouble</title>
+    <link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../../";</script>
+        <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script src="https://unpkg.com/kotlin-playground@1"></script><script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async></script>
+<link href="../../../../styles/multimodule.css" rel="Stylesheet">
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../../index.html">
+                    <span>stdlib</span>
+            </a>
+    </div>
+    <div>
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;stdlib/kotlin.random/-random/-default/next-double.html&quot;}"><div class="versions-dropdown">
+  <div class="versions-dropdown-button">1.4</div>
+  <div class="versions-dropdown-data"><a href="../../../../../../stdlib/kotlin.random/-random/-default/next-double.html">1.7</a><a href="../../../../../1.6/stdlib/kotlin.random/-random/-default/next-double.html">1.6</a><a href="../../../../../1.5/stdlib/kotlin.random/-random/-default/next-double.html">1.5</a><a href="next-double.html">1.4</a><a href="../../../../../1.3/stdlib/kotlin.random/-random/-default/next-double.html">1.3</a><a href="../../../../../../not-found-version.html?v=1.2">1.2</a><a href="../../../../../../not-found-version.html?v=1.1">1.1</a><a href="../../../../../../not-found-version.html?v=1.0">1.0</a></div>
+</div>
+</dokka-template-command>    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":stdlib_1.4/kotlin-stdlib-common">Common</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="stdlib::kotlin.random/Random.Default/nextDouble/#/PointingToDeclaration//-629151265">
+  <div class="breadcrumbs"><a href="../../../../index.html">stdlib</a><span class="delimiter">/</span><a href="../../index.html">kotlin.random</a><span class="delimiter">/</span><a href="../index.html">Random</a><span class="delimiter">/</span><a href="index.html">Default</a><span class="delimiter">/</span><span class="current">nextDouble</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>next</span><wbr><span><span>Double</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.4/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="next-double.html"><span class="token function">nextDouble</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../kotlin/-double/index.html">Double</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/src/kotlin/random/Random.kt#L292">source</a>)</span></span></div><p class="paragraph">Gets the next random <a href="../../../kotlin/-double/index.html">Double</a> value uniformly distributed between 0 (inclusive) and 1 (exclusive).</p><h4 class="">Samples</h4><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+import kotlin.math.sin
+
+
+import kotlin.random.Random
+
+
+import kotlin.test.assertTrue
+fun main() { 
+   //sampleStart 
+   if (Random.nextDouble() &lt;= 0.3) {
+    println("There was 30% possibility of rainy weather today and it is raining.")
+} else {
+    println("There was 70% possibility of sunny weather today and the sun is shining.")
+} 
+   //sampleEnd
+}</code></pre></div><hr><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="next-double.html"><span class="token function">nextDouble</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">until<span class="token operator">: </span><a href="../../../kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../kotlin/-double/index.html">Double</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/src/kotlin/random/Random.kt#L293">source</a>)</span></span></div><p class="paragraph">Gets the next random non-negative <code class="lang-kotlin">Double</code> from the random number generator less than the specified <a href="next-double.html">until</a> bound.</p><p class="paragraph">Generates a <code class="lang-kotlin">Double</code> random value uniformly distributed between 0 (inclusive) and <a href="next-double.html">until</a> (exclusive).</p><h4 class="">Samples</h4><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+import kotlin.math.sin
+
+
+import kotlin.random.Random
+
+
+import kotlin.test.assertTrue
+fun main() { 
+   //sampleStart 
+   val firstAngle = Random.nextDouble(until = Math.PI / 6);
+println("sin(firstAngle) &lt; 0.5 is ${sin(firstAngle) &lt; 0.5}") // true
+
+val secondAngle = Random.nextDouble(from = Math.PI / 6, until = Math.PI / 2)
+val sinValue = sin(secondAngle)
+println("sinValue &gt;= 0.5 &amp;&amp; sinValue &lt; 1.0 is ${sinValue &gt;= 0.5 &amp;&amp; sinValue &lt; 1.0}") // true 
+   //sampleEnd
+}</code></pre></div><h4 class="">Throws</h4><div class="table" data-togglable="Throws"><div class="table-row" data-filterable-current=":stdlib_1.4/kotlin-stdlib-common" data-filterable-set=":stdlib_1.4/kotlin-stdlib-common"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../../kotlin/-illegal-argument-exception/index.html"><span>Illegal</span><wbr><span>Argument</span><wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">if <a href="next-double.html">until</a> is negative or zero.</p></div></div></div></div></div><hr><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="next-double.html"><span class="token function">nextDouble</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">from<span class="token operator">: </span><a href="../../../kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">until<span class="token operator">: </span><a href="../../../kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../kotlin/-double/index.html">Double</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/src/kotlin/random/Random.kt#L294">source</a>)</span></span></div><p class="paragraph">Gets the next random <code class="lang-kotlin">Double</code> from the random number generator in the specified range.</p><p class="paragraph">Generates a <code class="lang-kotlin">Double</code> random value uniformly distributed between the specified <a href="next-double.html">from</a> (inclusive) and <a href="next-double.html">until</a> (exclusive) bounds.</p><p class="paragraph"><a href="next-double.html">from</a> and <a href="next-double.html">until</a> must be finite otherwise the behavior is unspecified.</p><h4 class="">Samples</h4><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+import kotlin.math.sin
+
+
+import kotlin.random.Random
+
+
+import kotlin.test.assertTrue
+fun main() { 
+   //sampleStart 
+   val firstAngle = Random.nextDouble(until = Math.PI / 6);
+println("sin(firstAngle) &lt; 0.5 is ${sin(firstAngle) &lt; 0.5}") // true
+
+val secondAngle = Random.nextDouble(from = Math.PI / 6, until = Math.PI / 2)
+val sinValue = sin(secondAngle)
+println("sinValue &gt;= 0.5 &amp;&amp; sinValue &lt; 1.0 is ${sinValue &gt;= 0.5 &amp;&amp; sinValue &lt; 1.0}") // true 
+   //sampleEnd
+}</code></pre></div><h4 class="">Throws</h4><div class="table" data-togglable="Throws"><div class="table-row" data-filterable-current=":stdlib_1.4/kotlin-stdlib-common" data-filterable-set=":stdlib_1.4/kotlin-stdlib-common"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../../kotlin/-illegal-argument-exception/index.html"><span>Illegal</span><wbr><span>Argument</span><wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">if <a href="next-double.html">from</a> is greater than or equal to <a href="next-double.html">until</a>.</p></div></div></div></div></div></div></div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+
+</body></html>
+
+
