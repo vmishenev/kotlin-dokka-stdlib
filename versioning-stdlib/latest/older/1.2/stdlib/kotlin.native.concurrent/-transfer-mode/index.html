@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>TransferMode</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+        <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<link href="../../../styles/multimodule.css" rel="Stylesheet">
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>stdlib</span>
+            </a>
+    </div>
+    <div>
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;stdlib/kotlin.native.concurrent/-transfer-mode/index.html&quot;}"><div class="versions-dropdown">
+  <div class="versions-dropdown-button">1.2</div>
+  <div class="versions-dropdown-data"><a href="../../../../../stdlib/kotlin.native.concurrent/-transfer-mode/index.html">1.7</a><a href="../../../../1.6/stdlib/kotlin.native.concurrent/-transfer-mode/index.html">1.6</a><a href="../../../../1.5/stdlib/kotlin.native.concurrent/-transfer-mode/index.html">1.5</a><a href="../../../../1.4/stdlib/kotlin.native.concurrent/-transfer-mode/index.html">1.4</a><a href="../../../../1.3/stdlib/kotlin.native.concurrent/-transfer-mode/index.html">1.3</a><a href="index.html">1.2</a></div>
+</div>
+</dokka-template-command>    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector native-like" data-active="" data-filter=":stdlib_1.2/kotlin-stdlib-native">Native</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="stdlib::kotlin.native.concurrent/TransferMode///PointingToDeclaration//-1003052751">
+  <div class="breadcrumbs"><a href="../../../index.html">stdlib</a><span class="delimiter">/</span><a href="../index.html">kotlin.native.concurrent</a><span class="delimiter">/</span><span class="current">TransferMode</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Transfer</span><wbr><span><span>Mode</span></span></h1>
+    <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+      <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.2/kotlin-stdlib-native" data-filterable-set=":stdlib_1.2/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.2/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.2/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">enum </span><a href="index.html">TransferMode</a> : <a href="../../kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">TransferMode</a><span class="token operator">&gt; </span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/kotlin-native/runtime/src/main/kotlin/kotlin/native/concurrent/ObjectTransfer.kt#L11">source</a>)</span></span></div><h2 class=""> Object Transfer Basics.</h2><p class="paragraph">Objects can be passed between threads in one of two possible modes.</p><ul><li><p class="paragraph"><a href="-s-a-f-e/index.html">SAFE</a> - object subgraph is checked to be not reachable by other globals or locals, and passed     if so, otherwise an exception is thrown</p></li><li><p class="paragraph"><a href="-u-n-s-a-f-e/index.html">UNSAFE</a> - object is blindly passed to another worker, if there are references     left in the passing worker - it may lead to crash or program malfunction</p></li></ul><p class="paragraph">Safe mode checks if object is no longer used in passing worker, using memory-management specific algorithm (ARC implementation relies on trial deletion on object graph rooted in passed object), and throws an <a href="../../kotlin/-illegal-state-exception/index.html">IllegalStateException</a> if object graph rooted in transferred object is reachable by some other means,</p><p class="paragraph">Unsafe mode is intended for most performance critical operations, where object graph ownership is expected to be correct (such as application debugged earlier in <a href="-s-a-f-e/index.html">SAFE</a> mode), just transfers ownership without further checks.</p><p class="paragraph">Note, that for some cases cycle collection need to be done to ensure that dead cycles do not affect reachability of passed object graph.</p></div>    </div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Entries">Entries</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="See also">See also</button></div>
+    <div class="tabs-section-body">
+      <h4 class="">See also</h4>
+      <div data-togglable="See also">
+        <div class="platform-hinted WithExtraAttributes with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="See also">
+          <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.2/kotlin-stdlib-native" data-filterable-set=":stdlib_1.2/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.2/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.2/kotlin-stdlib-native"><div data-togglable="See also"><div class="table" data-togglable="See also"><div class="table-row" data-filterable-current=":stdlib_1.2/kotlin-stdlib-native" data-filterable-set=":stdlib_1.2/kotlin-stdlib-native"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span data-unresolved-link="kotlin.native.internal/GC/collect/#/PointingToDeclaration/"><span>GC.</span><wbr><span>collect</span></span></div></span></div><div><div class="title"><div data-togglable="See also"><p class="paragraph">.</p></div></div></div></div></div></div></div></div>        </div>
+      </div>
+      <h2 class="tabbedcontent">Entries</h2>
+      <div class="table" data-togglable="Entries"><a data-name="-535240141%2FClasslikes%2F-1003052751" anchor-label="SAFE" id="-535240141%2FClasslikes%2F-1003052751" data-filterable-set=":stdlib_1.2/kotlin-stdlib-native"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.2/kotlin-stdlib-native" data-filterable-set=":stdlib_1.2/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-s-a-f-e/index.html">SAFE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-535240141%2FClasslikes%2F-1003052751"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.2/kotlin-stdlib-native" data-filterable-set=":stdlib_1.2/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.2/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.2/kotlin-stdlib-native"><div class="symbol monospace"><div class="block"><a href="-s-a-f-e/index.html">SAFE</a></div></div><div class="brief "><p class="paragraph">Reachibility check is performed.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-222138868%2FClasslikes%2F-1003052751" anchor-label="UNSAFE" id="-222138868%2FClasslikes%2F-1003052751" data-filterable-set=":stdlib_1.2/kotlin-stdlib-native"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.2/kotlin-stdlib-native" data-filterable-set=":stdlib_1.2/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-u-n-s-a-f-e/index.html">UNSAFE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-222138868%2FClasslikes%2F-1003052751"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.2/kotlin-stdlib-native" data-filterable-set=":stdlib_1.2/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.2/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.2/kotlin-stdlib-native"><div class="symbol monospace"><div class="block"><a href="-u-n-s-a-f-e/index.html">UNSAFE</a></div></div><div class="brief "><p class="paragraph">Skip reachibility check, can lead to mysterious crashes in an application. USE UNSAFE MODE ONLY IF ABSOLUTELY SURE WHAT YOU'RE DOING!!!</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="-372974862%2FProperties%2F-1003052751" anchor-label="name" id="-372974862%2FProperties%2F-1003052751" data-filterable-set=":stdlib_1.2/kotlin-stdlib-native"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.2/kotlin-stdlib-native" data-filterable-set=":stdlib_1.2/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin/-enum/name.html"><span><span>name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-372974862%2FProperties%2F-1003052751"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.2/kotlin-stdlib-native" data-filterable-set=":stdlib_1.2/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.2/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.2/kotlin-stdlib-native"><a data-name="-372974862%2FProperties%2F-1003052751" anchor-label="name" id="-372974862%2FProperties%2F-1003052751" data-filterable-set=":stdlib_1.2/kotlin-stdlib-native"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../kotlin/-enum/name.html">name</a><span class="token operator">: </span><a href="../../kotlin/-string/index.html">String</a></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-739389684%2FProperties%2F-1003052751" anchor-label="ordinal" id="-739389684%2FProperties%2F-1003052751" data-filterable-set=":stdlib_1.2/kotlin-stdlib-native"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.2/kotlin-stdlib-native" data-filterable-set=":stdlib_1.2/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin/-enum/ordinal.html"><span><span>ordinal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-739389684%2FProperties%2F-1003052751"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.2/kotlin-stdlib-native" data-filterable-set=":stdlib_1.2/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.2/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.2/kotlin-stdlib-native"><a data-name="-739389684%2FProperties%2F-1003052751" anchor-label="ordinal" id="-739389684%2FProperties%2F-1003052751" data-filterable-set=":stdlib_1.2/kotlin-stdlib-native"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../kotlin/-enum/ordinal.html">ordinal</a><span class="token operator">: </span><a href="../../kotlin/-int/index.html">Int</a></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1768556417%2FProperties%2F-1003052751" anchor-label="value" id="-1768556417%2FProperties%2F-1003052751" data-filterable-set=":stdlib_1.2/kotlin-stdlib-native"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.2/kotlin-stdlib-native" data-filterable-set=":stdlib_1.2/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="value.html"><span><span>value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1768556417%2FProperties%2F-1003052751"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.2/kotlin-stdlib-native" data-filterable-set=":stdlib_1.2/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.2/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.2/kotlin-stdlib-native"><a data-name="-1768556417%2FProperties%2F-1003052751" anchor-label="value" id="-1768556417%2FProperties%2F-1003052751" data-filterable-set=":stdlib_1.2/kotlin-stdlib-native"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="value.html">value</a><span class="token operator">: </span><a href="../../kotlin/-int/index.html">Int</a></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+
+</body></html>
+
+
