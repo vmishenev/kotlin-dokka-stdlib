@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Deprecated</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+        <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+<link href="../../../styles/multimodule.css" rel="Stylesheet">
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>stdlib</span>
+            </a>
+    </div>
+    <div>
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;stdlib/kotlin/-deprecated/index.html&quot;}">1.1</dokka-template-command>    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":stdlib_1.1/kotlin-stdlib-java-common">JVM</button>
+                <button class="platform-tag platform-selector js-like" data-active="" data-filter=":stdlib_1.1/kotlin-stdlib-js">JS</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="stdlib::kotlin/Deprecated///PointingToDeclaration//122488969">
+  <div class="breadcrumbs"><a href="../../../index.html">stdlib</a><span class="delimiter">/</span><a href="../index.html">kotlin</a><span class="delimiter">/</span><span class="current">Deprecated</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Deprecated</span></span></h1>
+    <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+      <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.1/kotlin-stdlib-java-common">JVM</button><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js" data-toggle=":stdlib_1.1/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.1/kotlin-stdlib-java-common"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../kotlin.annotation/-target/index.html"><span class="token annotation builtin">Target</span></a><span class="token punctuation">(</span><span>allowedTargets<span class="token operator"> = </span><span class="token punctuation">[</span><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.CLASS///PointingToDeclaration/">AnnotationTarget.CLASS</span><span class="token punctuation">, </span></span><wbr></wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.FUNCTION///PointingToDeclaration/">AnnotationTarget.FUNCTION</span><span class="token punctuation">, </span></span><wbr></wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.PROPERTY///PointingToDeclaration/">AnnotationTarget.PROPERTY</span><span class="token punctuation">, </span></span><wbr></wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.ANNOTATION_CLASS///PointingToDeclaration/">AnnotationTarget.ANNOTATION_CLASS</span><span class="token punctuation">, </span></span><wbr></wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.CONSTRUCTOR///PointingToDeclaration/">AnnotationTarget.CONSTRUCTOR</span><span class="token punctuation">, </span></span><wbr></wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.PROPERTY_SETTER///PointingToDeclaration/">AnnotationTarget.PROPERTY_SETTER</span><span class="token punctuation">, </span></span><wbr></wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.PROPERTY_GETTER///PointingToDeclaration/">AnnotationTarget.PROPERTY_GETTER</span><span class="token punctuation">, </span></span><wbr></wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.TYPEALIAS///PointingToDeclaration/">AnnotationTarget.TYPEALIAS</span></span><wbr></wbr><span class="token punctuation">]</span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword">annotation class </span><a href="index.html">Deprecated</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>message<span class="token operator">: </span><a href="../-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>replaceWith<span class="token operator">: </span><a href="../-replace-with/index.html">ReplaceWith</a><span class="token operator"> = </span>ReplaceWith(&quot;&quot;)<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>level<span class="token operator">: </span><a href="../-deprecation-level/index.html">DeprecationLevel</a><span class="token operator"> = </span>DeprecationLevel.WARNING</span></span><span class="token punctuation">)</span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/core/builtins/src/kotlin/Annotations.kt#L12">source</a>)</span></span></div><p class="paragraph">Marks the annotated declaration as deprecated.</p><p class="paragraph">A deprecated API element is not recommended to use, typically because it's being phased out or a better alternative exists.</p><p class="paragraph">To help removing deprecated API gradually, the property <a href="level.html">level</a> could be used. Usually a gradual phase-out goes through the &quot;warning&quot;, then &quot;error&quot;, then &quot;hidden&quot; or &quot;removed&quot; stages:</p><ul><li><p class="paragraph">First and by default, <a href="../-deprecation-level/-w-a-r-n-i-n-g/index.html">DeprecationLevel.WARNING</a> is used to notify API consumers, but not to break their compilation or runtime usages.</p></li><li><p class="paragraph">Then, some time later the deprecation level is raised to <a href="../-deprecation-level/-e-r-r-o-r/index.html">DeprecationLevel.ERROR</a>, so that no new Kotlin code can be compiled using the deprecated API.</p></li><li><p class="paragraph">Finally, the API is either removed entirely, or hidden (<a href="../-deprecation-level/-h-i-d-d-e-n/index.html">DeprecationLevel.HIDDEN</a>) from code, so its usages look like unresolved references, while the API remains in the compiled code preserving binary compatibility with previously compiled code.</p></li></ul><span class="kdoc-tag"><h4 class="">Since Kotlin</h4>1.0</span></div><div class="content sourceset-dependent-content" data-togglable=":stdlib_1.1/kotlin-stdlib-js"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../kotlin.annotation/-target/index.html"><span class="token annotation builtin">Target</span></a><span class="token punctuation">(</span><span>allowedTargets<span class="token operator"> = </span><span class="token punctuation">[</span><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.CLASS///PointingToDeclaration/">AnnotationTarget.CLASS</span><span class="token punctuation">, </span></span><wbr></wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.FUNCTION///PointingToDeclaration/">AnnotationTarget.FUNCTION</span><span class="token punctuation">, </span></span><wbr></wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.PROPERTY///PointingToDeclaration/">AnnotationTarget.PROPERTY</span><span class="token punctuation">, </span></span><wbr></wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.ANNOTATION_CLASS///PointingToDeclaration/">AnnotationTarget.ANNOTATION_CLASS</span><span class="token punctuation">, </span></span><wbr></wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.CONSTRUCTOR///PointingToDeclaration/">AnnotationTarget.CONSTRUCTOR</span><span class="token punctuation">, </span></span><wbr></wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.PROPERTY_SETTER///PointingToDeclaration/">AnnotationTarget.PROPERTY_SETTER</span><span class="token punctuation">, </span></span><wbr></wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.PROPERTY_GETTER///PointingToDeclaration/">AnnotationTarget.PROPERTY_GETTER</span><span class="token punctuation">, </span></span><wbr></wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.TYPEALIAS///PointingToDeclaration/">AnnotationTarget.TYPEALIAS</span></span><wbr></wbr><span class="token punctuation">]</span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword">annotation class </span><a href="index.html">Deprecated</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>message<span class="token operator">: </span><a href="../-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>replaceWith<span class="token operator">: </span><a href="../-replace-with/index.html">ReplaceWith</a><span class="token operator"> = </span>ReplaceWith(&quot;&quot;)<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>level<span class="token operator">: </span><a href="../-deprecation-level/index.html">DeprecationLevel</a><span class="token operator"> = </span>DeprecationLevel.WARNING</span></span><span class="token punctuation">)</span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/core/builtins/src/kotlin/Annotations.kt#L12">source</a>)</span></span></div><p class="paragraph">Marks the annotated declaration as deprecated.</p><p class="paragraph">A deprecated API element is not recommended to use, typically because it's being phased out or a better alternative exists.</p><p class="paragraph">To help removing deprecated API gradually, the property <a href="level.html">level</a> could be used. Usually a gradual phase-out goes through the &quot;warning&quot;, then &quot;error&quot;, then &quot;hidden&quot; or &quot;removed&quot; stages:</p><ul><li><p class="paragraph">First and by default, <a href="../-deprecation-level/-w-a-r-n-i-n-g/index.html">DeprecationLevel.WARNING</a> is used to notify API consumers, but not to break their compilation or runtime usages.</p></li><li><p class="paragraph">Then, some time later the deprecation level is raised to <a href="../-deprecation-level/-e-r-r-o-r/index.html">DeprecationLevel.ERROR</a>, so that no new Kotlin code can be compiled using the deprecated API.</p></li><li><p class="paragraph">Finally, the API is either removed entirely, or hidden (<a href="../-deprecation-level/-h-i-d-d-e-n/index.html">DeprecationLevel.HIDDEN</a>) from code, so its usages look like unresolved references, while the API remains in the compiled code preserving binary compatibility with previously compiled code.</p></li></ul><span class="kdoc-tag"><h4 class="">Since Kotlin</h4>1.1</span></div>    </div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Properties">Properties</button></div>
+    <div class="tabs-section-body">
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="-1694739225%2FProperties%2F122488969" anchor-label="level" id="-1694739225%2FProperties%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="level.html"><span><span>level</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1694739225%2FProperties%2F122488969"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.1/kotlin-stdlib-java-common">JVM</button><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js" data-toggle=":stdlib_1.1/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.1/kotlin-stdlib-java-common"><a data-name="-1694739225%2FProperties%2F122488969" anchor-label="level" id="-1694739225%2FProperties%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="level.html">level</a><span class="token operator">: </span><a href="../-deprecation-level/index.html">DeprecationLevel</a></div><div class="brief "><a data-name="-1694739225%2FProperties%2F-436929161" anchor-label="level" id="-1694739225%2FProperties%2F-436929161" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"></a><p class="paragraph">Specifies how the deprecated element usages are reported in code. See the <a href="../-deprecation-level/index.html">DeprecationLevel</a> enum for the possible values.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-1694739225%2FProperties%2F-436929161" anchor-label="level" id="-1694739225%2FProperties%2F-436929161" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"></a>1.0</div></div><div class="content sourceset-dependent-content" data-togglable=":stdlib_1.1/kotlin-stdlib-js"><a data-name="-1694739225%2FProperties%2F122488969" anchor-label="level" id="-1694739225%2FProperties%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="level.html">level</a><span class="token operator">: </span><a href="../-deprecation-level/index.html">DeprecationLevel</a></div><div class="brief "><a data-name="-1694739225%2FProperties%2F-738287586" anchor-label="level" id="-1694739225%2FProperties%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a><p class="paragraph">Specifies how the deprecated element usages are reported in code. See the <a href="../-deprecation-level/index.html">DeprecationLevel</a> enum for the possible values.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-1694739225%2FProperties%2F-738287586" anchor-label="level" id="-1694739225%2FProperties%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="511551044%2FProperties%2F122488969" anchor-label="message" id="511551044%2FProperties%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="message.html"><span><span>message</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="511551044%2FProperties%2F122488969"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.1/kotlin-stdlib-java-common">JVM</button><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js" data-toggle=":stdlib_1.1/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.1/kotlin-stdlib-java-common"><a data-name="511551044%2FProperties%2F122488969" anchor-label="message" id="511551044%2FProperties%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="message.html">message</a><span class="token operator">: </span><a href="../-string/index.html">String</a></div><div class="brief "><a data-name="511551044%2FProperties%2F-436929161" anchor-label="message" id="511551044%2FProperties%2F-436929161" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"></a><p class="paragraph">The message explaining the deprecation and recommending an alternative API to use.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="511551044%2FProperties%2F-436929161" anchor-label="message" id="511551044%2FProperties%2F-436929161" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"></a>1.0</div></div><div class="content sourceset-dependent-content" data-togglable=":stdlib_1.1/kotlin-stdlib-js"><a data-name="511551044%2FProperties%2F122488969" anchor-label="message" id="511551044%2FProperties%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="message.html">message</a><span class="token operator">: </span><a href="../-string/index.html">String</a></div><div class="brief "><a data-name="511551044%2FProperties%2F-738287586" anchor-label="message" id="511551044%2FProperties%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a><p class="paragraph">The message explaining the deprecation and recommending an alternative API to use.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="511551044%2FProperties%2F-738287586" anchor-label="message" id="511551044%2FProperties%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-782852847%2FProperties%2F122488969" anchor-label="replaceWith" id="-782852847%2FProperties%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="replace-with.html"><span>replace</span><wbr></wbr><span><span>With</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-782852847%2FProperties%2F122488969"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.1/kotlin-stdlib-java-common">JVM</button><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js" data-toggle=":stdlib_1.1/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.1/kotlin-stdlib-java-common"><a data-name="-782852847%2FProperties%2F122488969" anchor-label="replaceWith" id="-782852847%2FProperties%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="replace-with.html">replaceWith</a><span class="token operator">: </span><a href="../-replace-with/index.html">ReplaceWith</a></div><div class="brief "><a data-name="-782852847%2FProperties%2F-436929161" anchor-label="replaceWith" id="-782852847%2FProperties%2F-436929161" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"></a><p class="paragraph">If present, specifies a code fragment which should be used as a replacement for the deprecated API usage.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-782852847%2FProperties%2F-436929161" anchor-label="replaceWith" id="-782852847%2FProperties%2F-436929161" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"></a>1.0</div></div><div class="content sourceset-dependent-content" data-togglable=":stdlib_1.1/kotlin-stdlib-js"><a data-name="-782852847%2FProperties%2F122488969" anchor-label="replaceWith" id="-782852847%2FProperties%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="replace-with.html">replaceWith</a><span class="token operator">: </span><a href="../-replace-with/index.html">ReplaceWith</a></div><div class="brief "><a data-name="-782852847%2FProperties%2F-738287586" anchor-label="replaceWith" id="-782852847%2FProperties%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a><p class="paragraph">If present, specifies a code fragment which should be used as a replacement for the deprecated API usage.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-782852847%2FProperties%2F-738287586" anchor-label="replaceWith" id="-782852847%2FProperties%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+

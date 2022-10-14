@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>stdlib</title>
+    <link href="images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "";</script>
+        <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="scripts/sourceset_dependencies.js" async="async"></script>
+<link href="styles/style.css" rel="Stylesheet">
+<link href="styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="styles/main.css" rel="Stylesheet">
+<link href="styles/prism.css" rel="Stylesheet">
+<link href="styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+<link href="styles/multimodule.css" rel="Stylesheet">
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="index.html">
+                    <span>stdlib</span>
+            </a>
+    </div>
+    <div>
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;index.html&quot;}">1.1</dokka-template-command>    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":stdlib_1.1/kotlin-stdlib-common">Common</button>
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":stdlib_1.1/kotlin-stdlib-java-common">JVM</button>
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":stdlib_1.1/kotlin-stdlib-jdk7">JRE7</button>
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":stdlib_1.1/kotlin-stdlib-jdk8">JRE8</button>
+                <button class="platform-tag platform-selector js-like" data-active="" data-filter=":stdlib_1.1/kotlin-stdlib-js">JS</button>
+                <button class="platform-tag platform-selector native-like" data-active="" data-filter=":stdlib_1.1/kotlin-stdlib-native">Native</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="stdlib::////PointingToDeclaration//424579389">
+  <div class="breadcrumbs"></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>stdlib</span></span></h1>
+    <div class="platform-hinted UnderCoverText with-platform-tabs" data-platform-hinted="data-platform-hinted">
+      <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-common" data-active="" data-toggle=":stdlib_1.1/kotlin-stdlib-common">Common</button><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common" data-toggle=":stdlib_1.1/kotlin-stdlib-java-common">JVM</button><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-jdk7" data-filterable-set=":stdlib_1.1/kotlin-stdlib-jdk7" data-toggle=":stdlib_1.1/kotlin-stdlib-jdk7">JRE7</button><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-jdk8" data-filterable-set=":stdlib_1.1/kotlin-stdlib-jdk8" data-toggle=":stdlib_1.1/kotlin-stdlib-jdk8">JRE8</button><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js" data-toggle=":stdlib_1.1/kotlin-stdlib-js">JS</button><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-native" data-filterable-set=":stdlib_1.1/kotlin-stdlib-native" data-toggle=":stdlib_1.1/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.1/kotlin-stdlib-common"><h2 class=""> Kotlin Standard Library</h2><p class="paragraph">The Kotlin Standard Library provides living essentials for everyday work with Kotlin. These include:</p><ul><li><p class="paragraph">Higher-order functions implementing idiomatic patterns (<span data-unresolved-link="kotlin//let/TypeParam(bounds=[kotlin.Any?])#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/">let</span>, <span data-unresolved-link="kotlin//apply/TypeParam(bounds=[kotlin.Any?])#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),kotlin.Unit]/PointingToDeclaration/">apply</span>, kotlin.io.use, kotlin.synchronized, etc).</p></li><li><p class="paragraph">Extension functions providing querying operations for collections (eager) and sequences (lazy).</p></li><li><p class="paragraph">Various utilities for working with strings and char sequences.</p></li><li><p class="paragraph">Extensions for JDK classes making it convenient to work with files, IO, and threading.</p></li></ul></div><div class="content sourceset-dependent-content" data-togglable=":stdlib_1.1/kotlin-stdlib-java-common"><h2 class=""> Kotlin Standard Library</h2><p class="paragraph">The Kotlin Standard Library provides living essentials for everyday work with Kotlin. These include:</p><ul><li><p class="paragraph">Higher-order functions implementing idiomatic patterns (<span data-unresolved-link="kotlin//let/TypeParam(bounds=[kotlin.Any?])#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/">let</span>, <span data-unresolved-link="kotlin//apply/TypeParam(bounds=[kotlin.Any?])#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),kotlin.Unit]/PointingToDeclaration/">apply</span>, <a href="stdlib/kotlin.io/use.html">use</a>, <a href="stdlib/kotlin/synchronized.html">synchronized</a>, etc).</p></li><li><p class="paragraph">Extension functions providing querying operations for collections (eager) and sequences (lazy).</p></li><li><p class="paragraph">Various utilities for working with strings and char sequences.</p></li><li><p class="paragraph">Extensions for JDK classes making it convenient to work with files, IO, and threading.</p></li></ul></div><div class="content sourceset-dependent-content" data-togglable=":stdlib_1.1/kotlin-stdlib-jdk7"><h2 class=""> Kotlin Standard Library</h2><p class="paragraph">The Kotlin Standard Library provides living essentials for everyday work with Kotlin. These include:</p><ul><li><p class="paragraph">Higher-order functions implementing idiomatic patterns (<span data-unresolved-link="kotlin//let/TypeParam(bounds=[kotlin.Any?])#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/">let</span>, <span data-unresolved-link="kotlin//apply/TypeParam(bounds=[kotlin.Any?])#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),kotlin.Unit]/PointingToDeclaration/">apply</span>, <span data-unresolved-link="kotlin.io//use/TypeParam(bounds=[java.io.Closeable?])#kotlin.Function1[TypeParam(bounds=[java.io.Closeable?]),TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/">use</span>, <span data-unresolved-link="kotlin//synchronized/#kotlin.Any#kotlin.Function0[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/">synchronized</span>, etc).</p></li><li><p class="paragraph">Extension functions providing querying operations for collections (eager) and sequences (lazy).</p></li><li><p class="paragraph">Various utilities for working with strings and char sequences.</p></li><li><p class="paragraph">Extensions for JDK classes making it convenient to work with files, IO, and threading.</p></li></ul></div><div class="content sourceset-dependent-content" data-togglable=":stdlib_1.1/kotlin-stdlib-jdk8"><h2 class=""> Kotlin Standard Library</h2><p class="paragraph">The Kotlin Standard Library provides living essentials for everyday work with Kotlin. These include:</p><ul><li><p class="paragraph">Higher-order functions implementing idiomatic patterns (<span data-unresolved-link="kotlin//let/TypeParam(bounds=[kotlin.Any?])#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/">let</span>, <span data-unresolved-link="kotlin//apply/TypeParam(bounds=[kotlin.Any?])#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),kotlin.Unit]/PointingToDeclaration/">apply</span>, <span data-unresolved-link="kotlin.io//use/TypeParam(bounds=[java.io.Closeable?])#kotlin.Function1[TypeParam(bounds=[java.io.Closeable?]),TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/">use</span>, <span data-unresolved-link="kotlin//synchronized/#kotlin.Any#kotlin.Function0[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/">synchronized</span>, etc).</p></li><li><p class="paragraph">Extension functions providing querying operations for collections (eager) and sequences (lazy).</p></li><li><p class="paragraph">Various utilities for working with strings and char sequences.</p></li><li><p class="paragraph">Extensions for JDK classes making it convenient to work with files, IO, and threading.</p></li></ul></div><div class="content sourceset-dependent-content" data-togglable=":stdlib_1.1/kotlin-stdlib-js"><h2 class=""> Kotlin Standard Library</h2><p class="paragraph">The Kotlin Standard Library provides living essentials for everyday work with Kotlin. These include:</p><ul><li><p class="paragraph">Higher-order functions implementing idiomatic patterns (<span data-unresolved-link="kotlin//let/TypeParam(bounds=[kotlin.Any?])#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/">let</span>, <span data-unresolved-link="kotlin//apply/TypeParam(bounds=[kotlin.Any?])#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),kotlin.Unit]/PointingToDeclaration/">apply</span>, kotlin.io.use, <a href="stdlib/kotlin/synchronized.html">synchronized</a>, etc).</p></li><li><p class="paragraph">Extension functions providing querying operations for collections (eager) and sequences (lazy).</p></li><li><p class="paragraph">Various utilities for working with strings and char sequences.</p></li><li><p class="paragraph">Extensions for JDK classes making it convenient to work with files, IO, and threading.</p></li></ul></div><div class="content sourceset-dependent-content" data-togglable=":stdlib_1.1/kotlin-stdlib-native"><h2 class=""> Kotlin Standard Library</h2><p class="paragraph">The Kotlin Standard Library provides living essentials for everyday work with Kotlin. These include:</p><ul><li><p class="paragraph">Higher-order functions implementing idiomatic patterns (<span data-unresolved-link="kotlin//let/TypeParam(bounds=[kotlin.Any?])#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/">let</span>, <span data-unresolved-link="kotlin//apply/TypeParam(bounds=[kotlin.Any?])#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),kotlin.Unit]/PointingToDeclaration/">apply</span>, kotlin.io.use, kotlin.synchronized, etc).</p></li><li><p class="paragraph">Extension functions providing querying operations for collections (eager) and sequences (lazy).</p></li><li><p class="paragraph">Various utilities for working with strings and char sequences.</p></li><li><p class="paragraph">Extensions for JDK classes making it convenient to work with files, IO, and threading.</p></li></ul></div>    </div>
+  </div>
+  <h2 class="">Packages</h2>
+  <div class="table"><a data-name="-1469218141%2FPackages%2F122488969" anchor-label="kotlin" id="-1469218141%2FPackages%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/kotlin/index.html">kotlin</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1469218141%2FPackages%2F122488969"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+              <div class="platform-tag jvm-like">JVM</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="-1469218141%2FPackages%2F122488969" anchor-label="kotlin" id="-1469218141%2FPackages%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a>
+            <p class="paragraph">Core functions and types, available on all supported platforms.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="-752878562%2FPackages%2F122488969" anchor-label="kotlin.annotation" id="-752878562%2FPackages%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/kotlin.annotation/index.html">kotlin.annotation</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-752878562%2FPackages%2F122488969"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+              <div class="platform-tag jvm-like">JVM</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="-752878562%2FPackages%2F122488969" anchor-label="kotlin.annotation" id="-752878562%2FPackages%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a>
+            <p class="paragraph">Library support for the Kotlin annotation facility.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="-1552189347%2FPackages%2F-738287586" anchor-label="kotlin.browser" id="-1552189347%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/kotlin.browser/index.html">kotlin.browser</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1552189347%2FPackages%2F-738287586"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="-1552189347%2FPackages%2F-738287586" anchor-label="kotlin.browser" id="-1552189347%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+            <p class="paragraph">Access to top-level properties (<code class="lang-kotlin">document</code>, <code class="lang-kotlin">window</code> etc.) in the browser environment.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="252883722%2FPackages%2F122488969" anchor-label="kotlin.collections" id="252883722%2FPackages%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/kotlin.collections/index.html">kotlin.collections</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="252883722%2FPackages%2F122488969"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+              <div class="platform-tag jvm-like">JVM</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="252883722%2FPackages%2F122488969" anchor-label="kotlin.collections" id="252883722%2FPackages%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a>
+            <p class="paragraph">Collection types, such as <a href="stdlib/kotlin.collections/-iterable/index.html">Iterable</a>, <a href="stdlib/kotlin.collections/-collection/index.html">Collection</a>, <a href="stdlib/kotlin.collections/-list/index.html">List</a>, <a href="stdlib/kotlin.collections/-set/index.html">Set</a>, <a href="stdlib/kotlin.collections/-map/index.html">Map</a> and related top-level and extension functions.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="-1902286145%2FPackages%2F122488969" anchor-label="kotlin.comparisons" id="-1902286145%2FPackages%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/kotlin.comparisons.html">kotlin.comparisons</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1902286145%2FPackages%2F122488969"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+              <div class="platform-tag jvm-like">JVM</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-394503002%2FPackages%2F-436929161" anchor-label="kotlin.concurrent" id="-394503002%2FPackages%2F-436929161" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/kotlin.concurrent/index.html">kotlin.concurrent</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-394503002%2FPackages%2F-436929161"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">JVM</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="-394503002%2FPackages%2F-436929161" anchor-label="kotlin.concurrent" id="-394503002%2FPackages%2F-436929161" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"></a>
+            <p class="paragraph">Utility functions for concurrent programming.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="1825777527%2FPackages%2F-738287586" anchor-label="kotlin.dom" id="1825777527%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/kotlin.dom/index.html">kotlin.dom</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1825777527%2FPackages%2F-738287586"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="1825777527%2FPackages%2F-738287586" anchor-label="kotlin.dom" id="1825777527%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+            <p class="paragraph">Utility functions for working with the browser DOM.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="1781802069%2FPackages%2F122488969" anchor-label="kotlin.io" id="1781802069%2FPackages%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/kotlin.io/index.html">kotlin.io</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1781802069%2FPackages%2F122488969"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+              <div class="platform-tag jvm-like">JVM</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="1781802069%2FPackages%2F122488969" anchor-label="kotlin.io" id="1781802069%2FPackages%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a>
+            <p class="paragraph">IO API for working with files and streams.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="1078554296%2FPackages%2F-738287586" anchor-label="kotlin.js" id="1078554296%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/kotlin.js/index.html">kotlin.js</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1078554296%2FPackages%2F-738287586"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="1078554296%2FPackages%2F-738287586" anchor-label="kotlin.js" id="1078554296%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+            <p class="paragraph">Functions and other APIs specific to the JavaScript platform.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="-93735402%2FPackages%2F122488969" anchor-label="kotlin.jvm" id="-93735402%2FPackages%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/kotlin.jvm/index.html">kotlin.jvm</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-93735402%2FPackages%2F122488969"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+              <div class="platform-tag jvm-like">JVM</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="-93735402%2FPackages%2F122488969" anchor-label="kotlin.jvm" id="-93735402%2FPackages%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a>
+            <p class="paragraph">Functions and annotations specific to the Java platform.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="562766770%2FPackages%2F122488969" anchor-label="kotlin.reflect" id="562766770%2FPackages%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/kotlin.reflect/index.html">kotlin.reflect</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="562766770%2FPackages%2F122488969"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+              <div class="platform-tag jvm-like">JVM</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="562766770%2FPackages%2F122488969" anchor-label="kotlin.reflect" id="562766770%2FPackages%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a>
+            <p class="paragraph">Runtime API for /docs/reference/reflection.html</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="-493729393%2FPackages%2F-436929161" anchor-label="kotlin.reflect.full" id="-493729393%2FPackages%2F-436929161" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/kotlin.reflect.full/index.html">kotlin.reflect.full</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-493729393%2FPackages%2F-436929161"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">JVM</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="-493729393%2FPackages%2F-436929161" anchor-label="kotlin.reflect.full" id="-493729393%2FPackages%2F-436929161" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"></a>
+            <p class="paragraph">Extensions for /docs/reference/reflection.html provided by <code class="lang-kotlin">kotlin-reflect</code> library.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="2057451429%2FPackages%2F-436929161" anchor-label="kotlin.reflect.jvm" id="2057451429%2FPackages%2F-436929161" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/kotlin.reflect.jvm/index.html">kotlin.reflect.jvm</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2057451429%2FPackages%2F-436929161"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">JVM</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="2057451429%2FPackages%2F-436929161" anchor-label="kotlin.reflect.jvm" id="2057451429%2FPackages%2F-436929161" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"></a>
+            <p class="paragraph">Runtime API for interoperability between /docs/reference/reflection.html and Java reflection provided by <code class="lang-kotlin">kotlin-reflect</code> library.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="-2132581177%2FPackages%2F-436929161" anchor-label="kotlin.sequences" id="-2132581177%2FPackages%2F-436929161" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/kotlin.sequences/index.html">kotlin.sequences</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2132581177%2FPackages%2F-436929161"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">JVM</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="-2132581177%2FPackages%2F-436929161" anchor-label="kotlin.sequences" id="-2132581177%2FPackages%2F-436929161" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"></a>
+            <p class="paragraph"><span data-unresolved-link="kotlin.sequences/Sequence///PointingToDeclaration/">Sequence</span> type that represents lazily evaluated collections. Top-level functions for instantiating sequences and extension functions for sequences.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="1082536350%2FPackages%2F-436929161" anchor-label="kotlin.system" id="1082536350%2FPackages%2F-436929161" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/kotlin.system/index.html">kotlin.system</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1082536350%2FPackages%2F-436929161"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">JVM</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="1082536350%2FPackages%2F-436929161" anchor-label="kotlin.system" id="1082536350%2FPackages%2F-436929161" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"></a>
+            <p class="paragraph">System-related utility functions.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="-461204900%2FPackages%2F122488969" anchor-label="kotlin.text" id="-461204900%2FPackages%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/kotlin.text/index.html">kotlin.text</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-461204900%2FPackages%2F122488969"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+              <div class="platform-tag jvm-like">JVM</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="-461204900%2FPackages%2F122488969" anchor-label="kotlin.text" id="-461204900%2FPackages%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a>
+            <p class="paragraph">Functions for working with text and regular expressions.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="-1109057509%2FPackages%2F-738287586" anchor-label="org.khronos.webgl" id="-1109057509%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/org.khronos.webgl/index.html">org.khronos.webgl</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1109057509%2FPackages%2F-738287586"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="-1109057509%2FPackages%2F-738287586" anchor-label="org.khronos.webgl" id="-1109057509%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+            <p class="paragraph">Kotlin JavaScript wrappers for the WebGL API.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="1030144956%2FPackages%2F-738287586" anchor-label="org.w3c.css.masking" id="1030144956%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/org.w3c.css.masking/index.html">org.w3c.css.masking</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1030144956%2FPackages%2F-738287586"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-84686669%2FPackages%2F-738287586" anchor-label="org.w3c.dom" id="-84686669%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/org.w3c.dom/index.html">org.w3c.dom</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-84686669%2FPackages%2F-738287586"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="-84686669%2FPackages%2F-738287586" anchor-label="org.w3c.dom" id="-84686669%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+            <p class="paragraph">Kotlin JavaScript wrappers for the DOM API.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="-1343715685%2FPackages%2F-738287586" anchor-label="org.w3c.dom.clipboard" id="-1343715685%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/org.w3c.dom.clipboard/index.html">org.w3c.dom.clipboard</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1343715685%2FPackages%2F-738287586"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-645758200%2FPackages%2F-738287586" anchor-label="org.w3c.dom.css" id="-645758200%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/org.w3c.dom.css/index.html">org.w3c.dom.css</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-645758200%2FPackages%2F-738287586"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="-645758200%2FPackages%2F-738287586" anchor-label="org.w3c.dom.css" id="-645758200%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+            <p class="paragraph">Kotlin JavaScript wrappers for the DOM CSS API.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="-909733953%2FPackages%2F-738287586" anchor-label="org.w3c.dom.encryptedmedia" id="-909733953%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/org.w3c.dom.encryptedmedia/index.html">org.w3c.dom.encryptedmedia</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-909733953%2FPackages%2F-738287586"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-49334280%2FPackages%2F-738287586" anchor-label="org.w3c.dom.events" id="-49334280%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/org.w3c.dom.events/index.html">org.w3c.dom.events</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-49334280%2FPackages%2F-738287586"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="-49334280%2FPackages%2F-738287586" anchor-label="org.w3c.dom.events" id="-49334280%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+            <p class="paragraph">Kotlin JavaScript wrappers for the DOM events API.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="-1976268095%2FPackages%2F-738287586" anchor-label="org.w3c.dom.mediacapture" id="-1976268095%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/org.w3c.dom.mediacapture/index.html">org.w3c.dom.mediacapture</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1976268095%2FPackages%2F-738287586"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-63453180%2FPackages%2F-738287586" anchor-label="org.w3c.dom.mediasource" id="-63453180%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/org.w3c.dom.mediasource/index.html">org.w3c.dom.mediasource</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-63453180%2FPackages%2F-738287586"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-2130640907%2FPackages%2F-738287586" anchor-label="org.w3c.dom.parsing" id="-2130640907%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/org.w3c.dom.parsing/index.html">org.w3c.dom.parsing</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2130640907%2FPackages%2F-738287586"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="-2130640907%2FPackages%2F-738287586" anchor-label="org.w3c.dom.parsing" id="-2130640907%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+            <p class="paragraph">Kotlin JavaScript wrappers for the DOM parsing API.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="1991433499%2FPackages%2F-738287586" anchor-label="org.w3c.dom.pointerevents" id="1991433499%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/org.w3c.dom.pointerevents/index.html">org.w3c.dom.pointerevents</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1991433499%2FPackages%2F-738287586"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1859708887%2FPackages%2F-738287586" anchor-label="org.w3c.dom.svg" id="-1859708887%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/org.w3c.dom.svg/index.html">org.w3c.dom.svg</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1859708887%2FPackages%2F-738287586"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="-1859708887%2FPackages%2F-738287586" anchor-label="org.w3c.dom.svg" id="-1859708887%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+            <p class="paragraph">Kotlin JavaScript wrappers for the DOM SVG API.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="1058543476%2FPackages%2F-738287586" anchor-label="org.w3c.dom.url" id="1058543476%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/org.w3c.dom.url/index.html">org.w3c.dom.url</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1058543476%2FPackages%2F-738287586"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="1058543476%2FPackages%2F-738287586" anchor-label="org.w3c.dom.url" id="1058543476%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+            <p class="paragraph">Kotlin JavaScript wrappers for the DOM URL API.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="-1393697685%2FPackages%2F-738287586" anchor-label="org.w3c.fetch" id="-1393697685%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/org.w3c.fetch/index.html">org.w3c.fetch</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1393697685%2FPackages%2F-738287586"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="-1393697685%2FPackages%2F-738287586" anchor-label="org.w3c.fetch" id="-1393697685%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+            <p class="paragraph">Kotlin JavaScript wrappers for the <a href="https://fetch.spec.whatwg.org">W3C fetch API</a>.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="-1119932952%2FPackages%2F-738287586" anchor-label="org.w3c.files" id="-1119932952%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/org.w3c.files/index.html">org.w3c.files</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1119932952%2FPackages%2F-738287586"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="-1119932952%2FPackages%2F-738287586" anchor-label="org.w3c.files" id="-1119932952%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+            <p class="paragraph">Kotlin JavaScript wrappers for the <a href="https://www.w3.org/TR/FileAPI/">W3C file API</a>.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="-1131401703%2FPackages%2F-738287586" anchor-label="org.w3c.notifications" id="-1131401703%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/org.w3c.notifications/index.html">org.w3c.notifications</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1131401703%2FPackages%2F-738287586"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="-1131401703%2FPackages%2F-738287586" anchor-label="org.w3c.notifications" id="-1131401703%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+            <p class="paragraph">Kotlin JavaScript wrappers for the <a href="https://www.w3.org/TR/notifications/">Web Notifications API</a>.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="1597237025%2FPackages%2F-738287586" anchor-label="org.w3c.performance" id="1597237025%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/org.w3c.performance/index.html">org.w3c.performance</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1597237025%2FPackages%2F-738287586"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="1597237025%2FPackages%2F-738287586" anchor-label="org.w3c.performance" id="1597237025%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+            <p class="paragraph">Kotlin JavaScript wrappers for the <a href="https://www.w3.org/TR/navigation-timing/">Navigation Timing API</a>.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="604309222%2FPackages%2F-738287586" anchor-label="org.w3c.workers" id="604309222%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/org.w3c.workers/index.html">org.w3c.workers</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="604309222%2FPackages%2F-738287586"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="604309222%2FPackages%2F-738287586" anchor-label="org.w3c.workers" id="604309222%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+            <p class="paragraph">Kotlin JavaScript wrappers for the <a href="https://www.w3.org/TR/workers/">Web Workers API</a>.</p>
+          </span></div>
+      </div>
+    </div>
+<a data-name="-1106263309%2FPackages%2F-738287586" anchor-label="org.w3c.xhr" id="-1106263309%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+    <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="stdlib/org.w3c.xhr/index.html">org.w3c.xhr</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1106263309%2FPackages%2F-738287586"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag js-like">JS</div>
+            </div>
+          </div>
+        </div>
+        <div><span class="brief-comment"><a data-name="-1106263309%2FPackages%2F-738287586" anchor-label="org.w3c.xhr" id="-1106263309%2FPackages%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+            <p class="paragraph">Kotlin JavaScript wrappers for the <a href="https://www.w3.org/TR/XMLHttpRequest/">XMLHttpRequest API</a>.</p>
+          </span></div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+

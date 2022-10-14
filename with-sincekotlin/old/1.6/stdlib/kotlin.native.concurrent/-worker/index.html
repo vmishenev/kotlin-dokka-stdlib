@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Worker</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+        <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+<link href="../../../styles/multimodule.css" rel="Stylesheet">
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>stdlib</span>
+            </a>
+    </div>
+    <div>
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;stdlib/kotlin.native.concurrent/-worker/index.html&quot;}">1.6</dokka-template-command>    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector native-like" data-active="" data-filter=":stdlib_1.6/kotlin-stdlib-native">Native</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="stdlib::kotlin.native.concurrent/Worker///PointingToDeclaration//1770518069">
+  <div class="breadcrumbs"><a href="../../../index.html">stdlib</a><span class="delimiter">/</span><a href="../index.html">kotlin.native.concurrent</a><span class="delimiter">/</span><span class="current">Worker</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Worker</span></span></h1>
+    <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+      <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.6/kotlin-stdlib-native" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.6/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.6/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">value </span><span class="token keyword">class </span><a href="index.html">Worker</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/kotlin-native/runtime/src/main/kotlin/kotlin/native/concurrent/Worker.kt#L26">source</a>)</span></span></div><p class="paragraph">Class representing worker.</p><span class="kdoc-tag"><h4 class="">Since Kotlin</h4>1.3</span></div>    </div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+    <div class="tabs-section-body">
+      <h2 class="">Types</h2>
+      <div class="table" data-togglable="Types"><a data-name="39264455%2FClasslikes%2F1770518069" anchor-label="Companion" id="39264455%2FClasslikes%2F1770518069" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.6/kotlin-stdlib-native" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="39264455%2FClasslikes%2F1770518069"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.6/kotlin-stdlib-native" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.6/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.6/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="-592856274%2FFunctions%2F1770518069" anchor-label="asCPointer" id="-592856274%2FFunctions%2F1770518069" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.6/kotlin-stdlib-native" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="as-c-pointer.html"><span>as</span><wbr></wbr><span><span>CPointer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-592856274%2FFunctions%2F1770518069"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.6/kotlin-stdlib-native" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.6/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.6/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="as-c-pointer.html"><span class="token function"><strike>asCPointer</strike></span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlinx.cinterop/index.html#-1964913830%2FClasslikes%2F1770518069">COpaquePointer</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Convert worker to a COpaquePointer value that could be passed via native void* pointer. Can be used as an argument of <a href="-companion/from-c-pointer.html">Worker.fromCPointer</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="156330825%2FFunctions%2F1770518069" anchor-label="execute" id="156330825%2FFunctions%2F1770518069" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.6/kotlin-stdlib-native" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="execute.html"><span><span>execute</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="156330825%2FFunctions%2F1770518069"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.6/kotlin-stdlib-native" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.6/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.6/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="execute.html">T1</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="execute.html">T2</a><span class="token operator">&gt; </span><a href="execute.html"><span class="token function">execute</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mode<span class="token operator">: </span><a href="../-transfer-mode/index.html">TransferMode</a><span class="token punctuation">, </span></span><span class="parameter ">producer<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="execute.html">T1</a><span class="token punctuation">, </span></span><span class="parameter ">job<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="execute.html">T1</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="execute.html">T2</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-future/index.html">Future</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="execute.html">T2</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Plan job for further execution in the worker. Execute is a two-phase operation:</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-934138643%2FFunctions%2F1770518069" anchor-label="executeAfter" id="-934138643%2FFunctions%2F1770518069" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.6/kotlin-stdlib-native" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="execute-after.html"><span>execute</span><wbr></wbr><span><span>After</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-934138643%2FFunctions%2F1770518069"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.6/kotlin-stdlib-native" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.6/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.6/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="execute-after.html"><span class="token function">executeAfter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">afterMicroseconds<span class="token operator">: </span><a href="../../kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">operation<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../../kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Plan job for further execution in the worker.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1990505627%2FFunctions%2F1770518069" anchor-label="park" id="1990505627%2FFunctions%2F1770518069" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.6/kotlin-stdlib-native" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="park.html"><span><span>park</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1990505627%2FFunctions%2F1770518069"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.6/kotlin-stdlib-native" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.6/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.6/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="park.html"><span class="token function">park</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">timeoutMicroseconds<span class="token operator">: </span><a href="../../kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">process<span class="token operator">: </span><a href="../../kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Park execution of the current worker until a new request arrives or timeout specified in <a href="park.html">timeoutMicroseconds</a> elapsed. If <a href="park.html">process</a> is true, pending queue elements are processed, including delayed requests. Note that multiple requests could be processed this way.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1497712504%2FFunctions%2F1770518069" anchor-label="processQueue" id="1497712504%2FFunctions%2F1770518069" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.6/kotlin-stdlib-native" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="process-queue.html"><span>process</span><wbr></wbr><span><span>Queue</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1497712504%2FFunctions%2F1770518069"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.6/kotlin-stdlib-native" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.6/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.6/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="process-queue.html"><span class="token function">processQueue</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Process pending job(s) on the queue of this worker. Note that jobs scheduled with <a href="execute-after.html">executeAfter</a> using non-zero timeout are not processed this way. If termination request arrives while processing the queue via this API, worker is marked as terminated and will exit once the current request is done with.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1887760010%2FFunctions%2F1770518069" anchor-label="requestTermination" id="1887760010%2FFunctions%2F1770518069" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.6/kotlin-stdlib-native" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="request-termination.html"><span>request</span><wbr></wbr><span><span>Termination</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1887760010%2FFunctions%2F1770518069"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.6/kotlin-stdlib-native" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.6/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.6/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="request-termination.html"><span class="token function">requestTermination</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">processScheduledJobs<span class="token operator">: </span><a href="../../kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-future/index.html">Future</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Requests termination of the worker.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1715998034%2FFunctions%2F1770518069" anchor-label="toString" id="-1715998034%2FFunctions%2F1770518069" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.6/kotlin-stdlib-native" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="to-string.html"><span>to</span><wbr></wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1715998034%2FFunctions%2F1770518069"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.6/kotlin-stdlib-native" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.6/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.6/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-string.html"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">String representation of the worker.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="-165694305%2FProperties%2F1770518069" anchor-label="id" id="-165694305%2FProperties%2F1770518069" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.6/kotlin-stdlib-native" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="id.html"><span><span>id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-165694305%2FProperties%2F1770518069"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.6/kotlin-stdlib-native" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.6/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.6/kotlin-stdlib-native"><a data-name="-165694305%2FProperties%2F1770518069" anchor-label="id" id="-165694305%2FProperties%2F1770518069" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="id.html">id</a><span class="token operator">: </span><a href="../../kotlin/-int/index.html">Int</a></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-165694305%2FProperties%2F1770518069" anchor-label="id" id="-165694305%2FProperties%2F1770518069" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native"></a>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="582832623%2FProperties%2F1770518069" anchor-label="name" id="582832623%2FProperties%2F1770518069" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.6/kotlin-stdlib-native" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="name.html"><span><span>name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="582832623%2FProperties%2F1770518069"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.6/kotlin-stdlib-native" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.6/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.6/kotlin-stdlib-native"><a data-name="582832623%2FProperties%2F1770518069" anchor-label="name" id="582832623%2FProperties%2F1770518069" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="name.html">name</a><span class="token operator">: </span><a href="../../kotlin/-string/index.html">String</a></div><div class="brief "><a data-name="582832623%2FProperties%2F1770518069" anchor-label="name" id="582832623%2FProperties%2F1770518069" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native"></a><p class="paragraph">Name of the worker, as specified in <a href="-companion/start.html">Worker.start</a> or &quot;worker $id&quot; by default,</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="582832623%2FProperties%2F1770518069" anchor-label="name" id="582832623%2FProperties%2F1770518069" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native"></a>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1039944894%2FProperties%2F1770518069" anchor-label="platformThreadId" id="-1039944894%2FProperties%2F1770518069" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.6/kotlin-stdlib-native" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="platform-thread-id.html"><span>platform</span><wbr></wbr><span>Thread</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1039944894%2FProperties%2F1770518069"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.6/kotlin-stdlib-native" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.6/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.6/kotlin-stdlib-native"><a data-name="-1039944894%2FProperties%2F1770518069" anchor-label="platformThreadId" id="-1039944894%2FProperties%2F1770518069" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlin/ExperimentalStdlibApi///PointingToDeclaration/"><span class="token annotation builtin">ExperimentalStdlibApi</span></span></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="platform-thread-id.html">platformThreadId</a><span class="token operator">: </span><a href="../../kotlin/-u-long/index.html#1946143150%2FExtensions%2F1770518069">ULong</a></div><div class="brief "><a data-name="-1039944894%2FProperties%2F1770518069" anchor-label="platformThreadId" id="-1039944894%2FProperties%2F1770518069" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native"></a><p class="paragraph">Get platform thread id of the worker thread.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-1039944894%2FProperties%2F1770518069" anchor-label="platformThreadId" id="-1039944894%2FProperties%2F1770518069" data-filterable-set=":stdlib_1.6/kotlin-stdlib-native"></a>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+

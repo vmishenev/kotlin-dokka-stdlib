@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>visitFileTree</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+        <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../styles/multimodule.css" rel="Stylesheet">
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../index.html">
+                    <span>stdlib</span>
+            </a>
+    </div>
+    <div>
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;stdlib/kotlin.io.path/visit-file-tree.html&quot;}"><div class="versions-dropdown">
+  <div class="versions-dropdown-button">1.7</div>
+  <div class="versions-dropdown-data"><a href="../../../../stdlib/kotlin.io.path/visit-file-tree.html">1.8</a><a href="visit-file-tree.html">1.7</a><a href="../../../../not-found-version.html?v=1.6">1.6</a><a href="../../../../not-found-version.html?v=1.5">1.5</a><a href="../../../../not-found-version.html?v=1.4">1.4</a><a href="../../../../not-found-version.html?v=1.3">1.3</a><a href="../../../../not-found-version.html?v=1.2">1.2</a><a href="../../../../not-found-version.html?v=1.1">1.1</a><a href="../../../../not-found-version.html?v=1.0">1.0</a></div>
+</div>
+</dokka-template-command>    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":stdlib_1.7/kotlin-stdlib-jdk7">JRE7</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="stdlib::kotlin.io.path//visitFileTree/java.nio.file.Path#java.nio.file.FileVisitor[java.nio.file.Path]#kotlin.Int#kotlin.Boolean/PointingToDeclaration//-1043683280">
+  <div class="breadcrumbs"><a href="../../index.html">stdlib</a><span class="delimiter">/</span><a href="index.html">kotlin.io.path</a><span class="delimiter">/</span><span class="current">visitFileTree</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>visit</span><wbr><span>File</span><wbr><span><span>Tree</span></span></h1>
+  </div>
+  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-jdk7" data-filterable-set=":stdlib_1.7/kotlin-stdlib-jdk7" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-jdk7">JRE7</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-jdk7"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="-experimental-path-api/index.html"><span class="token annotation builtin">ExperimentalPathApi</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html">Path</a><span class="token punctuation">.</span><a href="visit-file-tree.html"><span class="token function">visitFileTree</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">visitor<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/FileVisitor.html">FileVisitor</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html">Path</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">maxDepth<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span><span class="token operator"> = </span>Int.MAX_VALUE<span class="token punctuation">, </span></span><span class="parameter ">followLinks<span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jdk7/src/kotlin/io/path/PathUtils.kt#L1021">source</a>)</span></span></div><p class="paragraph">Visits this directory and all its content with the specified <a href="visit-file-tree.html">visitor</a>.</p><p class="paragraph">The traversal is in depth-first order and starts at this directory. The specified <a href="visit-file-tree.html">visitor</a> is invoked on each file encountered.</p><span class="kdoc-tag"><h4 class="">Since Kotlin</h4>1.7</span><h4 class="">See also</h4><div data-togglable="See also"><div class="table" data-togglable="See also"><div class="table-row" data-filterable-current=":stdlib_1.7/kotlin-stdlib-jdk7" data-filterable-set=":stdlib_1.7/kotlin-stdlib-jdk7"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Files.html#walkFileTree-java.nio.file.Path-kotlin.collections.MutableSet[java.nio.file.FileVisitOption]-kotlin.Int-java.nio.file.FileVisitor[java.nio.file.Path]-"><span>Files.</span><wbr><span>walk</span><wbr><span>File</span><wbr><span><span>Tree</span></span></a></div></span></div><div></div></div></div></div></div><h4 class="">Parameters</h4><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":stdlib_1.7/kotlin-stdlib-jdk7" data-filterable-set=":stdlib_1.7/kotlin-stdlib-jdk7"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span><span>visitor</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">the <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/FileVisitor.html">FileVisitor</a> that receives callbacks.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":stdlib_1.7/kotlin-stdlib-jdk7" data-filterable-set=":stdlib_1.7/kotlin-stdlib-jdk7"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>max</span><wbr><span><span>Depth</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">the maximum depth to traverse. By default, there is no limit.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":stdlib_1.7/kotlin-stdlib-jdk7" data-filterable-set=":stdlib_1.7/kotlin-stdlib-jdk7"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>follow</span><wbr><span><span>Links</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">specifies whether to follow symbolic links, <code class="lang-kotlin">false</code> by default.</p></div></div></div></div></div></div></div><hr><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="-experimental-path-api/index.html"><span class="token annotation builtin">ExperimentalPathApi</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html">Path</a><span class="token punctuation">.</span><a href="visit-file-tree.html"><span class="token function">visitFileTree</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">maxDepth<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span><span class="token operator"> = </span>Int.MAX_VALUE<span class="token punctuation">, </span></span><span class="parameter ">followLinks<span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">builderAction<span class="token operator">: </span><span class="token keyword"></span><a href="-file-visitor-builder/index.html">FileVisitorBuilder</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><span data-unresolved-link="kotlin/Unit///PointingToDeclaration/">Unit</span></span></span><span class="token punctuation">)</span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jdk7/src/kotlin/io/path/PathUtils.kt#L1039">source</a>)</span></span></div><p class="paragraph">Visits this directory and all its content with the <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/FileVisitor.html">FileVisitor</a> defined in <a href="visit-file-tree.html">builderAction</a>.</p><p class="paragraph">This function works the same as <a href="visit-file-tree.html">Path.visitFileTree</a>. It is introduced to streamline the cases when a <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/FileVisitor.html">FileVisitor</a> is created only to be immediately used for a file tree traversal. The trailing lambda <a href="visit-file-tree.html">builderAction</a> is passed to <a href="file-visitor.html">fileVisitor</a> to get the file visitor.</p><p class="paragraph">Example:</p><div class="sample-container"><pre><code class="block lang- kotlin" theme="idea">projectDirectory.visitFileTree {<br>    onPreVisitDirectory { directory, _ -&gt;<br>        if (directory.name == "build") {<br>            directory.toFile().deleteRecursively()<br>            FileVisitResult.SKIP_SUBTREE<br>        } else {<br>            FileVisitResult.CONTINUE<br>        }<br>    }<br><br>    onVisitFile { file, _ -&gt;<br>        if (file.extension == "class") {<br>            file.deleteExisting()<br>        }<br>        FileVisitResult.CONTINUE<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><span class="kdoc-tag"><h4 class="">Since Kotlin</h4>1.7</span><h4 class="">See also</h4><div data-togglable="See also"><div class="table" data-togglable="See also"><div class="table-row" data-filterable-current=":stdlib_1.7/kotlin-stdlib-jdk7" data-filterable-set=":stdlib_1.7/kotlin-stdlib-jdk7"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><a href="visit-file-tree.html"><span>visit</span><wbr><span>File</span><wbr><span><span>Tree</span></span></a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":stdlib_1.7/kotlin-stdlib-jdk7" data-filterable-set=":stdlib_1.7/kotlin-stdlib-jdk7"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><a href="file-visitor.html"><span>file</span><wbr><span><span>Visitor</span></span></a></div></span></div><div></div></div></div></div></div><h4 class="">Parameters</h4><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":stdlib_1.7/kotlin-stdlib-jdk7" data-filterable-set=":stdlib_1.7/kotlin-stdlib-jdk7"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>max</span><wbr><span><span>Depth</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">the maximum depth to traverse. By default, there is no limit.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":stdlib_1.7/kotlin-stdlib-jdk7" data-filterable-set=":stdlib_1.7/kotlin-stdlib-jdk7"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>follow</span><wbr><span><span>Links</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">specifies whether to follow symbolic links, <code class="lang-kotlin">false</code> by default.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":stdlib_1.7/kotlin-stdlib-jdk7" data-filterable-set=":stdlib_1.7/kotlin-stdlib-jdk7"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>builder</span><wbr><span><span>Action</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">the function that defines <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/FileVisitor.html">FileVisitor</a>.</p></div></div></div></div></div></div></div></div>  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+
+</body></html>
+
+

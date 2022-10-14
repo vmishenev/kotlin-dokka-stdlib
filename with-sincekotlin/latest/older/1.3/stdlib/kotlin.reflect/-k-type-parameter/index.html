@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>KTypeParameter</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+        <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../../styles/multimodule.css" rel="Stylesheet">
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>stdlib</span>
+            </a>
+    </div>
+    <div>
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;stdlib/kotlin.reflect/-k-type-parameter/index.html&quot;}"><div class="versions-dropdown">
+  <div class="versions-dropdown-button">1.3</div>
+  <div class="versions-dropdown-data"><a href="../../../../../stdlib/kotlin.reflect/-k-type-parameter/index.html">1.8</a><a href="../../../../1.7/stdlib/kotlin.reflect/-k-type-parameter/index.html">1.7</a><a href="../../../../1.6/stdlib/kotlin.reflect/-k-type-parameter/index.html">1.6</a><a href="../../../../1.5/stdlib/kotlin.reflect/-k-type-parameter/index.html">1.5</a><a href="../../../../1.4/stdlib/kotlin.reflect/-k-type-parameter/index.html">1.4</a><a href="index.html">1.3</a><a href="../../../../1.2/stdlib/kotlin.reflect/-k-type-parameter/index.html">1.2</a><a href="../../../../../not-found-version.html?v=1.1">1.1</a><a href="../../../../../not-found-version.html?v=1.0">1.0</a></div>
+</div>
+</dokka-template-command>    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":stdlib_1.3/kotlin-stdlib-common">Common</button>
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":stdlib_1.3/kotlin-stdlib-java-common">JVM</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="stdlib::kotlin.reflect/KTypeParameter///PointingToDeclaration//-1322543970">
+  <div class="breadcrumbs"><a href="../../../index.html">stdlib</a><span class="delimiter">/</span><a href="../index.html">kotlin.reflect</a><span class="delimiter">/</span><span class="current">KTypeParameter</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>KType</span><wbr><span><span>Parameter</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.3/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">KTypeParameter</a> : <a href="../-k-classifier/index.html">KClassifier</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/src/kotlin/reflect/KTypeParameter.kt#L8">source</a>)</span></span></div><p class="paragraph">Represents a declaration of a type parameter of a class or a callable. See the <a href="https://kotlinlang.org/docs/reference/generics.html#generics">Kotlin language documentation</a> for more information.</p><span class="kdoc-tag"><h4 class="">Since Kotlin</h4>1.2</span></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Extensions">Extensions</button></div>
+    <div class="tabs-section-body">
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="-832384197%2FProperties%2F-1322543970" anchor-label="isReified" id="-832384197%2FProperties%2F-1322543970" data-filterable-set=":stdlib_1.3/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.3/kotlin-stdlib-common" data-filterable-set=":stdlib_1.3/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="is-reified.html"><span>is</span><wbr><span><span>Reified</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-832384197%2FProperties%2F-1322543970"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.3/kotlin-stdlib-common"><a data-name="-832384197%2FProperties%2F-1322543970" anchor-label="isReified" id="-832384197%2FProperties%2F-1322543970" data-filterable-set=":stdlib_1.3/kotlin-stdlib-common"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="is-reified.html">isReified</a><span class="token operator">: </span><a href="../../kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><a data-name="-832384197%2FProperties%2F-1322543970" anchor-label="isReified" id="-832384197%2FProperties%2F-1322543970" data-filterable-set=":stdlib_1.3/kotlin-stdlib-common"></a><p class="paragraph"><code class="lang-kotlin">true</code> if this type parameter is <code class="lang-kotlin">reified</code>. See the <a href="https://kotlinlang.org/docs/reference/inline-functions.html#reified-type-parameters">Kotlin language documentation</a> for more information.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-832384197%2FProperties%2F-1322543970" anchor-label="isReified" id="-832384197%2FProperties%2F-1322543970" data-filterable-set=":stdlib_1.3/kotlin-stdlib-common"></a>1.2</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-823062874%2FProperties%2F-1322543970" anchor-label="name" id="-823062874%2FProperties%2F-1322543970" data-filterable-set=":stdlib_1.3/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.3/kotlin-stdlib-common" data-filterable-set=":stdlib_1.3/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="name.html"><span><span>name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-823062874%2FProperties%2F-1322543970"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.3/kotlin-stdlib-common"><a data-name="-823062874%2FProperties%2F-1322543970" anchor-label="name" id="-823062874%2FProperties%2F-1322543970" data-filterable-set=":stdlib_1.3/kotlin-stdlib-common"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="name.html">name</a><span class="token operator">: </span><a href="../../kotlin/-string/index.html">String</a></div><div class="brief "><a data-name="-823062874%2FProperties%2F-1322543970" anchor-label="name" id="-823062874%2FProperties%2F-1322543970" data-filterable-set=":stdlib_1.3/kotlin-stdlib-common"></a><p class="paragraph">The name of this type parameter as it was declared in the source code.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-823062874%2FProperties%2F-1322543970" anchor-label="name" id="-823062874%2FProperties%2F-1322543970" data-filterable-set=":stdlib_1.3/kotlin-stdlib-common"></a>1.2</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1391451154%2FProperties%2F-1322543970" anchor-label="upperBounds" id="1391451154%2FProperties%2F-1322543970" data-filterable-set=":stdlib_1.3/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.3/kotlin-stdlib-common" data-filterable-set=":stdlib_1.3/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="upper-bounds.html"><span>upper</span><wbr><span><span>Bounds</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1391451154%2FProperties%2F-1322543970"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.3/kotlin-stdlib-common"><a data-name="1391451154%2FProperties%2F-1322543970" anchor-label="upperBounds" id="1391451154%2FProperties%2F-1322543970" data-filterable-set=":stdlib_1.3/kotlin-stdlib-common"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="upper-bounds.html">upperBounds</a><span class="token operator">: </span><a href="../../kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-k-type/index.html">KType</a><span class="token operator">&gt;</span></div><div class="brief "><a data-name="1391451154%2FProperties%2F-1322543970" anchor-label="upperBounds" id="1391451154%2FProperties%2F-1322543970" data-filterable-set=":stdlib_1.3/kotlin-stdlib-common"></a><p class="paragraph">Upper bounds, or generic constraints imposed on this type parameter. See the <a href="https://kotlinlang.org/docs/reference/generics.html#upper-bounds">Kotlin language documentation</a> for more information.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="1391451154%2FProperties%2F-1322543970" anchor-label="upperBounds" id="1391451154%2FProperties%2F-1322543970" data-filterable-set=":stdlib_1.3/kotlin-stdlib-common"></a>1.2</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-584454272%2FProperties%2F-1322543970" anchor-label="variance" id="-584454272%2FProperties%2F-1322543970" data-filterable-set=":stdlib_1.3/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.3/kotlin-stdlib-common" data-filterable-set=":stdlib_1.3/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="variance.html"><span><span>variance</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-584454272%2FProperties%2F-1322543970"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.3/kotlin-stdlib-common"><a data-name="-584454272%2FProperties%2F-1322543970" anchor-label="variance" id="-584454272%2FProperties%2F-1322543970" data-filterable-set=":stdlib_1.3/kotlin-stdlib-common"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="variance.html">variance</a><span class="token operator">: </span><a href="../-k-variance/index.html">KVariance</a></div><div class="brief "><a data-name="-584454272%2FProperties%2F-1322543970" anchor-label="variance" id="-584454272%2FProperties%2F-1322543970" data-filterable-set=":stdlib_1.3/kotlin-stdlib-common"></a><p class="paragraph">Declaration-site variance of this type parameter. See the <a href="https://kotlinlang.org/docs/reference/generics.html#declaration-site-variance">Kotlin language documentation</a> for more information.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-584454272%2FProperties%2F-1322543970" anchor-label="variance" id="-584454272%2FProperties%2F-1322543970" data-filterable-set=":stdlib_1.3/kotlin-stdlib-common"></a>1.2</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="tabbedcontent">Extensions</h2>
+      <div class="table" data-togglable="Extensions"><a data-name="-838533683%2FExtensions%2F439089845" anchor-label="createType" id="-838533683%2FExtensions%2F439089845" data-filterable-set=":stdlib_1.3/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.3/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.3/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin.reflect.full/create-type.html"><span>create</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-838533683%2FExtensions%2F439089845"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.3/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.3/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.3/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.3/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-k-classifier/index.html#1443178180%2FExtensions%2F439089845">KClassifier</a><span class="token punctuation">.</span><a href="../../kotlin.reflect.full/create-type.html"><span class="token function">createType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">arguments<span class="token operator">: </span><a href="../../kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="kotlin.reflect/KTypeProjection///PointingToDeclaration/">KTypeProjection</span><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter ">nullable<span class="token operator">: </span><a href="../../kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">annotations<span class="token operator">: </span><a href="../../kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlin/-annotation/index.html">Annotation</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-k-type/index.html">KType</a></div><div class="brief "><p class="paragraph">Creates a <a href="../-k-type/index.html">KType</a> instance with the given classifier, type arguments, nullability and annotations. If the number of passed type arguments is not equal to the total number of type parameters of a classifier, an exception is thrown. If any of the arguments does not satisfy the bounds of the corresponding type parameter, an exception is thrown.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-840898792%2FExtensions%2F439089845" anchor-label="starProjectedType" id="-840898792%2FExtensions%2F439089845" data-filterable-set=":stdlib_1.3/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.3/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.3/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin.reflect.full/star-projected-type.html"><span>star</span><wbr><span>Projected</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-840898792%2FExtensions%2F439089845"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.3/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.3/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.3/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.3/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../-k-classifier/index.html#1443178180%2FExtensions%2F439089845">KClassifier</a><span class="token punctuation">.</span><a href="../../kotlin.reflect.full/star-projected-type.html">starProjectedType</a><span class="token operator">: </span><a href="../-k-type/index.html">KType</a></div><div class="brief "><p class="paragraph">Creates an instance of <a href="../-k-type/index.html">KType</a> with the given classifier, substituting all its type parameters with star projections. The resulting type is not marked as nullable and does not have any annotations.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+
+</body></html>
+
+

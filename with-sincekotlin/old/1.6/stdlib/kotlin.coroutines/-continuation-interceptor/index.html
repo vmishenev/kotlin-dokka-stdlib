@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ContinuationInterceptor</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+        <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+<link href="../../../styles/multimodule.css" rel="Stylesheet">
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>stdlib</span>
+            </a>
+    </div>
+    <div>
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;stdlib/kotlin.coroutines/-continuation-interceptor/index.html&quot;}">1.6</dokka-template-command>    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":stdlib_1.6/kotlin-stdlib-common">Common</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="stdlib::kotlin.coroutines/ContinuationInterceptor///PointingToDeclaration//757634145">
+  <div class="breadcrumbs"><a href="../../../index.html">stdlib</a><span class="delimiter">/</span><a href="../index.html">kotlin.coroutines</a><span class="delimiter">/</span><span class="current">ContinuationInterceptor</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Continuation</span><wbr></wbr><span><span>Interceptor</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.6/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">ContinuationInterceptor</a> : <a href="../-coroutine-context/-element/index.html">CoroutineContext.Element</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/src/kotlin/coroutines/ContinuationInterceptor.kt#L8">source</a>)</span></span></div><p class="paragraph">Marks coroutine context element that intercepts coroutine continuations. The coroutines framework uses <a href="-key/index.html">ContinuationInterceptor.Key</a> to retrieve the interceptor and intercepts all coroutine continuations with <a href="intercept-continuation.html">interceptContinuation</a> invocations.</p><p class="paragraph"><a href="index.html">ContinuationInterceptor</a> behaves like a <a href="../-abstract-coroutine-context-key/index.html">polymorphic element</a>, meaning that its implementation delegates <a href="../-coroutine-context/-element/get.html">get</a> and <a href="../-coroutine-context/-element/minus-key.html">minusKey</a> to <a href="../get-polymorphic-element.html">getPolymorphicElement</a> and <a href="../minus-polymorphic-key.html">minusPolymorphicKey</a> respectively. <a href="index.html">ContinuationInterceptor</a> subtypes can be extracted from the coroutine context using either <a href="-key/index.html">ContinuationInterceptor.Key</a> or subtype key if it extends <a href="../-abstract-coroutine-context-key/index.html">AbstractCoroutineContextKey</a>.</p><span class="kdoc-tag"><h4 class="">Since Kotlin</h4>1.3</span></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Extensions">Extensions</button></div>
+    <div class="tabs-section-body">
+      <h2 class="">Types</h2>
+      <div class="table" data-togglable="Types"><a data-name="483996537%2FClasslikes%2F757634145" anchor-label="Key" id="483996537%2FClasslikes%2F757634145" data-filterable-set=":stdlib_1.6/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.6/kotlin-stdlib-common" data-filterable-set=":stdlib_1.6/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-key/index.html"><span><span>Key</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="483996537%2FClasslikes%2F757634145"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.6/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">object </span><a href="-key/index.html">Key</a> : <a href="../-coroutine-context/-key/index.html">CoroutineContext.Key</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">ContinuationInterceptor</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">The key that defines <i>the</i> context interceptor.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.2</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="466442070%2FFunctions%2F757634145" anchor-label="fold" id="466442070%2FFunctions%2F757634145" data-filterable-set=":stdlib_1.6/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.6/kotlin-stdlib-common" data-filterable-set=":stdlib_1.6/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-coroutine-context/-element/fold.html"><span><span>fold</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="466442070%2FFunctions%2F757634145"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.6/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-coroutine-context/-element/fold.html">R</a><span class="token operator">&gt; </span><a href="../-coroutine-context/-element/fold.html"><span class="token function">fold</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">initial<span class="token operator">: </span><a href="../-coroutine-context/-element/fold.html">R</a><span class="token punctuation">, </span></span><span class="parameter ">operation<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="../-coroutine-context/-element/fold.html">R</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="../-coroutine-context/-element/index.html">CoroutineContext.Element</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../-coroutine-context/-element/fold.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-coroutine-context/-element/fold.html">R</a></div><div class="brief "><p class="paragraph">Accumulates entries of this context starting with <a href="../-coroutine-context/-element/fold.html">initial</a> value and applying <a href="../-coroutine-context/-element/fold.html">operation</a> from left to right to current accumulator value and each element of this context.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.2</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1171096926%2FFunctions%2F757634145" anchor-label="get" id="1171096926%2FFunctions%2F757634145" data-filterable-set=":stdlib_1.6/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.6/kotlin-stdlib-common" data-filterable-set=":stdlib_1.6/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get.html"><span><span>get</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1171096926%2FFunctions%2F757634145"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.6/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator override </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="get.html">E</a><span class="token operator"> : </span><a href="../-coroutine-context/-element/index.html">CoroutineContext.Element</a><span class="token operator">&gt; </span><a href="get.html"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="../-coroutine-context/-key/index.html">CoroutineContext.Key</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="get.html">E</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="get.html">E</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Returns the element with the given <a href="get.html">key</a> from this context or <code class="lang-kotlin">null</code>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.2</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-8614465%2FFunctions%2F757634145" anchor-label="interceptContinuation" id="-8614465%2FFunctions%2F757634145" data-filterable-set=":stdlib_1.6/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.6/kotlin-stdlib-common" data-filterable-set=":stdlib_1.6/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="intercept-continuation.html"><span>intercept</span><wbr></wbr><span><span>Continuation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-8614465%2FFunctions%2F757634145"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.6/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="intercept-continuation.html">T</a><span class="token operator">&gt; </span><a href="intercept-continuation.html"><span class="token function">interceptContinuation</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">continuation<span class="token operator">: </span><a href="../-continuation/index.html">Continuation</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="intercept-continuation.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-continuation/index.html">Continuation</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="intercept-continuation.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns continuation that wraps the original <a href="intercept-continuation.html">continuation</a>, thus intercepting all resumptions. This function is invoked by coroutines framework when needed and the resulting continuations are cached internally per each instance of the original <a href="intercept-continuation.html">continuation</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.2</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-388012804%2FFunctions%2F757634145" anchor-label="minusKey" id="-388012804%2FFunctions%2F757634145" data-filterable-set=":stdlib_1.6/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.6/kotlin-stdlib-common" data-filterable-set=":stdlib_1.6/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="minus-key.html"><span>minus</span><wbr></wbr><span><span>Key</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-388012804%2FFunctions%2F757634145"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.6/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="minus-key.html"><span class="token function">minusKey</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="../-coroutine-context/-key/index.html">CoroutineContext.Key</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-coroutine-context/index.html">CoroutineContext</a></div><div class="brief "><p class="paragraph">Returns a context containing elements from this context, but without an element with the specified <a href="minus-key.html">key</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.2</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1141296693%2FFunctions%2F757634145" anchor-label="plus" id="1141296693%2FFunctions%2F757634145" data-filterable-set=":stdlib_1.6/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.6/kotlin-stdlib-common" data-filterable-set=":stdlib_1.6/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-coroutine-context/plus.html"><span><span>plus</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1141296693%2FFunctions%2F757634145"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.6/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="../-coroutine-context/plus.html"><span class="token function">plus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="../-coroutine-context/index.html">CoroutineContext</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-coroutine-context/index.html">CoroutineContext</a></div><div class="brief "><p class="paragraph">Returns a context containing elements from this context and elements from  other <a href="../-coroutine-context/plus.html">context</a>. The elements from this context with the same key as in the other one are dropped.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.2</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-920668851%2FFunctions%2F757634145" anchor-label="releaseInterceptedContinuation" id="-920668851%2FFunctions%2F757634145" data-filterable-set=":stdlib_1.6/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.6/kotlin-stdlib-common" data-filterable-set=":stdlib_1.6/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="release-intercepted-continuation.html"><span>release</span><wbr></wbr><span>Intercepted</span><wbr></wbr><span><span>Continuation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-920668851%2FFunctions%2F757634145"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.6/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="release-intercepted-continuation.html"><span class="token function">releaseInterceptedContinuation</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">continuation<span class="token operator">: </span><a href="../-continuation/index.html">Continuation</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Invoked for the continuation instance returned by <a href="intercept-continuation.html">interceptContinuation</a> when the original continuation completes and will not be used anymore. This function is invoked only if <a href="intercept-continuation.html">interceptContinuation</a> had returned a different continuation instance from the one it was invoked with.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.2</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="-951571167%2FProperties%2F757634145" anchor-label="key" id="-951571167%2FProperties%2F757634145" data-filterable-set=":stdlib_1.6/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.6/kotlin-stdlib-common" data-filterable-set=":stdlib_1.6/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-coroutine-context/-element/key.html"><span><span>key</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-951571167%2FProperties%2F757634145"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.6/kotlin-stdlib-common"><a data-name="-951571167%2FProperties%2F757634145" anchor-label="key" id="-951571167%2FProperties%2F757634145" data-filterable-set=":stdlib_1.6/kotlin-stdlib-common"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-coroutine-context/-element/key.html">key</a><span class="token operator">: </span><a href="../-coroutine-context/-key/index.html">CoroutineContext.Key</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></div><div class="brief "><a data-name="-951571167%2FProperties%2F757634145" anchor-label="key" id="-951571167%2FProperties%2F757634145" data-filterable-set=":stdlib_1.6/kotlin-stdlib-common"></a><p class="paragraph">A key of this coroutine context element.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-951571167%2FProperties%2F757634145" anchor-label="key" id="-951571167%2FProperties%2F757634145" data-filterable-set=":stdlib_1.6/kotlin-stdlib-common"></a>1.2</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="tabbedcontent">Extensions</h2>
+      <div class="table" data-togglable="Extensions"><a data-name="1720170851%2FExtensions%2F757634145" anchor-label="getPolymorphicElement" id="1720170851%2FExtensions%2F757634145" data-filterable-set=":stdlib_1.6/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.6/kotlin-stdlib-common" data-filterable-set=":stdlib_1.6/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../get-polymorphic-element.html"><span>get</span><wbr></wbr><span>Polymorphic</span><wbr></wbr><span><span>Element</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1720170851%2FExtensions%2F757634145"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.6/kotlin-stdlib-common"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../kotlin/-experimental-stdlib-api/index.html"><span class="token annotation builtin">ExperimentalStdlibApi</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../get-polymorphic-element.html">E</a><span class="token operator"> : </span><a href="../-coroutine-context/-element/index.html">CoroutineContext.Element</a><span class="token operator">&gt; </span><a href="../-coroutine-context/-element/index.html">CoroutineContext.Element</a><span class="token punctuation">.</span><a href="../get-polymorphic-element.html"><span class="token function">getPolymorphicElement</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="../-coroutine-context/-key/index.html">CoroutineContext.Key</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../get-polymorphic-element.html">E</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../get-polymorphic-element.html">E</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Returns the current element if it is associated with the given <a href="../get-polymorphic-element.html">key</a> in a polymorphic manner or <code class="lang-kotlin">null</code> otherwise. This method returns non-null value if either <a href="../-coroutine-context/-element/key.html">Element.key</a> is equal to the given <a href="../get-polymorphic-element.html">key</a> or if the <a href="../get-polymorphic-element.html">key</a> is associated with <a href="../-coroutine-context/-element/key.html">Element.key</a> via <a href="../-abstract-coroutine-context-key/index.html">AbstractCoroutineContextKey</a>. See <a href="../-abstract-coroutine-context-key/index.html">AbstractCoroutineContextKey</a> for the example of usage.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1431606987%2FExtensions%2F757634145" anchor-label="minusPolymorphicKey" id="1431606987%2FExtensions%2F757634145" data-filterable-set=":stdlib_1.6/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.6/kotlin-stdlib-common" data-filterable-set=":stdlib_1.6/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../minus-polymorphic-key.html"><span>minus</span><wbr></wbr><span>Polymorphic</span><wbr></wbr><span><span>Key</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1431606987%2FExtensions%2F757634145"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.6/kotlin-stdlib-common"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../kotlin/-experimental-stdlib-api/index.html"><span class="token annotation builtin">ExperimentalStdlibApi</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-coroutine-context/-element/index.html">CoroutineContext.Element</a><span class="token punctuation">.</span><a href="../minus-polymorphic-key.html"><span class="token function">minusPolymorphicKey</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="../-coroutine-context/-key/index.html">CoroutineContext.Key</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-coroutine-context/index.html">CoroutineContext</a></div><div class="brief "><p class="paragraph">Returns empty coroutine context if the element is associated with the given <a href="../minus-polymorphic-key.html">key</a> in a polymorphic manner or <code class="lang-kotlin">null</code> otherwise. This method returns empty context if either <a href="../-coroutine-context/-element/key.html">Element.key</a> is equal to the given <a href="../minus-polymorphic-key.html">key</a> or if the <a href="../minus-polymorphic-key.html">key</a> is associated with <a href="../-coroutine-context/-element/key.html">Element.key</a> via <a href="../-abstract-coroutine-context-key/index.html">AbstractCoroutineContextKey</a>. See <a href="../-abstract-coroutine-context-key/index.html">AbstractCoroutineContextKey</a> for the example of usage.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+

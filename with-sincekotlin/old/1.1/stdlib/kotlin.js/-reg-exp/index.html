@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>RegExp</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+        <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+<link href="../../../styles/multimodule.css" rel="Stylesheet">
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>stdlib</span>
+            </a>
+    </div>
+    <div>
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;stdlib/kotlin.js/-reg-exp/index.html&quot;}">1.1</dokka-template-command>    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector js-like" data-active="" data-filter=":stdlib_1.1/kotlin-stdlib-js">JS</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="stdlib::kotlin.js/RegExp///PointingToDeclaration//-738287586">
+  <div class="breadcrumbs"><a href="../../../index.html">stdlib</a><span class="delimiter">/</span><a href="../index.html">kotlin.js</a><span class="delimiter">/</span><span class="current">RegExp</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Reg</span><wbr></wbr><span><span>Exp</span></span></h1>
+    <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+      <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js" data-active="" data-toggle=":stdlib_1.1/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.1/kotlin-stdlib-js"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">class </span><a href="index.html">RegExp</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">pattern<span class="token operator">: </span><a href="../../kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">flags<span class="token operator">: </span><a href="../../kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>definedExternally</span></span><span class="token punctuation">)</span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/js/src/kotlin/regexp.kt#L8">source</a>)</span></span></div><p class="paragraph">Exposes the JavaScript <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/RegExp">RegExp object</a> to Kotlin.</p><span class="kdoc-tag"><h4 class="">Since Kotlin</h4>1.1</span></div>    </div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Extensions">Extensions</button></div>
+    <div class="tabs-section-body">
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="1239673153%2FConstructors%2F-738287586" anchor-label="RegExp" id="1239673153%2FConstructors%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-reg-exp.html"><span>Reg</span><wbr></wbr><span><span>Exp</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1239673153%2FConstructors%2F-738287586"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js" data-active="" data-toggle=":stdlib_1.1/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.1/kotlin-stdlib-js"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-reg-exp.html"><span class="token function">RegExp</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">pattern<span class="token operator">: </span><a href="../../kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">flags<span class="token operator">: </span><a href="../../kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>definedExternally</span></span><span class="token punctuation">)</span></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="-1288373115%2FFunctions%2F-738287586" anchor-label="exec" id="-1288373115%2FFunctions%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="exec.html"><span><span>exec</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1288373115%2FFunctions%2F-738287586"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js" data-active="" data-toggle=":stdlib_1.1/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.1/kotlin-stdlib-js"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="exec.html"><span class="token function">exec</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">str<span class="token operator">: </span><a href="../../kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-reg-exp-match/index.html">RegExpMatch</a><span class="token operator">?</span></div><div class="inline-comment"><b>Since Kotlin </b>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-822902842%2FFunctions%2F-738287586" anchor-label="test" id="-822902842%2FFunctions%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="test.html"><span><span>test</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-822902842%2FFunctions%2F-738287586"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js" data-active="" data-toggle=":stdlib_1.1/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.1/kotlin-stdlib-js"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="test.html"><span class="token function">test</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">str<span class="token operator">: </span><a href="../../kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlin/-boolean/index.html">Boolean</a></div><div class="inline-comment"><b>Since Kotlin </b>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1677223964%2FFunctions%2F-738287586" anchor-label="toString" id="-1677223964%2FFunctions%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="to-string.html"><span>to</span><wbr></wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1677223964%2FFunctions%2F-738287586"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js" data-active="" data-toggle=":stdlib_1.1/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.1/kotlin-stdlib-js"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-string.html"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlin/-string/index.html">String</a></div><div class="inline-comment"><b>Since Kotlin </b>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="971967309%2FProperties%2F-738287586" anchor-label="global" id="971967309%2FProperties%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="global.html"><span><span>global</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="971967309%2FProperties%2F-738287586"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js" data-active="" data-toggle=":stdlib_1.1/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.1/kotlin-stdlib-js"><a data-name="971967309%2FProperties%2F-738287586" anchor-label="global" id="971967309%2FProperties%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="global.html">global</a><span class="token operator">: </span><a href="../../kotlin/-boolean/index.html">Boolean</a></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="971967309%2FProperties%2F-738287586" anchor-label="global" id="971967309%2FProperties%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-92244434%2FProperties%2F-738287586" anchor-label="ignoreCase" id="-92244434%2FProperties%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="ignore-case.html"><span>ignore</span><wbr></wbr><span><span>Case</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-92244434%2FProperties%2F-738287586"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js" data-active="" data-toggle=":stdlib_1.1/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.1/kotlin-stdlib-js"><a data-name="-92244434%2FProperties%2F-738287586" anchor-label="ignoreCase" id="-92244434%2FProperties%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="ignore-case.html">ignoreCase</a><span class="token operator">: </span><a href="../../kotlin/-boolean/index.html">Boolean</a></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-92244434%2FProperties%2F-738287586" anchor-label="ignoreCase" id="-92244434%2FProperties%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1591626926%2FProperties%2F-738287586" anchor-label="lastIndex" id="1591626926%2FProperties%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="last-index.html"><span>last</span><wbr></wbr><span><span>Index</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1591626926%2FProperties%2F-738287586"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js" data-active="" data-toggle=":stdlib_1.1/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.1/kotlin-stdlib-js"><a data-name="1591626926%2FProperties%2F-738287586" anchor-label="lastIndex" id="1591626926%2FProperties%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="last-index.html">lastIndex</a><span class="token operator">: </span><a href="../../kotlin/-int/index.html">Int</a></div><div class="brief "><a data-name="1591626926%2FProperties%2F-738287586" anchor-label="lastIndex" id="1591626926%2FProperties%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a><p class="paragraph">The lastIndex is a read/write integer property of regular expressions that specifies the index at which to start the next match.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="1591626926%2FProperties%2F-738287586" anchor-label="lastIndex" id="1591626926%2FProperties%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="256523517%2FProperties%2F-738287586" anchor-label="multiline" id="256523517%2FProperties%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="multiline.html"><span><span>multiline</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="256523517%2FProperties%2F-738287586"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js" data-active="" data-toggle=":stdlib_1.1/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.1/kotlin-stdlib-js"><a data-name="256523517%2FProperties%2F-738287586" anchor-label="multiline" id="256523517%2FProperties%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="multiline.html">multiline</a><span class="token operator">: </span><a href="../../kotlin/-boolean/index.html">Boolean</a></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="256523517%2FProperties%2F-738287586" anchor-label="multiline" id="256523517%2FProperties%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="tabbedcontent">Extensions</h2>
+      <div class="table" data-togglable="Extensions"><a data-name="294312485%2FExtensions%2F-738287586" anchor-label="reset" id="294312485%2FExtensions%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../reset.html"><span><span>reset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="294312485%2FExtensions%2F-738287586"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js" data-active="" data-toggle=":stdlib_1.1/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.1/kotlin-stdlib-js"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">RegExp</a><span class="token punctuation">.</span><a href="../reset.html"><span class="token function">reset</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Resets the regular expression so that subsequent <a href="test.html">RegExp.test</a> and <a href="exec.html">RegExp.exec</a> calls will match starting with the beginning of the input string.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+
