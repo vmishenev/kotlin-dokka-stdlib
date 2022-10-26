@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Number</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+        <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../../styles/multimodule.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/version-navigation.js" async></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>stdlib</span>
+            </a>
+    </div>
+    <div>
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;stdlib/kotlin/-number/index.html&quot;}"><div class="versions-dropdown">
+  <div class="versions-dropdown-button">1.0</div>
+  <div class="versions-dropdown-data"><a href="../../../../../stdlib/kotlin/-number/index.html">1.8</a><a href="../../../../1.7/stdlib/kotlin/-number/index.html">1.7</a><a href="../../../../1.6/stdlib/kotlin/-number/index.html">1.6</a><a href="../../../../1.5/stdlib/kotlin/-number/index.html">1.5</a><a href="../../../../1.4/stdlib/kotlin/-number/index.html">1.4</a><a href="../../../../1.3/stdlib/kotlin/-number/index.html">1.3</a><a href="../../../../1.2/stdlib/kotlin/-number/index.html">1.2</a><a href="../../../../1.1/stdlib/kotlin/-number/index.html">1.1</a><a href="index.html">1.0</a></div>
+</div>
+</dokka-template-command>    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="stdlib::kotlin/Number///PointingToDeclaration//-874938664">
+  <div class="breadcrumbs"><a href="../../../index.html">stdlib</a><span class="delimiter">/</span><a href="../index.html">kotlin</a><span class="delimiter">/</span><span class="current">Number</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Number</span></span></h1>
+    <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+      <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">Number</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/core/builtins/native/kotlin/Number.kt#L22">source</a>)</span></span></div><p class="paragraph">Superclass for all platform classes representing numeric values.</p><span class="kdoc-tag"><h4 class="">Since Kotlin</h4>1.0</span></div>    </div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Inheritors">Inheritors</button></div>
+    <div class="tabs-section-body">
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="427593372%2FConstructors%2F-874938664" anchor-label="Number" id="427593372%2FConstructors%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-number.html"><span><span>Number</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="427593372%2FConstructors%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-number.html"><span class="token function">Number</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="638668066%2FFunctions%2F-874938664" anchor-label="toByte" id="638668066%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="to-byte.html"><span>to</span><wbr><span><span>Byte</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="638668066%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="to-byte.html"><span class="token function">toByte</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-byte/index.html">Byte</a></div><div class="brief "><p class="paragraph">Returns the value of this number as a <a href="../-byte/index.html">Byte</a>, which may involve rounding or truncation.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="679784084%2FFunctions%2F-874938664" anchor-label="toChar" id="679784084%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="to-char.html"><span>to</span><wbr><span><span>Char</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="679784084%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="to-char.html"><span class="token function">toChar</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-char/index.html">Char</a></div><div class="brief "><p class="paragraph">Returns the <a href="../-char/index.html">Char</a> with the numeric value equal to this number, truncated to 16 bits if appropriate.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1630342969%2FFunctions%2F-874938664" anchor-label="toDouble" id="1630342969%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="to-double.html"><span>to</span><wbr><span><span>Double</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1630342969%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="to-double.html"><span class="token function">toDouble</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-double/index.html">Double</a></div><div class="brief "><p class="paragraph">Returns the value of this number as a <a href="../-double/index.html">Double</a>, which may involve rounding.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1268219156%2FFunctions%2F-874938664" anchor-label="toFloat" id="1268219156%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="to-float.html"><span>to</span><wbr><span><span>Float</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1268219156%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="to-float.html"><span class="token function">toFloat</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-float/index.html">Float</a></div><div class="brief "><p class="paragraph">Returns the value of this number as a <a href="../-float/index.html">Float</a>, which may involve rounding.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1293036639%2FFunctions%2F-874938664" anchor-label="toInt" id="-1293036639%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="to-int.html"><span>to</span><wbr><span><span>Int</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1293036639%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="to-int.html"><span class="token function">toInt</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Returns the value of this number as an <a href="../-int/index.html">Int</a>, which may involve rounding or truncation.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="114438702%2FFunctions%2F-874938664" anchor-label="toLong" id="114438702%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="to-long.html"><span>to</span><wbr><span><span>Long</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="114438702%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="to-long.html"><span class="token function">toLong</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-long/index.html">Long</a></div><div class="brief "><p class="paragraph">Returns the value of this number as a <a href="../-long/index.html">Long</a>, which may involve rounding or truncation.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="2105458420%2FFunctions%2F-874938664" anchor-label="toShort" id="2105458420%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="to-short.html"><span>to</span><wbr><span><span>Short</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2105458420%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="to-short.html"><span class="token function">toShort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-short/index.html">Short</a></div><div class="brief "><p class="paragraph">Returns the value of this number as a <a href="../-short/index.html">Short</a>, which may involve rounding or truncation.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Inheritors</h2>
+      <div class="table" data-togglable="Inheritors"><a data-name="1310507387%2FInheritors%2F-874938664" anchor-label="Byte" id="1310507387%2FInheritors%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-byte/index.html">Byte</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1310507387%2FInheritors%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div></div>
+          </div>
+        </div>
+<a data-name="-189731805%2FInheritors%2F-874938664" anchor-label="Short" id="-189731805%2FInheritors%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-short/index.html">Short</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-189731805%2FInheritors%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div></div>
+          </div>
+        </div>
+<a data-name="-1079676016%2FInheritors%2F-874938664" anchor-label="Int" id="-1079676016%2FInheritors%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-int/index.html">Int</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1079676016%2FInheritors%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div></div>
+          </div>
+        </div>
+<a data-name="786278023%2FInheritors%2F-874938664" anchor-label="Long" id="786278023%2FInheritors%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-long/index.html">Long</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="786278023%2FInheritors%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div></div>
+          </div>
+        </div>
+<a data-name="-1026971069%2FInheritors%2F-874938664" anchor-label="Float" id="-1026971069%2FInheritors%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-float/index.html">Float</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1026971069%2FInheritors%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div></div>
+          </div>
+        </div>
+<a data-name="1846517330%2FInheritors%2F-874938664" anchor-label="Double" id="1846517330%2FInheritors%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-double/index.html">Double</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1846517330%2FInheritors%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+
+</body></html>
+
+

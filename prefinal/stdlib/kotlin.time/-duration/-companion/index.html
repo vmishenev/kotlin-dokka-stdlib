@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Companion</title>
+    <link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../../";</script>
+        <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+<link href="../../../../styles/multimodule.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/version-navigation.js" async="async"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../../index.html">
+                    <span>stdlib</span>
+            </a>
+    </div>
+    <div>
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;stdlib/kotlin.time/-duration/-companion/index.html&quot;}"><div class="versions-dropdown">
+  <div class="versions-dropdown-button">1.8</div>
+  <div class="versions-dropdown-data"><a href="index.html">1.8</a><a href="../../../../older/1.7/stdlib/kotlin.time/-duration/-companion/index.html">1.7</a><a href="../../../../older/1.6/stdlib/kotlin.time/-duration/-companion/index.html">1.6</a><a href="../../../../not-found-version.html?v=1.5" class="unavailable-version">1.5</a><a href="../../../../not-found-version.html?v=1.4" class="unavailable-version">1.4</a><a href="../../../../not-found-version.html?v=1.3" class="unavailable-version">1.3</a><a href="../../../../not-found-version.html?v=1.2" class="unavailable-version">1.2</a><a href="../../../../not-found-version.html?v=1.1" class="unavailable-version">1.1</a><a href="../../../../not-found-version.html?v=1.0" class="unavailable-version">1.0</a></div>
+</div>
+</dokka-template-command>    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":stdlib_1.8/kotlin-stdlib-common">Common</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="stdlib::kotlin.time/Duration.Companion///PointingToDeclaration//2144419555">
+  <div class="breadcrumbs"><a href="../../../../index.html">stdlib</a><span class="delimiter">/</span><a href="../../index.html">kotlin.time</a><span class="delimiter">/</span><a href="../index.html">Duration</a><span class="delimiter">/</span><span class="current">Companion</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Companion</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.8/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">Companion</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/src/kotlin/time/Duration.kt#L54">source</a>)</span></span></div><span class="kdoc-tag"><h4 class="">Since Kotlin</h4>1.2</span></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+    <div class="tabs-section-body">
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="1888005810%2FFunctions%2F2144419555" anchor-label="convert" id="1888005810%2FFunctions%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.8/kotlin-stdlib-common" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="convert.html"><span><span>convert</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1888005810%2FFunctions%2F2144419555"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.8/kotlin-stdlib-common"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../-experimental-time/index.html"><span class="token annotation builtin">ExperimentalTime</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="convert.html"><span class="token function">convert</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../../kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">sourceUnit<span class="token operator">: </span><a href="../../-duration-unit/index.html">DurationUnit</a><span class="token punctuation">, </span></span><span class="parameter ">targetUnit<span class="token operator">: </span><a href="../../-duration-unit/index.html">DurationUnit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../kotlin/-double/index.html">Double</a></div><div class="brief "><p class="paragraph">Converts the given time duration <a href="convert.html">value</a> expressed in the specified <a href="convert.html">sourceUnit</a> into the specified <a href="convert.html">targetUnit</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.2</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1801060431%2FFunctions%2F2144419555" anchor-label="days" id="-1801060431%2FFunctions%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.8/kotlin-stdlib-common" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="days.html"><span><span>days</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1801060431%2FFunctions%2F2144419555"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.8/kotlin-stdlib-common"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../-experimental-time/index.html"><span class="token annotation builtin">ExperimentalTime</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="days.html"><span class="token function"><strike>days</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../../kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../-experimental-time/index.html"><span class="token annotation builtin">ExperimentalTime</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="days.html"><span class="token function"><strike>days</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../-experimental-time/index.html"><span class="token annotation builtin">ExperimentalTime</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="days.html"><span class="token function"><strike>days</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../../kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><p class="paragraph">Returns a <a href="../index.html">Duration</a> representing the specified <a href="days.html">value</a> number of days.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.5</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1771687895%2FFunctions%2F2144419555" anchor-label="hours" id="-1771687895%2FFunctions%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.8/kotlin-stdlib-common" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="hours.html"><span><span>hours</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1771687895%2FFunctions%2F2144419555"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.8/kotlin-stdlib-common"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../-experimental-time/index.html"><span class="token annotation builtin">ExperimentalTime</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="hours.html"><span class="token function"><strike>hours</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../../kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../-experimental-time/index.html"><span class="token annotation builtin">ExperimentalTime</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="hours.html"><span class="token function"><strike>hours</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../-experimental-time/index.html"><span class="token annotation builtin">ExperimentalTime</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="hours.html"><span class="token function"><strike>hours</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../../kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><p class="paragraph">Returns a <a href="../index.html">Duration</a> representing the specified <a href="hours.html">value</a> number of hours.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.5</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-514515435%2FFunctions%2F2144419555" anchor-label="microseconds" id="-514515435%2FFunctions%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.8/kotlin-stdlib-common" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="microseconds.html"><span><span>microseconds</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-514515435%2FFunctions%2F2144419555"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.8/kotlin-stdlib-common"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../-experimental-time/index.html"><span class="token annotation builtin">ExperimentalTime</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="microseconds.html"><span class="token function"><strike>microseconds</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../../kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../-experimental-time/index.html"><span class="token annotation builtin">ExperimentalTime</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="microseconds.html"><span class="token function"><strike>microseconds</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../-experimental-time/index.html"><span class="token annotation builtin">ExperimentalTime</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="microseconds.html"><span class="token function"><strike>microseconds</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../../kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><p class="paragraph">Returns a <a href="../index.html">Duration</a> representing the specified <a href="microseconds.html">value</a> number of microseconds.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.5</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-742783988%2FFunctions%2F2144419555" anchor-label="milliseconds" id="-742783988%2FFunctions%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.8/kotlin-stdlib-common" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="milliseconds.html"><span><span>milliseconds</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-742783988%2FFunctions%2F2144419555"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.8/kotlin-stdlib-common"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../-experimental-time/index.html"><span class="token annotation builtin">ExperimentalTime</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="milliseconds.html"><span class="token function"><strike>milliseconds</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../../kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../-experimental-time/index.html"><span class="token annotation builtin">ExperimentalTime</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="milliseconds.html"><span class="token function"><strike>milliseconds</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../-experimental-time/index.html"><span class="token annotation builtin">ExperimentalTime</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="milliseconds.html"><span class="token function"><strike>milliseconds</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../../kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><p class="paragraph">Returns a <a href="../index.html">Duration</a> representing the specified <a href="milliseconds.html">value</a> number of milliseconds.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.5</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="2040037209%2FFunctions%2F2144419555" anchor-label="minutes" id="2040037209%2FFunctions%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.8/kotlin-stdlib-common" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="minutes.html"><span><span>minutes</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2040037209%2FFunctions%2F2144419555"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.8/kotlin-stdlib-common"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../-experimental-time/index.html"><span class="token annotation builtin">ExperimentalTime</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="minutes.html"><span class="token function"><strike>minutes</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../../kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../-experimental-time/index.html"><span class="token annotation builtin">ExperimentalTime</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="minutes.html"><span class="token function"><strike>minutes</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../-experimental-time/index.html"><span class="token annotation builtin">ExperimentalTime</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="minutes.html"><span class="token function"><strike>minutes</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../../kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><p class="paragraph">Returns a <a href="../index.html">Duration</a> representing the specified <a href="minutes.html">value</a> number of minutes.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.5</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1483432211%2FFunctions%2F2144419555" anchor-label="nanoseconds" id="-1483432211%2FFunctions%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.8/kotlin-stdlib-common" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="nanoseconds.html"><span><span>nanoseconds</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1483432211%2FFunctions%2F2144419555"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.8/kotlin-stdlib-common"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../-experimental-time/index.html"><span class="token annotation builtin">ExperimentalTime</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="nanoseconds.html"><span class="token function"><strike>nanoseconds</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../../kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../-experimental-time/index.html"><span class="token annotation builtin">ExperimentalTime</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="nanoseconds.html"><span class="token function"><strike>nanoseconds</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../-experimental-time/index.html"><span class="token annotation builtin">ExperimentalTime</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="nanoseconds.html"><span class="token function"><strike>nanoseconds</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../../kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><p class="paragraph">Returns a <a href="../index.html">Duration</a> representing the specified <a href="nanoseconds.html">value</a> number of nanoseconds.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.5</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="568279698%2FFunctions%2F2144419555" anchor-label="parse" id="568279698%2FFunctions%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.8/kotlin-stdlib-common" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="parse.html"><span><span>parse</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="568279698%2FFunctions%2F2144419555"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.8/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="parse.html"><span class="token function">parse</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../../kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><p class="paragraph">Parses a string that represents a duration and returns the parsed <a href="../index.html">Duration</a> value.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.2</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="411618034%2FFunctions%2F2144419555" anchor-label="parseIsoString" id="411618034%2FFunctions%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.8/kotlin-stdlib-common" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="parse-iso-string.html"><span>parse</span><wbr></wbr><span>Iso</span><wbr></wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="411618034%2FFunctions%2F2144419555"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.8/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="parse-iso-string.html"><span class="token function">parseIsoString</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../../kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><p class="paragraph">Parses a string that represents a duration in a restricted ISO-8601 composite representation and returns the parsed <a href="../index.html">Duration</a> value. Composite representation is a relaxed version of ISO-8601 duration format that supports negative durations and negative values of individual components.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.2</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1401613988%2FFunctions%2F2144419555" anchor-label="parseIsoStringOrNull" id="-1401613988%2FFunctions%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.8/kotlin-stdlib-common" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="parse-iso-string-or-null.html"><span>parse</span><wbr></wbr><span>Iso</span><wbr></wbr><span>String</span><wbr></wbr><span>Or</span><wbr></wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1401613988%2FFunctions%2F2144419555"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.8/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="parse-iso-string-or-null.html"><span class="token function">parseIsoStringOrNull</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../../kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">Duration</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Parses a string that represents a duration in restricted ISO-8601 composite representation and returns the parsed <a href="../index.html">Duration</a> value or <code class="lang-kotlin">null</code> if the string doesn't represent a duration in the format acceptable by <a href="parse-iso-string.html">parseIsoString</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.2</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-222605060%2FFunctions%2F2144419555" anchor-label="parseOrNull" id="-222605060%2FFunctions%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.8/kotlin-stdlib-common" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="parse-or-null.html"><span>parse</span><wbr></wbr><span>Or</span><wbr></wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-222605060%2FFunctions%2F2144419555"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.8/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="parse-or-null.html"><span class="token function">parseOrNull</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../../kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">Duration</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Parses a string that represents a duration and returns the parsed <a href="../index.html">Duration</a> value, or <code class="lang-kotlin">null</code> if the string doesn't represent a duration in any of the supported formats.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.2</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1567919687%2FFunctions%2F2144419555" anchor-label="seconds" id="-1567919687%2FFunctions%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.8/kotlin-stdlib-common" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="seconds.html"><span><span>seconds</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1567919687%2FFunctions%2F2144419555"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.8/kotlin-stdlib-common"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../-experimental-time/index.html"><span class="token annotation builtin">ExperimentalTime</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="seconds.html"><span class="token function"><strike>seconds</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../../kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../-experimental-time/index.html"><span class="token annotation builtin">ExperimentalTime</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="seconds.html"><span class="token function"><strike>seconds</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../-experimental-time/index.html"><span class="token annotation builtin">ExperimentalTime</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="seconds.html"><span class="token function"><strike>seconds</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../../kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><p class="paragraph">Returns a <a href="../index.html">Duration</a> representing the specified <a href="seconds.html">value</a> number of seconds.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.5</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="-1275996637%2FProperties%2F2144419555" anchor-label="days" id="-1275996637%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.8/kotlin-stdlib-common" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="days.html"><span><span>days</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1275996637%2FProperties%2F2144419555"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.8/kotlin-stdlib-common"><a data-name="-1275996637%2FProperties%2F2144419555" anchor-label="days" id="-1275996637%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../../kotlin/-int/index.html">Int</a><span class="token punctuation">.</span><a href="days.html">days</a><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><a data-name="-1275996637%2FProperties%2F2144419555" anchor-label="days" id="-1275996637%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><p class="paragraph">Returns a <a href="../index.html">Duration</a> equal to this <a href="../../../kotlin/-int/index.html">Int</a> number of days.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-1275996637%2FProperties%2F2144419555" anchor-label="days" id="-1275996637%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>1.2</div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../../kotlin/-long/index.html">Long</a><span class="token punctuation">.</span><a href="days.html">days</a><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><a data-name="-1275996637%2FProperties%2F2144419555" anchor-label="days" id="-1275996637%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><p class="paragraph">Returns a <a href="../index.html">Duration</a> equal to this <a href="../../../kotlin/-long/index.html">Long</a> number of days.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-1275996637%2FProperties%2F2144419555" anchor-label="days" id="-1275996637%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>1.2</div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../../kotlin/-double/index.html">Double</a><span class="token punctuation">.</span><a href="days.html">days</a><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><a data-name="-1275996637%2FProperties%2F2144419555" anchor-label="days" id="-1275996637%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><p class="paragraph">Returns a <a href="../index.html">Duration</a> equal to this <a href="../../../kotlin/-double/index.html">Double</a> number of days.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-1275996637%2FProperties%2F2144419555" anchor-label="days" id="-1275996637%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>1.2</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="943479075%2FProperties%2F2144419555" anchor-label="hours" id="943479075%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.8/kotlin-stdlib-common" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="hours.html"><span><span>hours</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="943479075%2FProperties%2F2144419555"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.8/kotlin-stdlib-common"><a data-name="943479075%2FProperties%2F2144419555" anchor-label="hours" id="943479075%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../../kotlin/-int/index.html">Int</a><span class="token punctuation">.</span><a href="hours.html">hours</a><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><a data-name="943479075%2FProperties%2F2144419555" anchor-label="hours" id="943479075%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><p class="paragraph">Returns a <a href="../index.html">Duration</a> equal to this <a href="../../../kotlin/-int/index.html">Int</a> number of hours.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="943479075%2FProperties%2F2144419555" anchor-label="hours" id="943479075%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>1.2</div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../../kotlin/-long/index.html">Long</a><span class="token punctuation">.</span><a href="hours.html">hours</a><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><a data-name="943479075%2FProperties%2F2144419555" anchor-label="hours" id="943479075%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><p class="paragraph">Returns a <a href="../index.html">Duration</a> equal to this <a href="../../../kotlin/-long/index.html">Long</a> number of hours.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="943479075%2FProperties%2F2144419555" anchor-label="hours" id="943479075%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>1.2</div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../../kotlin/-double/index.html">Double</a><span class="token punctuation">.</span><a href="hours.html">hours</a><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><a data-name="943479075%2FProperties%2F2144419555" anchor-label="hours" id="943479075%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><p class="paragraph">Returns a <a href="../index.html">Duration</a> equal to this <a href="../../../kotlin/-double/index.html">Double</a> number of hours.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="943479075%2FProperties%2F2144419555" anchor-label="hours" id="943479075%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>1.2</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1637028895%2FProperties%2F2144419555" anchor-label="INFINITE" id="-1637028895%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.8/kotlin-stdlib-common" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-i-n-f-i-n-i-t-e.html"><span><span>INFINITE</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1637028895%2FProperties%2F2144419555"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.8/kotlin-stdlib-common"><a data-name="-1637028895%2FProperties%2F2144419555" anchor-label="INFINITE" id="-1637028895%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-i-n-f-i-n-i-t-e.html">INFINITE</a><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><a data-name="-1637028895%2FProperties%2F2144419555" anchor-label="INFINITE" id="-1637028895%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><p class="paragraph">The duration whose value is positive infinity. It is useful for representing timeouts that should never expire.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-1637028895%2FProperties%2F2144419555" anchor-label="INFINITE" id="-1637028895%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>1.2</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-559127417%2FProperties%2F2144419555" anchor-label="microseconds" id="-559127417%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.8/kotlin-stdlib-common" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="microseconds.html"><span><span>microseconds</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-559127417%2FProperties%2F2144419555"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.8/kotlin-stdlib-common"><a data-name="-559127417%2FProperties%2F2144419555" anchor-label="microseconds" id="-559127417%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../../kotlin/-int/index.html">Int</a><span class="token punctuation">.</span><a href="microseconds.html">microseconds</a><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><a data-name="-559127417%2FProperties%2F2144419555" anchor-label="microseconds" id="-559127417%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><p class="paragraph">Returns a <a href="../index.html">Duration</a> equal to this <a href="../../../kotlin/-int/index.html">Int</a> number of microseconds.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-559127417%2FProperties%2F2144419555" anchor-label="microseconds" id="-559127417%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>1.2</div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../../kotlin/-long/index.html">Long</a><span class="token punctuation">.</span><a href="microseconds.html">microseconds</a><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><a data-name="-559127417%2FProperties%2F2144419555" anchor-label="microseconds" id="-559127417%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><p class="paragraph">Returns a <a href="../index.html">Duration</a> equal to this <a href="../../../kotlin/-long/index.html">Long</a> number of microseconds.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-559127417%2FProperties%2F2144419555" anchor-label="microseconds" id="-559127417%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>1.2</div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../../kotlin/-double/index.html">Double</a><span class="token punctuation">.</span><a href="microseconds.html">microseconds</a><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><a data-name="-559127417%2FProperties%2F2144419555" anchor-label="microseconds" id="-559127417%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><p class="paragraph">Returns a <a href="../index.html">Duration</a> equal to this <a href="../../../kotlin/-double/index.html">Double</a> number of microseconds.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-559127417%2FProperties%2F2144419555" anchor-label="microseconds" id="-559127417%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>1.2</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-787395970%2FProperties%2F2144419555" anchor-label="milliseconds" id="-787395970%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.8/kotlin-stdlib-common" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="milliseconds.html"><span><span>milliseconds</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-787395970%2FProperties%2F2144419555"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.8/kotlin-stdlib-common"><a data-name="-787395970%2FProperties%2F2144419555" anchor-label="milliseconds" id="-787395970%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../../kotlin/-int/index.html">Int</a><span class="token punctuation">.</span><a href="milliseconds.html">milliseconds</a><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><a data-name="-787395970%2FProperties%2F2144419555" anchor-label="milliseconds" id="-787395970%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><p class="paragraph">Returns a <a href="../index.html">Duration</a> equal to this <a href="../../../kotlin/-int/index.html">Int</a> number of milliseconds.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-787395970%2FProperties%2F2144419555" anchor-label="milliseconds" id="-787395970%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>1.2</div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../../kotlin/-long/index.html">Long</a><span class="token punctuation">.</span><a href="milliseconds.html">milliseconds</a><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><a data-name="-787395970%2FProperties%2F2144419555" anchor-label="milliseconds" id="-787395970%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><p class="paragraph">Returns a <a href="../index.html">Duration</a> equal to this <a href="../../../kotlin/-long/index.html">Long</a> number of milliseconds.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-787395970%2FProperties%2F2144419555" anchor-label="milliseconds" id="-787395970%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>1.2</div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../../kotlin/-double/index.html">Double</a><span class="token punctuation">.</span><a href="milliseconds.html">milliseconds</a><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><a data-name="-787395970%2FProperties%2F2144419555" anchor-label="milliseconds" id="-787395970%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><p class="paragraph">Returns a <a href="../index.html">Duration</a> equal to this <a href="../../../kotlin/-double/index.html">Double</a> number of milliseconds.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-787395970%2FProperties%2F2144419555" anchor-label="milliseconds" id="-787395970%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>1.2</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1565769133%2FProperties%2F2144419555" anchor-label="minutes" id="-1565769133%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.8/kotlin-stdlib-common" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="minutes.html"><span><span>minutes</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1565769133%2FProperties%2F2144419555"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.8/kotlin-stdlib-common"><a data-name="-1565769133%2FProperties%2F2144419555" anchor-label="minutes" id="-1565769133%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../../kotlin/-int/index.html">Int</a><span class="token punctuation">.</span><a href="minutes.html">minutes</a><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><a data-name="-1565769133%2FProperties%2F2144419555" anchor-label="minutes" id="-1565769133%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><p class="paragraph">Returns a <a href="../index.html">Duration</a> equal to this <a href="../../../kotlin/-int/index.html">Int</a> number of minutes.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-1565769133%2FProperties%2F2144419555" anchor-label="minutes" id="-1565769133%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>1.2</div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../../kotlin/-long/index.html">Long</a><span class="token punctuation">.</span><a href="minutes.html">minutes</a><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><a data-name="-1565769133%2FProperties%2F2144419555" anchor-label="minutes" id="-1565769133%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><p class="paragraph">Returns a <a href="../index.html">Duration</a> equal to this <a href="../../../kotlin/-long/index.html">Long</a> number of minutes.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-1565769133%2FProperties%2F2144419555" anchor-label="minutes" id="-1565769133%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>1.2</div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../../kotlin/-double/index.html">Double</a><span class="token punctuation">.</span><a href="minutes.html">minutes</a><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><a data-name="-1565769133%2FProperties%2F2144419555" anchor-label="minutes" id="-1565769133%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><p class="paragraph">Returns a <a href="../index.html">Duration</a> equal to this <a href="../../../kotlin/-double/index.html">Double</a> number of minutes.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-1565769133%2FProperties%2F2144419555" anchor-label="minutes" id="-1565769133%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>1.2</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-585640473%2FProperties%2F2144419555" anchor-label="nanoseconds" id="-585640473%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.8/kotlin-stdlib-common" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="nanoseconds.html"><span><span>nanoseconds</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-585640473%2FProperties%2F2144419555"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.8/kotlin-stdlib-common"><a data-name="-585640473%2FProperties%2F2144419555" anchor-label="nanoseconds" id="-585640473%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../../kotlin/-int/index.html">Int</a><span class="token punctuation">.</span><a href="nanoseconds.html">nanoseconds</a><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><a data-name="-585640473%2FProperties%2F2144419555" anchor-label="nanoseconds" id="-585640473%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><p class="paragraph">Returns a <a href="../index.html">Duration</a> equal to this <a href="../../../kotlin/-int/index.html">Int</a> number of nanoseconds.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-585640473%2FProperties%2F2144419555" anchor-label="nanoseconds" id="-585640473%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>1.2</div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../../kotlin/-long/index.html">Long</a><span class="token punctuation">.</span><a href="nanoseconds.html">nanoseconds</a><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><a data-name="-585640473%2FProperties%2F2144419555" anchor-label="nanoseconds" id="-585640473%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><p class="paragraph">Returns a <a href="../index.html">Duration</a> equal to this <a href="../../../kotlin/-long/index.html">Long</a> number of nanoseconds.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-585640473%2FProperties%2F2144419555" anchor-label="nanoseconds" id="-585640473%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>1.2</div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../../kotlin/-double/index.html">Double</a><span class="token punctuation">.</span><a href="nanoseconds.html">nanoseconds</a><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><a data-name="-585640473%2FProperties%2F2144419555" anchor-label="nanoseconds" id="-585640473%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><p class="paragraph">Returns a <a href="../index.html">Duration</a> equal to this <a href="../../../kotlin/-double/index.html">Double</a> number of nanoseconds.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-585640473%2FProperties%2F2144419555" anchor-label="nanoseconds" id="-585640473%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>1.2</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-878758733%2FProperties%2F2144419555" anchor-label="seconds" id="-878758733%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.8/kotlin-stdlib-common" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="seconds.html"><span><span>seconds</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-878758733%2FProperties%2F2144419555"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.8/kotlin-stdlib-common"><a data-name="-878758733%2FProperties%2F2144419555" anchor-label="seconds" id="-878758733%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../../kotlin/-int/index.html">Int</a><span class="token punctuation">.</span><a href="seconds.html">seconds</a><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><a data-name="-878758733%2FProperties%2F2144419555" anchor-label="seconds" id="-878758733%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><p class="paragraph">Returns a <a href="../index.html">Duration</a> equal to this <a href="../../../kotlin/-int/index.html">Int</a> number of seconds.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-878758733%2FProperties%2F2144419555" anchor-label="seconds" id="-878758733%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>1.2</div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../../kotlin/-long/index.html">Long</a><span class="token punctuation">.</span><a href="seconds.html">seconds</a><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><a data-name="-878758733%2FProperties%2F2144419555" anchor-label="seconds" id="-878758733%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><p class="paragraph">Returns a <a href="../index.html">Duration</a> equal to this <a href="../../../kotlin/-long/index.html">Long</a> number of seconds.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-878758733%2FProperties%2F2144419555" anchor-label="seconds" id="-878758733%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>1.2</div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../../kotlin/-double/index.html">Double</a><span class="token punctuation">.</span><a href="seconds.html">seconds</a><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><a data-name="-878758733%2FProperties%2F2144419555" anchor-label="seconds" id="-878758733%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><p class="paragraph">Returns a <a href="../index.html">Duration</a> equal to this <a href="../../../kotlin/-double/index.html">Double</a> number of seconds.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-878758733%2FProperties%2F2144419555" anchor-label="seconds" id="-878758733%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>1.2</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-522356275%2FProperties%2F2144419555" anchor-label="ZERO" id="-522356275%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.8/kotlin-stdlib-common" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-z-e-r-o.html"><span><span>ZERO</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-522356275%2FProperties%2F2144419555"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.8/kotlin-stdlib-common"><a data-name="-522356275%2FProperties%2F2144419555" anchor-label="ZERO" id="-522356275%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-z-e-r-o.html">ZERO</a><span class="token operator">: </span><a href="../index.html">Duration</a></div><div class="brief "><a data-name="-522356275%2FProperties%2F2144419555" anchor-label="ZERO" id="-522356275%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a><p class="paragraph">The duration equal to exactly 0 seconds.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-522356275%2FProperties%2F2144419555" anchor-label="ZERO" id="-522356275%2FProperties%2F2144419555" data-filterable-set=":stdlib_1.8/kotlin-stdlib-common"></a>1.2</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+

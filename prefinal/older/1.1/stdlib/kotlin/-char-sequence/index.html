@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>CharSequence</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+        <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../../styles/multimodule.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/version-navigation.js" async></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>stdlib</span>
+            </a>
+    </div>
+    <div>
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;stdlib/kotlin/-char-sequence/index.html&quot;}"><div class="versions-dropdown">
+  <div class="versions-dropdown-button">1.1</div>
+  <div class="versions-dropdown-data"><a href="../../../../../stdlib/kotlin/-char-sequence/index.html">1.8</a><a href="../../../../1.7/stdlib/kotlin/-char-sequence/index.html">1.7</a><a href="../../../../1.6/stdlib/kotlin/-char-sequence/index.html">1.6</a><a href="../../../../1.5/stdlib/kotlin/-char-sequence/index.html">1.5</a><a href="../../../../1.4/stdlib/kotlin/-char-sequence/index.html">1.4</a><a href="../../../../1.3/stdlib/kotlin/-char-sequence/index.html">1.3</a><a href="../../../../1.2/stdlib/kotlin/-char-sequence/index.html">1.2</a><a href="index.html">1.1</a><a href="../../../../1.0/stdlib/kotlin/-char-sequence/index.html">1.0</a></div>
+</div>
+</dokka-template-command>    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":stdlib_1.1/kotlin-stdlib-java-common">JVM</button>
+                <button class="platform-tag platform-selector js-like" data-active="" data-filter=":stdlib_1.1/kotlin-stdlib-js">JS</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="stdlib::kotlin/CharSequence///PointingToDeclaration//122488969">
+  <div class="breadcrumbs"><a href="../../../index.html">stdlib</a><span class="delimiter">/</span><a href="../index.html">kotlin</a><span class="delimiter">/</span><span class="current">CharSequence</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Char</span><wbr><span><span>Sequence</span></span></h1>
+    <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+      <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.1/kotlin-stdlib-java-common">JVM</button><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js" data-toggle=":stdlib_1.1/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.1/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">CharSequence</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/core/builtins/native/kotlin/CharSequence.kt#L22">source</a>)</span></span></div><p class="paragraph">Represents a readable sequence of <a href="../-char/index.html">Char</a> values.</p><span class="kdoc-tag"><h4 class="">Since Kotlin</h4>1.0</span></div><div class="content sourceset-dependent-content" data-togglable=":stdlib_1.1/kotlin-stdlib-js"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">CharSequence</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/core/builtins/native/kotlin/CharSequence.kt#L22">source</a>)</span></span></div><p class="paragraph">Represents a readable sequence of <a href="../-char/index.html">Char</a> values.</p><span class="kdoc-tag"><h4 class="">Since Kotlin</h4>1.1</span></div>    </div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Extensions">Extensions</button><button class="section-tab" data-togglable="Inheritors">Inheritors</button></div>
+    <div class="tabs-section-body">
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="1785924527%2FFunctions%2F122488969" anchor-label="get" id="1785924527%2FFunctions%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get.html"><span><span>get</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1785924527%2FFunctions%2F122488969"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.1/kotlin-stdlib-java-common">JVM</button><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js" data-toggle=":stdlib_1.1/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.1/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="get.html"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">index<span class="token operator">: </span><a href="../-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-char/index.html">Char</a></div><div class="brief "><p class="paragraph">Returns the character at the specified <a href="get.html">index</a> in this character sequence.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div><div class="content sourceset-dependent-content" data-togglable=":stdlib_1.1/kotlin-stdlib-js"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="get.html"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">index<span class="token operator">: </span><a href="../-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-char/index.html">Char</a></div><div class="brief "><p class="paragraph">Returns the character at the specified <a href="get.html">index</a> in this character sequence.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="382592985%2FFunctions%2F122488969" anchor-label="subSequence" id="382592985%2FFunctions%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="sub-sequence.html"><span>sub</span><wbr><span><span>Sequence</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="382592985%2FFunctions%2F122488969"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.1/kotlin-stdlib-java-common">JVM</button><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js" data-toggle=":stdlib_1.1/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.1/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="sub-sequence.html"><span class="token function">subSequence</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">startIndex<span class="token operator">: </span><a href="../-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">endIndex<span class="token operator">: </span><a href="../-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">CharSequence</a></div><div class="brief "><p class="paragraph">Returns a new character sequence that is a subsequence of this character sequence, starting at the specified <a href="sub-sequence.html">startIndex</a> and ending right before the specified <a href="sub-sequence.html">endIndex</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div><div class="content sourceset-dependent-content" data-togglable=":stdlib_1.1/kotlin-stdlib-js"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="sub-sequence.html"><span class="token function">subSequence</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">startIndex<span class="token operator">: </span><a href="../-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">endIndex<span class="token operator">: </span><a href="../-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">CharSequence</a></div><div class="brief "><p class="paragraph">Returns a new character sequence that is a subsequence of this character sequence, starting at the specified <a href="sub-sequence.html">startIndex</a> and ending right before the specified <a href="sub-sequence.html">endIndex</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="-1310864083%2FProperties%2F122488969" anchor-label="length" id="-1310864083%2FProperties%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="length.html"><span><span>length</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1310864083%2FProperties%2F122488969"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.1/kotlin-stdlib-java-common">JVM</button><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js" data-toggle=":stdlib_1.1/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.1/kotlin-stdlib-java-common"><a data-name="-1310864083%2FProperties%2F122488969" anchor-label="length" id="-1310864083%2FProperties%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="length.html">length</a><span class="token operator">: </span><a href="../-int/index.html">Int</a></div><div class="brief "><a data-name="-1310864083%2FProperties%2F-436929161" anchor-label="length" id="-1310864083%2FProperties%2F-436929161" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"></a><p class="paragraph">Returns the length of this character sequence.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-1310864083%2FProperties%2F-436929161" anchor-label="length" id="-1310864083%2FProperties%2F-436929161" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"></a>1.0</div></div><div class="content sourceset-dependent-content" data-togglable=":stdlib_1.1/kotlin-stdlib-js"><a data-name="-1310864083%2FProperties%2F122488969" anchor-label="length" id="-1310864083%2FProperties%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="length.html">length</a><span class="token operator">: </span><a href="../-int/index.html">Int</a></div><div class="brief "><a data-name="-1310864083%2FProperties%2F-738287586" anchor-label="length" id="-1310864083%2FProperties%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a><p class="paragraph">Returns the length of this character sequence.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-1310864083%2FProperties%2F-738287586" anchor-label="length" id="-1310864083%2FProperties%2F-738287586" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Inheritors</h2>
+      <div class="table" data-togglable="Inheritors"><a data-name="992936466%2FInheritors%2F122488969" anchor-label="String" id="992936466%2FInheritors%2F122488969" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common :stdlib_1.1/kotlin-stdlib-js">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-string/index.html">String</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="992936466%2FInheritors%2F122488969"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <h2 class="tabbedcontent">Extensions</h2>
+      <div class="table" data-togglable="Extensions"><a data-name="-1489678099%2FExtensions%2F-436929161" anchor-label="max" id="-1489678099%2FExtensions%2F-436929161" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin.text/max.html"><span><span>max</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1489678099%2FExtensions%2F-436929161"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.1/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.1/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">CharSequence</a><span class="token punctuation">.</span><a href="../../kotlin.text/max.html"><span class="token function"><strike>max</strike></span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-char/index.html">Char</a><span class="token operator">?</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">CharSequence</a><span class="token punctuation">.</span><a href="../../kotlin.text/max.html"><span class="token function"><strike>max</strike></span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-char/index.html">Char</a><span class="token operator">?</span></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="2070538054%2FExtensions%2F-436929161" anchor-label="maxBy" id="2070538054%2FExtensions%2F-436929161" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin.text/max-by.html"><span>max</span><wbr><span><span>By</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2070538054%2FExtensions%2F-436929161"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.1/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.1/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlin.text/max-by.html">R</a><span class="token operator"> : </span><a href="../-comparable/index.html">Comparable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlin.text/max-by.html">R</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><a href="index.html">CharSequence</a><span class="token punctuation">.</span><a href="../../kotlin.text/max-by.html"><span class="token function"><strike>maxBy</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">selector<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="../-char/index.html">Char</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../../kotlin.text/max-by.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-char/index.html">Char</a><span class="token operator">?</span></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlin.text/max-by.html">R</a><span class="token operator"> : </span><a href="../-comparable/index.html">Comparable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlin.text/max-by.html">R</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><a href="index.html">CharSequence</a><span class="token punctuation">.</span><a href="../../kotlin.text/max-by.html"><span class="token function"><strike>maxBy</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">selector<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="../-char/index.html">Char</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../../kotlin.text/max-by.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-char/index.html">Char</a><span class="token operator">?</span></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1492384816%2FExtensions%2F-436929161" anchor-label="maxWith" id="1492384816%2FExtensions%2F-436929161" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin.text/max-with.html"><span>max</span><wbr><span><span>With</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1492384816%2FExtensions%2F-436929161"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.1/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.1/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">CharSequence</a><span class="token punctuation">.</span><a href="../../kotlin.text/max-with.html"><span class="token function"><strike>maxWith</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">comparator<span class="token operator">: </span><a href="../index.html#2125976557%2FClasslikes%2F-436929161">Comparator</a><span class="token operator">&lt;</span><span class="token keyword">in </span><a href="../-char/index.html">Char</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-char/index.html">Char</a><span class="token operator">?</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">CharSequence</a><span class="token punctuation">.</span><a href="../../kotlin.text/max-with.html"><span class="token function"><strike>maxWith</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">comparator<span class="token operator">: </span><a href="../index.html#2125976557%2FClasslikes%2F-436929161">Comparator</a><span class="token operator">&lt;</span><span class="token keyword">in </span><a href="../-char/index.html">Char</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-char/index.html">Char</a><span class="token operator">?</span></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1755981019%2FExtensions%2F-436929161" anchor-label="min" id="1755981019%2FExtensions%2F-436929161" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin.text/min.html"><span><span>min</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1755981019%2FExtensions%2F-436929161"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.1/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.1/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">CharSequence</a><span class="token punctuation">.</span><a href="../../kotlin.text/min.html"><span class="token function"><strike>min</strike></span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-char/index.html">Char</a><span class="token operator">?</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">CharSequence</a><span class="token punctuation">.</span><a href="../../kotlin.text/min.html"><span class="token function"><strike>min</strike></span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-char/index.html">Char</a><span class="token operator">?</span></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-984318668%2FExtensions%2F-436929161" anchor-label="minBy" id="-984318668%2FExtensions%2F-436929161" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin.text/min-by.html"><span>min</span><wbr><span><span>By</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-984318668%2FExtensions%2F-436929161"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.1/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.1/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlin.text/min-by.html">R</a><span class="token operator"> : </span><a href="../-comparable/index.html">Comparable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlin.text/min-by.html">R</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><a href="index.html">CharSequence</a><span class="token punctuation">.</span><a href="../../kotlin.text/min-by.html"><span class="token function"><strike>minBy</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">selector<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="../-char/index.html">Char</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../../kotlin.text/min-by.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-char/index.html">Char</a><span class="token operator">?</span></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlin.text/min-by.html">R</a><span class="token operator"> : </span><a href="../-comparable/index.html">Comparable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlin.text/min-by.html">R</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><a href="index.html">CharSequence</a><span class="token punctuation">.</span><a href="../../kotlin.text/min-by.html"><span class="token function"><strike>minBy</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">selector<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="../-char/index.html">Char</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../../kotlin.text/min-by.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-char/index.html">Char</a><span class="token operator">?</span></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1041980158%2FExtensions%2F-436929161" anchor-label="minWith" id="-1041980158%2FExtensions%2F-436929161" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin.text/min-with.html"><span>min</span><wbr><span><span>With</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1041980158%2FExtensions%2F-436929161"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.1/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.1/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">CharSequence</a><span class="token punctuation">.</span><a href="../../kotlin.text/min-with.html"><span class="token function"><strike>minWith</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">comparator<span class="token operator">: </span><a href="../index.html#2125976557%2FClasslikes%2F-436929161">Comparator</a><span class="token operator">&lt;</span><span class="token keyword">in </span><a href="../-char/index.html">Char</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-char/index.html">Char</a><span class="token operator">?</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">CharSequence</a><span class="token punctuation">.</span><a href="../../kotlin.text/min-with.html"><span class="token function"><strike>minWith</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">comparator<span class="token operator">: </span><a href="../index.html#2125976557%2FClasslikes%2F-436929161">Comparator</a><span class="token operator">&lt;</span><span class="token keyword">in </span><a href="../-char/index.html">Char</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-char/index.html">Char</a><span class="token operator">?</span></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1397281063%2FExtensions%2F-436929161" anchor-label="split" id="1397281063%2FExtensions%2F-436929161" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin.text/split.html"><span><span>split</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1397281063%2FExtensions%2F-436929161"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.1/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.1/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">CharSequence</a><span class="token punctuation">.</span><a href="../../kotlin.text/split.html"><span class="token function">split</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">regex<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html">Pattern</a><span class="token punctuation">, </span></span><span class="parameter ">limit<span class="token operator">: </span><a href="../-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-string/index.html">String</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">CharSequence</a><span class="token punctuation">.</span><a href="../../kotlin.text/split.html"><span class="token function">split</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">regex<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html">Pattern</a><span class="token punctuation">, </span></span><span class="parameter ">limit<span class="token operator">: </span><a href="../-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-string/index.html">String</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Splits this char sequence around matches of the given regular expression.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="379215027%2FExtensions%2F-436929161" anchor-label="toSortedSet" id="379215027%2FExtensions%2F-436929161" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin.text/to-sorted-set.html"><span>to</span><wbr><span>Sorted</span><wbr><span><span>Set</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="379215027%2FExtensions%2F-436929161"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.1/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.1/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">CharSequence</a><span class="token punctuation">.</span><a href="../../kotlin.text/to-sorted-set.html"><span class="token function">toSortedSet</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html">SortedSet</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-char/index.html">Char</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">CharSequence</a><span class="token punctuation">.</span><a href="../../kotlin.text/to-sorted-set.html"><span class="token function">toSortedSet</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html">SortedSet</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-char/index.html">Char</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns a new <a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html">SortedSet</a> of all characters.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+
+</body></html>
+
+
