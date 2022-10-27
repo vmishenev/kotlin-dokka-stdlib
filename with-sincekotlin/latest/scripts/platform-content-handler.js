@@ -12,6 +12,21 @@ const samplesDarkThemeName = 'darcula'
 const samplesLightThemeName = 'idea'
 
 window.addEventListener('load', () => {
+    initContent()
+    initHidingLeftNavigation()
+    topNavbarOffset = document.getElementById('navigation-wrapper')
+    darkModeSwitch()
+    document.querySelectorAll(".versions-dropdown a")
+        .forEach(elem => elem.addEventListener('click', (event) => selectVersion(event, elem)))
+
+document.addEventListener('updateContentPage', () => {
+initContent()
+darkModeSwitch()
+ })
+
+})
+
+const initContent = (event, elem) => {
     document.querySelectorAll("div[data-platform-hinted]")
         .forEach(elem => elem.addEventListener('click', (event) => togglePlatformDependent(event, elem)))
     document.querySelectorAll("div[tabs-section]")
@@ -23,10 +38,52 @@ window.addEventListener('load', () => {
     }
     initTabs()
     handleAnchor()
-    initHidingLeftNavigation()
-    topNavbarOffset = document.getElementById('navigation-wrapper')
-    darkModeSwitch()
+}
+window.addEventListener('load', () => {
+    document.querySelectorAll(".versions-dropdown a")
+            .forEach(elem => elem.addEventListener('click', (event) => selectVersion(event, elem)))
 })
+
+const getLastAvailableVersion = () => {
+    const versions = document.querySelector(".versions-dropdown-data").children
+    for (let i = versions.length - 1; i >= 0; i--) {
+        let element = versions[i]
+        if(el.getAttribute("href").indexOf("not-found-version.htm") == -1 ) {
+            return element
+        }
+    }
+}
+
+const selectVersion = (event, elem) => {
+    if(elem.getAttribute("href").indexOf("not-found-version.htm") != -1) {
+        event.preventDefault()
+        event.stopPropagation()
+        event.stopImmediatePropagation()
+        document.querySelector(".versions-dropdown-button").textContent = elem.textContent
+
+                const content = document.getElementById("main")
+                //content.style.display = "none";
+
+
+        let lastVersion = getLastAvailableVersion()
+        const appended = document.createElement("iframe")
+        appended.src = elem.getAttribute("href")
+        appended.frameBorder = 0
+        appended.height="100%"
+        appended.onload = function() {
+            const messageBox = appended.contentWindow.document.querySelector(".sub-title")
+            messageBox.textContent="The declaration is unavaibaile in " +
+            elem.textContent + " version, but this exists in "
+            let link = appended.contentWindow.document.createElement("a")
+            link.href = lastVersion.href
+            link.textContent =  lastVersion.textContent
+            link.target = "_parent"
+            messageBox.append(link)
+        };
+        content.textContent = ''
+        content.prepend(appended)
+    }
+}
 
 const darkModeSwitch = () => {
     const localStorageKey = "dokka-dark-mode"
@@ -124,6 +181,7 @@ function scrollToElementInContent(element) {
 
 
 function handleAnchor() {
+console.log("handle anchor")
     if (highlightedAnchor) {
         highlightedAnchor.classList.remove('anchor-highlight')
         highlightedAnchor = null;
