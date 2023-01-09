@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>uncaughtExceptions</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../index.html">
+<span>kotlinx.coroutines</span>            </a>    </div>
+    <div>1.6.4-SNAPSHOT
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":kotlinx-coroutines-test:dokkaHtmlPartial/jvmMain">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="kotlinx-coroutines-test::kotlinx.coroutines.test//uncaughtExceptions/kotlinx.coroutines.test.TestCoroutineScope#/PointingToDeclaration//-1989735873">
+  <div class="breadcrumbs"><a href="../index.html">kotlinx-coroutines-test</a><span class="delimiter">/</span><a href="index.html">kotlinx.coroutines.test</a><span class="delimiter">/</span><span class="current">uncaughtExceptions</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>uncaught</span><wbr><span><span>Exceptions</span></span></h1>
+  </div>
+  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":kotlinx-coroutines-test:dokkaHtmlPartial/jvmMain" data-filterable-set=":kotlinx-coroutines-test:dokkaHtmlPartial/jvmMain" data-active="" data-toggle=":kotlinx-coroutines-test:dokkaHtmlPartial/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-coroutines-test:dokkaHtmlPartial/jvmMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-test-coroutine-scope/index.html">TestCoroutineScope</a><span class="token punctuation">.</span><a href="uncaught-exceptions.html"><strike>uncaughtExceptions</strike></a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token operator">&gt;</span></div><div class="deprecation-content"><h3 class="">Deprecated</h3><p class="paragraph">This list is only populated if `UncaughtExceptionCaptor` is in the test context, and so can be easily misused. It is only present for backward compatibility and will be removed in the subsequent releases. If you need to check the list of exceptions, please consider creating your own `CoroutineExceptionHandler`.</p></div><p class="paragraph">List of uncaught coroutine exceptions, for backward compatibility.</p><p class="paragraph">The returned list is a copy of the exceptions caught during execution. During <a href="-test-coroutine-scope/cleanup-test-coroutines.html">TestCoroutineScope.cleanupTestCoroutines</a> the first element of this list is rethrown if it is not empty.</p><p class="paragraph">Exceptions are only collected in this list if the <a href="-uncaught-exception-captor/index.html">UncaughtExceptionCaptor</a> is in the test context.</p></div>  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+
