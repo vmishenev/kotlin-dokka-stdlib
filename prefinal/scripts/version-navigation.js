@@ -16,8 +16,6 @@ const getLastAvailableVersion = () => {
 const selectVersion = (event, elem) => {
     if(elem.classList.contains("unavailable-version")) {
         event.preventDefault()
-        event.stopPropagation()
-        event.stopImmediatePropagation()
         document.querySelector(".versions-dropdown-button").textContent = elem.textContent
 
         let lastVersion = getLastAvailableVersion()

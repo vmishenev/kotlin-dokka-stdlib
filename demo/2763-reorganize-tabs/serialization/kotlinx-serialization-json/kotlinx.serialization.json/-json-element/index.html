@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>JsonElement</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../index.html">
+<span>kotlinx-serialization</span>            </a>    </div>
+    <div>1.5.0-SNAPSHOT
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain">common</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="kotlinx-serialization-json::kotlinx.serialization.json/JsonElement///PointingToDeclaration//-702380584">
+  <div class="breadcrumbs"><a href="../../index.html">kotlinx-serialization-json</a><span class="delimiter">/</span><a href="../index.html">kotlinx.serialization.json</a><span class="delimiter">/</span><span class="current">JsonElement</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Json</span><wbr><span><span>Element</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../../kotlinx-serialization-core/kotlinx.serialization/-serializable/index.html"><span class="token annotation builtin">Serializable</span></a><span class="token punctuation">(</span><span>with<span class="token operator"> = </span><a href="../../../kotlinx-serialization-json/kotlinx.serialization.json/-json-element-serializer/index.html">JsonElementSerializer::class</a></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">sealed </span><span class="token keyword">class </span><a href="index.html">JsonElement</a></div><p class="paragraph">Class representing single JSON element. Can be <a href="../-json-primitive/index.html">JsonPrimitive</a>, <a href="../-json-array/index.html">JsonArray</a> or <a href="../-json-object/index.html">JsonObject</a>.</p><p class="paragraph"><a href="../../../kotlinx-serialization-json/kotlinx.serialization.json/-json-element/to-string.html">JsonElement.toString</a> properly prints JSON tree as valid JSON, taking into account quoted values and primitives. Whole hierarchy is serializable, but only when used with <a href="../-json/index.html">Json</a> as <a href="index.html">JsonElement</a> is purely JSON-specific structure which has a meaningful schemaless semantics only for JSON.</p><p class="paragraph">The whole hierarchy is <a href="../../../kotlinx-serialization-core/kotlinx.serialization/-serializable/index.html">serializable</a> only by <a href="../-json/index.html">Json</a> format.</p><h4 class="">Inheritors</h4><div class="table" data-togglable="Inheritors"><div class="table-row" data-togglable="Inheritors" data-filterable-current=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-json-primitive/index.html">JsonPrimitive</a></div></span></div><div></div></div></div><div class="table-row" data-togglable="Inheritors" data-filterable-current=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-json-object/index.html">JsonObject</a></div></span></div><div></div></div></div><div class="table-row" data-togglable="Inheritors" data-filterable-current=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-json-array/index.html">JsonArray</a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors,Types,Functions,Inherited Functions,Properties,Inherited Properties">Members</button><button class="section-tab" data-togglable="Constructors,Types,Functions,Inherited Functions,Properties,Inherited Properties,Extensions">Members + Extensions</button></div>
+    <div class="tabs-section-body">
+      <h2 class="" data-togglable="Properties">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="1421564108%2FProperties%2F-702380584" anchor-label="jsonArray" id="1421564108%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../json-array.html"><span>json</span><wbr><span><span>Array</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1421564108%2FProperties%2F-702380584"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Extensions"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"><a data-name="1421564108%2FProperties%2F-702380584" anchor-label="jsonArray" id="1421564108%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="index.html">JsonElement</a><span class="token punctuation">.</span><a href="../json-array.html">jsonArray</a><span class="token operator">: </span><a href="../-json-array/index.html">JsonArray</a></div><div class="brief "><a data-name="1421564108%2FProperties%2F-702380584" anchor-label="jsonArray" id="1421564108%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Convenience method to get current element as <a href="../-json-array/index.html">JsonArray</a></p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="909370932%2FProperties%2F-702380584" anchor-label="jsonNull" id="909370932%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../json-null.html"><span>json</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="909370932%2FProperties%2F-702380584"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Extensions"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"><a data-name="909370932%2FProperties%2F-702380584" anchor-label="jsonNull" id="909370932%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="index.html">JsonElement</a><span class="token punctuation">.</span><a href="../json-null.html">jsonNull</a><span class="token operator">: </span><a href="../-json-null/index.html">JsonNull</a></div><div class="brief "><a data-name="909370932%2FProperties%2F-702380584" anchor-label="jsonNull" id="909370932%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Convenience method to get current element as <a href="../-json-null/index.html">JsonNull</a></p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1980262076%2FProperties%2F-702380584" anchor-label="jsonObject" id="1980262076%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../json-object.html"><span>json</span><wbr><span><span>Object</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1980262076%2FProperties%2F-702380584"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Extensions"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"><a data-name="1980262076%2FProperties%2F-702380584" anchor-label="jsonObject" id="1980262076%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="index.html">JsonElement</a><span class="token punctuation">.</span><a href="../json-object.html">jsonObject</a><span class="token operator">: </span><a href="../-json-object/index.html">JsonObject</a></div><div class="brief "><a data-name="1980262076%2FProperties%2F-702380584" anchor-label="jsonObject" id="1980262076%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Convenience method to get current element as <a href="../-json-object/index.html">JsonObject</a></p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1042864638%2FProperties%2F-702380584" anchor-label="jsonPrimitive" id="1042864638%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../json-primitive.html"><span>json</span><wbr><span><span>Primitive</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1042864638%2FProperties%2F-702380584"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Extensions"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"><a data-name="1042864638%2FProperties%2F-702380584" anchor-label="jsonPrimitive" id="1042864638%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="index.html">JsonElement</a><span class="token punctuation">.</span><a href="../json-primitive.html">jsonPrimitive</a><span class="token operator">: </span><a href="../-json-primitive/index.html">JsonPrimitive</a></div><div class="brief "><a data-name="1042864638%2FProperties%2F-702380584" anchor-label="jsonPrimitive" id="1042864638%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Convenience method to get current element as <a href="../-json-primitive/index.html">JsonPrimitive</a></p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+

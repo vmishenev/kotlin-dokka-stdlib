@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>JsonBuilder</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../index.html">
+<span>kotlinx-serialization</span>            </a>    </div>
+    <div>1.5.0-SNAPSHOT
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain">common</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="kotlinx-serialization-json::kotlinx.serialization.json/JsonBuilder///PointingToDeclaration//-702380584">
+  <div class="breadcrumbs"><a href="../../index.html">kotlinx-serialization-json</a><span class="delimiter">/</span><a href="../index.html">kotlinx.serialization.json</a><span class="delimiter">/</span><span class="current">JsonBuilder</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Json</span><wbr><span><span>Builder</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">JsonBuilder</a></div><p class="paragraph">Builder of the <a href="../-json/index.html">Json</a> instance provided by <code class="lang-kotlin">Json { ... }</code> factory function.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors,Types,Functions,Inherited Functions,Properties,Inherited Properties">Members</button></div>
+    <div class="tabs-section-body">
+      <h2 class="" data-togglable="Properties">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="1680151471%2FProperties%2F-702380584" anchor-label="allowSpecialFloatingPointValues" id="1680151471%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="allow-special-floating-point-values.html"><span>allow</span><wbr><span>Special</span><wbr><span>Floating</span><wbr><span>Point</span><wbr><span><span>Values</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1680151471%2FProperties%2F-702380584"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"><a data-name="1680151471%2FProperties%2F-702380584" anchor-label="allowSpecialFloatingPointValues" id="1680151471%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="allow-special-floating-point-values.html">allowSpecialFloatingPointValues</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><a data-name="1680151471%2FProperties%2F-702380584" anchor-label="allowSpecialFloatingPointValues" id="1680151471%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Removes JSON specification restriction on special floating-point values such as <code class="lang-kotlin">NaN</code> and <code class="lang-kotlin">Infinity</code> and enables their serialization and deserialization. When enabling it, please ensure that the receiving party will be able to encode and decode these special values. <code class="lang-kotlin">false</code> by default.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1072906777%2FProperties%2F-702380584" anchor-label="allowStructuredMapKeys" id="1072906777%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="allow-structured-map-keys.html"><span>allow</span><wbr><span>Structured</span><wbr><span>Map</span><wbr><span><span>Keys</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1072906777%2FProperties%2F-702380584"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"><a data-name="1072906777%2FProperties%2F-702380584" anchor-label="allowStructuredMapKeys" id="1072906777%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="allow-structured-map-keys.html">allowStructuredMapKeys</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><a data-name="1072906777%2FProperties%2F-702380584" anchor-label="allowStructuredMapKeys" id="1072906777%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Enables structured objects to be serialized as map keys by changing serialized form of the map from JSON object (key-value pairs) to flat array like <code class="lang-kotlin">[k1, v1, k2, v2]</code>. <code class="lang-kotlin">false</code> by default.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="85749099%2FProperties%2F-702380584" anchor-label="classDiscriminator" id="85749099%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="class-discriminator.html"><span>class</span><wbr><span><span>Discriminator</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="85749099%2FProperties%2F-702380584"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"><a data-name="85749099%2FProperties%2F-702380584" anchor-label="classDiscriminator" id="85749099%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="class-discriminator.html">classDiscriminator</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><a data-name="85749099%2FProperties%2F-702380584" anchor-label="classDiscriminator" id="85749099%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Name of the class descriptor property for polymorphic serialization. "type" by default.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1569212186%2FProperties%2F-702380584" anchor-label="coerceInputValues" id="1569212186%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="coerce-input-values.html"><span>coerce</span><wbr><span>Input</span><wbr><span><span>Values</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1569212186%2FProperties%2F-702380584"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"><a data-name="1569212186%2FProperties%2F-702380584" anchor-label="coerceInputValues" id="1569212186%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="coerce-input-values.html">coerceInputValues</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><a data-name="1569212186%2FProperties%2F-702380584" anchor-label="coerceInputValues" id="1569212186%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Enables coercing incorrect JSON values to the default property value in the following cases:</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-824687513%2FProperties%2F-702380584" anchor-label="encodeDefaults" id="-824687513%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="encode-defaults.html"><span>encode</span><wbr><span><span>Defaults</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-824687513%2FProperties%2F-702380584"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"><a data-name="-824687513%2FProperties%2F-702380584" anchor-label="encodeDefaults" id="-824687513%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="encode-defaults.html">encodeDefaults</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><a data-name="-824687513%2FProperties%2F-702380584" anchor-label="encodeDefaults" id="-824687513%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Specifies whether default values of Kotlin properties should be encoded. <code class="lang-kotlin">false</code> by default.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="138022995%2FProperties%2F-702380584" anchor-label="explicitNulls" id="138022995%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="explicit-nulls.html"><span>explicit</span><wbr><span><span>Nulls</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="138022995%2FProperties%2F-702380584"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"><a data-name="138022995%2FProperties%2F-702380584" anchor-label="explicitNulls" id="138022995%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../../kotlinx-serialization-core/kotlinx.serialization/-experimental-serialization-api/index.html"><span class="token annotation builtin">ExperimentalSerializationApi</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="explicit-nulls.html">explicitNulls</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><a data-name="138022995%2FProperties%2F-702380584" anchor-label="explicitNulls" id="138022995%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Specifies whether <code class="lang-kotlin">null</code> values should be encoded for nullable properties and must be present in JSON object during decoding.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1979234913%2FProperties%2F-702380584" anchor-label="ignoreUnknownKeys" id="-1979234913%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="ignore-unknown-keys.html"><span>ignore</span><wbr><span>Unknown</span><wbr><span><span>Keys</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1979234913%2FProperties%2F-702380584"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"><a data-name="-1979234913%2FProperties%2F-702380584" anchor-label="ignoreUnknownKeys" id="-1979234913%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="ignore-unknown-keys.html">ignoreUnknownKeys</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><a data-name="-1979234913%2FProperties%2F-702380584" anchor-label="ignoreUnknownKeys" id="-1979234913%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Specifies whether encounters of unknown properties in the input JSON should be ignored instead of throwing <a href="../../../kotlinx-serialization-core/kotlinx.serialization/-serialization-exception/index.html">SerializationException</a>. <code class="lang-kotlin">false</code> by default.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1998671870%2FProperties%2F-702380584" anchor-label="isLenient" id="1998671870%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="is-lenient.html"><span>is</span><wbr><span><span>Lenient</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1998671870%2FProperties%2F-702380584"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"><a data-name="1998671870%2FProperties%2F-702380584" anchor-label="isLenient" id="1998671870%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="is-lenient.html">isLenient</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><a data-name="1998671870%2FProperties%2F-702380584" anchor-label="isLenient" id="1998671870%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Removes JSON specification restriction (RFC-4627) and makes parser more liberal to the malformed input. In lenient mode quoted boolean literals, and unquoted string literals are allowed.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1625405740%2FProperties%2F-702380584" anchor-label="prettyPrint" id="-1625405740%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="pretty-print.html"><span>pretty</span><wbr><span><span>Print</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1625405740%2FProperties%2F-702380584"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"><a data-name="-1625405740%2FProperties%2F-702380584" anchor-label="prettyPrint" id="-1625405740%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="pretty-print.html">prettyPrint</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><a data-name="-1625405740%2FProperties%2F-702380584" anchor-label="prettyPrint" id="-1625405740%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Specifies whether resulting JSON should be pretty-printed. <code class="lang-kotlin">false</code> by default.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1217804872%2FProperties%2F-702380584" anchor-label="prettyPrintIndent" id="1217804872%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="pretty-print-indent.html"><span>pretty</span><wbr><span>Print</span><wbr><span><span>Indent</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1217804872%2FProperties%2F-702380584"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"><a data-name="1217804872%2FProperties%2F-702380584" anchor-label="prettyPrintIndent" id="1217804872%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../../kotlinx-serialization-core/kotlinx.serialization/-experimental-serialization-api/index.html"><span class="token annotation builtin">ExperimentalSerializationApi</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="pretty-print-indent.html">prettyPrintIndent</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><a data-name="1217804872%2FProperties%2F-702380584" anchor-label="prettyPrintIndent" id="1217804872%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Specifies indent string to use with <a href="pretty-print.html">prettyPrint</a> mode 4 spaces by default. Experimentality note: this API is experimental because it is not clear whether this option has compelling use-cases.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1441052162%2FProperties%2F-702380584" anchor-label="serializersModule" id="-1441052162%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="serializers-module.html"><span>serializers</span><wbr><span><span>Module</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1441052162%2FProperties%2F-702380584"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"><a data-name="-1441052162%2FProperties%2F-702380584" anchor-label="serializersModule" id="-1441052162%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="serializers-module.html">serializersModule</a><span class="token operator">: </span><a href="../../../kotlinx-serialization-core/kotlinx.serialization.modules/-serializers-module/index.html">SerializersModule</a></div><div class="brief "><a data-name="-1441052162%2FProperties%2F-702380584" anchor-label="serializersModule" id="-1441052162%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Module with contextual and polymorphic serializers to be used in the resulting <a href="../-json/index.html">Json</a> instance.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1778617289%2FProperties%2F-702380584" anchor-label="useAlternativeNames" id="1778617289%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="use-alternative-names.html"><span>use</span><wbr><span>Alternative</span><wbr><span><span>Names</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1778617289%2FProperties%2F-702380584"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"><a data-name="1778617289%2FProperties%2F-702380584" anchor-label="useAlternativeNames" id="1778617289%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="use-alternative-names.html">useAlternativeNames</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><a data-name="1778617289%2FProperties%2F-702380584" anchor-label="useAlternativeNames" id="1778617289%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Specifies whether Json instance makes use of <a href="../-json-names/index.html">JsonNames</a> annotation.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-917438954%2FProperties%2F-702380584" anchor-label="useArrayPolymorphism" id="-917438954%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="use-array-polymorphism.html"><span>use</span><wbr><span>Array</span><wbr><span><span>Polymorphism</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-917438954%2FProperties%2F-702380584"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"><a data-name="-917438954%2FProperties%2F-702380584" anchor-label="useArrayPolymorphism" id="-917438954%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="use-array-polymorphism.html">useArrayPolymorphism</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><a data-name="-917438954%2FProperties%2F-702380584" anchor-label="useArrayPolymorphism" id="-917438954%2FProperties%2F-702380584" data-filterable-set=":kotlinx-serialization-json:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Switches polymorphic serialization to the default array format. This is an option for legacy JSON format and should not be generally used. <code class="lang-kotlin">false</code> by default.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+
