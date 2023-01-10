@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ValueTimeMark</title>
+    <link href="../../../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../../../";</script>
+        <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+<link href="../../../../../styles/multimodule.css" rel="Stylesheet">
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../../../index.html">
+                    <span>stdlib</span>
+            </a>
+    </div>
+    <div>
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;stdlib/kotlin.time/-time-source/-monotonic/-value-time-mark/index.html&quot;}">1.7</dokka-template-command>    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":stdlib_1.7/kotlin-stdlib-common">Common</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="stdlib::kotlin.time/TimeSource.Monotonic.ValueTimeMark///PointingToDeclaration//1451026850">
+  <div class="breadcrumbs"><a href="../../../../../index.html">stdlib</a><span class="delimiter">/</span><a href="../../../index.html">kotlin.time</a><span class="delimiter">/</span><a href="../../index.html">TimeSource</a><span class="delimiter">/</span><a href="../index.html">Monotonic</a><span class="delimiter">/</span><span class="current">ValueTimeMark</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Value</span><wbr></wbr><span>Time</span><wbr></wbr><span><span>Mark</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-common"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../../-experimental-time/index.html"><span class="token annotation builtin">ExperimentalTime</span></a></div><div class="block"><span class="token annotation builtin">@</span><a href="../../../../kotlin.jvm/-jvm-inline/index.html"><span class="token annotation builtin">JvmInline</span></a></div></div><span class="token keyword">value </span><span class="token keyword">class </span><a href="index.html">ValueTimeMark</a> : <span data-unresolved-link="kotlin.time/ComparableTimeMark///PointingToDeclaration/">ComparableTimeMark</span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/src/kotlin/time/TimeSource.kt#L66">source</a>)</span></span></div><p class="paragraph">A specialized <a href="../../../-time-mark/index.html">kotlin.time.TimeMark</a> returned by <a href="../index.html">TimeSource.Monotonic</a> time source.</p><p class="paragraph">This time mark is implemented as an inline value class wrapping a platform-dependent time reading value of the default monotonic time source, thus allowing to avoid additional boxing of that value.</p><p class="paragraph">The operations <a href="plus.html">plus</a> and <a href="minus.html">minus</a> are also specialized to return <a href="index.html">ValueTimeMark</a> type.</p><p class="paragraph">This time mark implements <span data-unresolved-link="kotlin.time/ComparableTimeMark///PointingToDeclaration/">ComparableTimeMark</span> and therefore is comparable with other time marks obtained from the same <a href="../index.html">TimeSource.Monotonic</a> time source.</p><span class="kdoc-tag"><h4 class="">Since Kotlin</h4>1.7</span></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors,Types,Functions,Inherited Functions,Properties,Inherited Properties">Members</button><button class="section-tab" data-togglable="Constructors,Types,Functions,Inherited Functions,Properties,Inherited Properties,Extensions">Members + Extensions</button></div>
+    <div class="tabs-section-body">
+      <h2 class="" data-togglable="Functions">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="680826258%2FFunctions%2F1451026850" anchor-label="compareTo" id="680826258%2FFunctions%2F1451026850" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#-2088849221%2FFunctions%2F1451026850"><span>compare</span><wbr></wbr><span><span>To</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="680826258%2FFunctions%2F1451026850"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator override </span><span class="token keyword">fun </span><a href="index.html#-2088849221%2FFunctions%2F1451026850"><span class="token function">compareTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><span data-unresolved-link="kotlin.time/ComparableTimeMark///PointingToDeclaration/">ComparableTimeMark</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../../kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Compares this time mark with the <a href="index.html#-2088849221%2FFunctions%2F1451026850">other</a> time mark for order.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.7</div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="compare-to.html"><span class="token function">compareTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="index.html">TimeSource.Monotonic.ValueTimeMark</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../../kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Compares this time mark with the <a href="compare-to.html">other</a> time mark for order.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.7</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1891278195%2FFunctions%2F1451026850" anchor-label="compareTo" id="1891278195%2FFunctions%2F1451026850" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../../../kotlin/compare-to.html"><span>compare</span><wbr></wbr><span><span>To</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1891278195%2FFunctions%2F1451026850"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">infix inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../../kotlin/compare-to.html">T</a><span class="token operator">&gt; </span><a href="../../../../kotlin/-comparable/index.html">Comparable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../../kotlin/compare-to.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../../../kotlin/compare-to.html"><span class="token function">compareTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../../../kotlin/compare-to.html">T</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../../kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Compares this object with the specified object for order. Returns zero if this object is equal to the specified <a href="../../../../kotlin/compare-to.html">other</a> object, a negative number if it's less than <a href="../../../../kotlin/compare-to.html">other</a>, or a positive number if it's greater than <a href="../../../../kotlin/compare-to.html">other</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.6</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="208285962%2FFunctions%2F1451026850" anchor-label="elapsedNow" id="208285962%2FFunctions%2F1451026850" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="elapsed-now.html"><span>elapsed</span><wbr></wbr><span><span>Now</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="208285962%2FFunctions%2F1451026850"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="elapsed-now.html"><span class="token function">elapsedNow</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../-duration/index.html">Duration</a></div><div class="brief "><p class="paragraph">Returns the amount of time passed from this mark measured with the time source from which this mark was taken.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.7</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1335588489%2FFunctions%2F1451026850" anchor-label="hasNotPassedNow" id="1335588489%2FFunctions%2F1451026850" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="has-not-passed-now.html"><span>has</span><wbr></wbr><span>Not</span><wbr></wbr><span>Passed</span><wbr></wbr><span><span>Now</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1335588489%2FFunctions%2F1451026850"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="has-not-passed-now.html"><span class="token function">hasNotPassedNow</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../../kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Returns false if this time mark has not passed according to the time source from which this mark was taken.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.7</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-966562696%2FFunctions%2F1451026850" anchor-label="hasPassedNow" id="-966562696%2FFunctions%2F1451026850" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="has-passed-now.html"><span>has</span><wbr></wbr><span>Passed</span><wbr></wbr><span><span>Now</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-966562696%2FFunctions%2F1451026850"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="has-passed-now.html"><span class="token function">hasPassedNow</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../../kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Returns true if this time mark has passed according to the time source from which this mark was taken.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.7</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-822006127%2FFunctions%2F1451026850" anchor-label="minus" id="-822006127%2FFunctions%2F1451026850" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="minus.html"><span><span>minus</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-822006127%2FFunctions%2F1451026850"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator override </span><span class="token keyword">fun </span><a href="minus.html"><span class="token function">minus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><span data-unresolved-link="kotlin.time/ComparableTimeMark///PointingToDeclaration/">ComparableTimeMark</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../-duration/index.html">Duration</a></div><div class="brief "><p class="paragraph">Returns the duration elapsed between the <a href="minus.html">other</a> time mark and <code class="lang-kotlin">this</code> time mark.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.7</div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator override </span><span class="token keyword">fun </span><a href="minus.html"><span class="token function">minus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">duration<span class="token operator">: </span><a href="../../../-duration/index.html">Duration</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">TimeSource.Monotonic.ValueTimeMark</a></div><div class="brief "><p class="paragraph">Returns a time mark on the same time source that is behind this time mark by the specified <a href="minus.html">duration</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.7</div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="minus.html"><span class="token function">minus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="index.html">TimeSource.Monotonic.ValueTimeMark</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../-duration/index.html">Duration</a></div><div class="brief "><p class="paragraph">Returns the duration elapsed between the <a href="minus.html">other</a> time mark obtained from the same <a href="../index.html">TimeSource.Monotonic</a> time source and <code class="lang-kotlin">this</code> time mark.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.7</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="690371426%2FFunctions%2F1451026850" anchor-label="plus" id="690371426%2FFunctions%2F1451026850" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="plus.html"><span><span>plus</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="690371426%2FFunctions%2F1451026850"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator override </span><span class="token keyword">fun </span><a href="plus.html"><span class="token function">plus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">duration<span class="token operator">: </span><a href="../../../-duration/index.html">Duration</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">TimeSource.Monotonic.ValueTimeMark</a></div><div class="brief "><p class="paragraph">Returns a time mark on the same time source that is ahead of this time mark by the specified <a href="plus.html">duration</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.7</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+

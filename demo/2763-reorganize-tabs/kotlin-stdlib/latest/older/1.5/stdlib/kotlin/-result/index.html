@@ -1,0 +1,328 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Result</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+        <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../../styles/multimodule.css" rel="Stylesheet">
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>stdlib</span>
+            </a>
+    </div>
+    <div>
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;stdlib/kotlin/-result/index.html&quot;}"><div class="versions-dropdown">
+  <div class="versions-dropdown-button">1.5</div>
+  <div class="versions-dropdown-data"><a href="../../../../../stdlib/kotlin/-result/index.html">1.8</a><a href="../../../../1.7/stdlib/kotlin/-result/index.html">1.7</a><a href="../../../../1.6/stdlib/kotlin/-result/index.html">1.6</a><a href="index.html">1.5</a><a href="../../../../1.4/stdlib/kotlin/-result/index.html">1.4</a><a href="../../../../1.3/stdlib/kotlin/-result/index.html">1.3</a><a href="../../../../../not-found-version.html?v=1.2">1.2</a><a href="../../../../../not-found-version.html?v=1.1">1.1</a><a href="../../../../../not-found-version.html?v=1.0">1.0</a></div>
+</div>
+</dokka-template-command>    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":stdlib_1.5/kotlin-stdlib-common">Common</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="stdlib::kotlin/Result///PointingToDeclaration//64241440">
+  <div class="breadcrumbs"><a href="../../../index.html">stdlib</a><span class="delimiter">/</span><a href="../index.html">kotlin</a><span class="delimiter">/</span><span class="current">Result</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Result</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.5/kotlin-stdlib-common"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../kotlin.jvm/-jvm-inline/index.html"><span class="token annotation builtin">JvmInline</span></a></div></div><span class="token keyword">value </span><span class="token keyword">class </span><a href="index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="index.html">T</a><span class="token operator">&gt;</span> : <span data-unresolved-link="kotlin.io/Serializable///PointingToDeclaration/">Serializable</span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/src/kotlin/util/Result.kt#L22">source</a>)</span></span></div><p class="paragraph">A discriminated union that encapsulates a successful outcome with a value of type <a href="index.html">T</a> or a failure with an arbitrary <a href="../-throwable/index.html">Throwable</a> exception.</p><span class="kdoc-tag"><h4 class="">Since Kotlin</h4>1.3</span></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors,Types,Functions,Inherited Functions,Properties,Inherited Properties">Members</button><button class="section-tab" data-togglable="Constructors,Types,Functions,Inherited Functions,Properties,Inherited Properties,Extensions">Members + Extensions</button></div>
+    <div class="tabs-section-body">
+      <h2 class="" data-togglable="Types">Types</h2>
+      <div class="table" data-togglable="Types"><a data-name="573631624%2FClasslikes%2F64241440" anchor-label="Companion" id="573631624%2FClasslikes%2F64241440" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common"></a>
+        <div class="table-row" data-togglable="Types" data-filterable-current=":stdlib_1.5/kotlin-stdlib-common" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="573631624%2FClasslikes%2F64241440"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.5/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div><div class="brief "><p class="paragraph">Companion object for <a href="index.html">Result</a> class that contains its constructor functions <a href="-companion/success.html">success</a> and <a href="-companion/failure.html">failure</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="" data-togglable="Functions">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="-2046056664%2FFunctions%2F64241440" anchor-label="exceptionOrNull" id="-2046056664%2FFunctions%2F64241440" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.5/kotlin-stdlib-common" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="exception-or-null.html"><span>exception</span><wbr><span>Or</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2046056664%2FFunctions%2F64241440"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.5/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="exception-or-null.html"><span class="token function">exceptionOrNull</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-throwable/index.html">Throwable</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Returns the encapsulated <a href="../-throwable/index.html">Throwable</a> exception if this instance represents <a href="is-failure.html">failure</a> or <code class="lang-kotlin">null</code> if it is <a href="is-success.html">success</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1493536401%2FFunctions%2F64241440" anchor-label="fold" id="-1493536401%2FFunctions%2F64241440" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.5/kotlin-stdlib-common" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../fold.html"><span><span>fold</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1493536401%2FFunctions%2F64241440"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.5/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../fold.html">R</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="../fold.html">T</a><span class="token operator">&gt; </span><a href="index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../fold.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../fold.html"><span class="token function">fold</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">onSuccess<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span>value<span class="token operator">: </span><a href="../fold.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../fold.html">R</a><span class="token punctuation">, </span></span><span class="parameter ">onFailure<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span>exception<span class="token operator">: </span><a href="../-throwable/index.html">Throwable</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../fold.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../fold.html">R</a></div><div class="brief "><p class="paragraph">Returns the result of <a href="../fold.html">onSuccess</a> for the encapsulated value if this instance represents <a href="is-success.html">success</a> or the result of <a href="../fold.html">onFailure</a> function for the encapsulated <a href="../-throwable/index.html">Throwable</a> exception if it is <a href="is-failure.html">failure</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="557083332%2FFunctions%2F64241440" anchor-label="getOrDefault" id="557083332%2FFunctions%2F64241440" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.5/kotlin-stdlib-common" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../get-or-default.html"><span>get</span><wbr><span>Or</span><wbr><span><span>Default</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="557083332%2FFunctions%2F64241440"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.5/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../get-or-default.html">R</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="../get-or-default.html">T</a><span class="token operator"> : </span><a href="../get-or-default.html">R</a><span class="token operator">&gt; </span><a href="index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../get-or-default.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../get-or-default.html"><span class="token function">getOrDefault</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">defaultValue<span class="token operator">: </span><a href="../get-or-default.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../get-or-default.html">R</a></div><div class="brief "><p class="paragraph">Returns the encapsulated value if this instance represents <a href="is-success.html">success</a> or the <a href="../get-or-default.html">defaultValue</a> if it is <a href="is-failure.html">failure</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="2143244719%2FFunctions%2F64241440" anchor-label="getOrElse" id="2143244719%2FFunctions%2F64241440" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.5/kotlin-stdlib-common" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../get-or-else.html"><span>get</span><wbr><span>Or</span><wbr><span><span>Else</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2143244719%2FFunctions%2F64241440"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.5/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../get-or-else.html">R</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="../get-or-else.html">T</a><span class="token operator"> : </span><a href="../get-or-else.html">R</a><span class="token operator">&gt; </span><a href="index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../get-or-else.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../get-or-else.html"><span class="token function">getOrElse</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">onFailure<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span>exception<span class="token operator">: </span><a href="../-throwable/index.html">Throwable</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../get-or-else.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../get-or-else.html">R</a></div><div class="brief "><p class="paragraph">Returns the encapsulated value if this instance represents <a href="is-success.html">success</a> or the result of <a href="../get-or-else.html">onFailure</a> function for the encapsulated <a href="../-throwable/index.html">Throwable</a> exception if it is <a href="is-failure.html">failure</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-369984959%2FFunctions%2F64241440" anchor-label="getOrNull" id="-369984959%2FFunctions%2F64241440" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.5/kotlin-stdlib-common" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-or-null.html"><span>get</span><wbr><span>Or</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-369984959%2FFunctions%2F64241440"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.5/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="get-or-null.html"><span class="token function">getOrNull</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">T</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Returns the encapsulated value if this instance represents <a href="is-success.html">success</a> or <code class="lang-kotlin">null</code> if it is <a href="is-failure.html">failure</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="872674489%2FFunctions%2F64241440" anchor-label="getOrThrow" id="872674489%2FFunctions%2F64241440" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.5/kotlin-stdlib-common" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../get-or-throw.html"><span>get</span><wbr><span>Or</span><wbr><span><span>Throw</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="872674489%2FFunctions%2F64241440"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.5/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../get-or-throw.html">T</a><span class="token operator">&gt; </span><a href="index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../get-or-throw.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../get-or-throw.html"><span class="token function">getOrThrow</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../get-or-throw.html">T</a></div><div class="brief "><p class="paragraph">Returns the encapsulated value if this instance represents <a href="is-success.html">success</a> or throws the encapsulated <a href="../-throwable/index.html">Throwable</a> exception if it is <a href="is-failure.html">failure</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1704479418%2FFunctions%2F64241440" anchor-label="map" id="-1704479418%2FFunctions%2F64241440" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.5/kotlin-stdlib-common" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../map.html"><span><span>map</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1704479418%2FFunctions%2F64241440"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.5/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../map.html">R</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="../map.html">T</a><span class="token operator">&gt; </span><a href="index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../map.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../map.html"><span class="token function">map</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">transform<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span>value<span class="token operator">: </span><a href="../map.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../map.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../map.html">R</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns the encapsulated result of the given <a href="../map.html">transform</a> function applied to the encapsulated value if this instance represents <a href="is-success.html">success</a> or the original encapsulated <a href="../-throwable/index.html">Throwable</a> exception if it is <a href="is-failure.html">failure</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1065567405%2FFunctions%2F64241440" anchor-label="mapCatching" id="1065567405%2FFunctions%2F64241440" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.5/kotlin-stdlib-common" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../map-catching.html"><span>map</span><wbr><span><span>Catching</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1065567405%2FFunctions%2F64241440"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.5/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../map-catching.html">R</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="../map-catching.html">T</a><span class="token operator">&gt; </span><a href="index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../map-catching.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../map-catching.html"><span class="token function">mapCatching</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">transform<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span>value<span class="token operator">: </span><a href="../map-catching.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../map-catching.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../map-catching.html">R</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns the encapsulated result of the given <a href="../map-catching.html">transform</a> function applied to the encapsulated value if this instance represents <a href="is-success.html">success</a> or the original encapsulated <a href="../-throwable/index.html">Throwable</a> exception if it is <a href="is-failure.html">failure</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1295111815%2FFunctions%2F64241440" anchor-label="onFailure" id="1295111815%2FFunctions%2F64241440" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.5/kotlin-stdlib-common" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../on-failure.html"><span>on</span><wbr><span><span>Failure</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1295111815%2FFunctions%2F64241440"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.5/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../on-failure.html">T</a><span class="token operator">&gt; </span><a href="index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../on-failure.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../on-failure.html"><span class="token function">onFailure</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">action<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span>exception<span class="token operator">: </span><a href="../-throwable/index.html">Throwable</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../on-failure.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Performs the given <a href="../on-failure.html">action</a> on the encapsulated <a href="../-throwable/index.html">Throwable</a> exception if this instance represents <a href="is-failure.html">failure</a>. Returns the original <code class="lang-kotlin">Result</code> unchanged.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1773378683%2FFunctions%2F64241440" anchor-label="onSuccess" id="1773378683%2FFunctions%2F64241440" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.5/kotlin-stdlib-common" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../on-success.html"><span>on</span><wbr><span><span>Success</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1773378683%2FFunctions%2F64241440"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.5/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../on-success.html">T</a><span class="token operator">&gt; </span><a href="index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../on-success.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../on-success.html"><span class="token function">onSuccess</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">action<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span>value<span class="token operator">: </span><a href="../on-success.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../on-success.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Performs the given <a href="../on-success.html">action</a> on the encapsulated value if this instance represents <a href="is-success.html">success</a>. Returns the original <code class="lang-kotlin">Result</code> unchanged.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1037523331%2FFunctions%2F64241440" anchor-label="recover" id="-1037523331%2FFunctions%2F64241440" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.5/kotlin-stdlib-common" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../recover.html"><span><span>recover</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1037523331%2FFunctions%2F64241440"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.5/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../recover.html">R</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="../recover.html">T</a><span class="token operator"> : </span><a href="../recover.html">R</a><span class="token operator">&gt; </span><a href="index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../recover.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../recover.html"><span class="token function">recover</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">transform<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span>exception<span class="token operator">: </span><a href="../-throwable/index.html">Throwable</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../recover.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../recover.html">R</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns the encapsulated result of the given <a href="../recover.html">transform</a> function applied to the encapsulated <a href="../-throwable/index.html">Throwable</a> exception if this instance represents <a href="is-failure.html">failure</a> or the original encapsulated value if it is <a href="is-success.html">success</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="199862134%2FFunctions%2F64241440" anchor-label="recoverCatching" id="199862134%2FFunctions%2F64241440" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.5/kotlin-stdlib-common" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../recover-catching.html"><span>recover</span><wbr><span><span>Catching</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="199862134%2FFunctions%2F64241440"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.5/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../recover-catching.html">R</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="../recover-catching.html">T</a><span class="token operator"> : </span><a href="../recover-catching.html">R</a><span class="token operator">&gt; </span><a href="index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../recover-catching.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../recover-catching.html"><span class="token function">recoverCatching</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">transform<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span>exception<span class="token operator">: </span><a href="../-throwable/index.html">Throwable</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../recover-catching.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../recover-catching.html">R</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns the encapsulated result of the given <a href="../recover-catching.html">transform</a> function applied to the encapsulated <a href="../-throwable/index.html">Throwable</a> exception if this instance represents <a href="is-failure.html">failure</a> or the original encapsulated value if it is <a href="is-success.html">success</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1283118387%2FFunctions%2F64241440" anchor-label="toString" id="-1283118387%2FFunctions%2F64241440" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.5/kotlin-stdlib-common" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="to-string.html"><span>to</span><wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1283118387%2FFunctions%2F64241440"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.5/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-string.html"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-string/index.html">String</a></div><div class="brief "><p class="paragraph">Returns a string <code class="lang-kotlin">Success(v)</code> if this instance represents <a href="is-success.html">success</a> where <code class="lang-kotlin">v</code> is a string representation of the value or a string <code class="lang-kotlin">Failure(x)</code> if it is <a href="is-failure.html">failure</a> where <code class="lang-kotlin">x</code> is a string representation of the exception.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="" data-togglable="Properties">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="1643168321%2FProperties%2F64241440" anchor-label="isFailure" id="1643168321%2FProperties%2F64241440" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.5/kotlin-stdlib-common" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="is-failure.html"><span>is</span><wbr><span><span>Failure</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1643168321%2FProperties%2F64241440"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.5/kotlin-stdlib-common"><a data-name="1643168321%2FProperties%2F64241440" anchor-label="isFailure" id="1643168321%2FProperties%2F64241440" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-failure.html">isFailure</a><span class="token operator">: </span><a href="../-boolean/index.html">Boolean</a></div><div class="brief "><a data-name="1643168321%2FProperties%2F64241440" anchor-label="isFailure" id="1643168321%2FProperties%2F64241440" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common"></a><p class="paragraph">Returns <code class="lang-kotlin">true</code> if this instance represents a failed outcome. In this case <a href="is-success.html">isSuccess</a> returns <code class="lang-kotlin">false</code>.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="1643168321%2FProperties%2F64241440" anchor-label="isFailure" id="1643168321%2FProperties%2F64241440" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common"></a>1.3</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1126449688%2FProperties%2F64241440" anchor-label="isSuccess" id="-1126449688%2FProperties%2F64241440" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.5/kotlin-stdlib-common" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="is-success.html"><span>is</span><wbr><span><span>Success</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1126449688%2FProperties%2F64241440"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.5/kotlin-stdlib-common"><a data-name="-1126449688%2FProperties%2F64241440" anchor-label="isSuccess" id="-1126449688%2FProperties%2F64241440" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-success.html">isSuccess</a><span class="token operator">: </span><a href="../-boolean/index.html">Boolean</a></div><div class="brief "><a data-name="-1126449688%2FProperties%2F64241440" anchor-label="isSuccess" id="-1126449688%2FProperties%2F64241440" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common"></a><p class="paragraph">Returns <code class="lang-kotlin">true</code> if this instance represents a successful outcome. In this case <a href="is-failure.html">isFailure</a> returns <code class="lang-kotlin">false</code>.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-1126449688%2FProperties%2F64241440" anchor-label="isSuccess" id="-1126449688%2FProperties%2F64241440" data-filterable-set=":stdlib_1.5/kotlin-stdlib-common"></a>1.3</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+
+

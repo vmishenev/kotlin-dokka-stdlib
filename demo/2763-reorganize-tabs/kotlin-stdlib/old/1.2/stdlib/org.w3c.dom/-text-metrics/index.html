@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>TextMetrics</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+        <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+<link href="../../../styles/multimodule.css" rel="Stylesheet">
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>stdlib</span>
+            </a>
+    </div>
+    <div>
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;stdlib/org.w3c.dom/-text-metrics/index.html&quot;}">1.2</dokka-template-command>    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector js-like" data-active="" data-filter=":stdlib_1.2/kotlin-stdlib-js">JS</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="stdlib::org.w3c.dom/TextMetrics///PointingToDeclaration//-1186984225">
+  <div class="breadcrumbs"><a href="../../../index.html">stdlib</a><span class="delimiter">/</span><a href="../index.html">org.w3c.dom</a><span class="delimiter">/</span><span class="current">TextMetrics</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Text</span><wbr></wbr><span><span>Metrics</span></span></h1>
+    <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+      <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.2/kotlin-stdlib-js" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js" data-active="" data-toggle=":stdlib_1.2/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.2/kotlin-stdlib-js"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">class </span><a href="index.html">TextMetrics</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/js/src/org.w3c/org.w3c.dom.kt#L2910">source</a>)</span></span></div><p class="paragraph">Exposes the JavaScript <a href="https://developer.mozilla.org/en/docs/Web/API/TextMetrics">TextMetrics</a> to Kotlin</p><span class="kdoc-tag"><h4 class="">Since Kotlin</h4>1.1</span></div>    </div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors,Types,Functions,Inherited Functions,Properties,Inherited Properties">Members</button></div>
+    <div class="tabs-section-body">
+      <h2 class="tabbedcontent" data-togglable="Constructors">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="1696680126%2FConstructors%2F-1186984225" anchor-label="TextMetrics" id="1696680126%2FConstructors%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.2/kotlin-stdlib-js" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-text-metrics.html"><span>Text</span><wbr></wbr><span><span>Metrics</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1696680126%2FConstructors%2F-1186984225"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.2/kotlin-stdlib-js" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js" data-active="" data-toggle=":stdlib_1.2/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.2/kotlin-stdlib-js"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="" data-togglable="Properties">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="-460612031%2FProperties%2F-1186984225" anchor-label="actualBoundingBoxAscent" id="-460612031%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.2/kotlin-stdlib-js" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="actual-bounding-box-ascent.html"><span>actual</span><wbr></wbr><span>Bounding</span><wbr></wbr><span>Box</span><wbr></wbr><span><span>Ascent</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-460612031%2FProperties%2F-1186984225"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.2/kotlin-stdlib-js" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js" data-active="" data-toggle=":stdlib_1.2/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.2/kotlin-stdlib-js"><a data-name="-460612031%2FProperties%2F-1186984225" anchor-label="actualBoundingBoxAscent" id="-460612031%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="actual-bounding-box-ascent.html">actualBoundingBoxAscent</a><span class="token operator">: </span><a href="../../kotlin/-double/index.html#1846517330%2FMain%2F-1186984225">Double</a></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-460612031%2FProperties%2F-1186984225" anchor-label="actualBoundingBoxAscent" id="-460612031%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1759361509%2FProperties%2F-1186984225" anchor-label="actualBoundingBoxDescent" id="1759361509%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.2/kotlin-stdlib-js" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="actual-bounding-box-descent.html"><span>actual</span><wbr></wbr><span>Bounding</span><wbr></wbr><span>Box</span><wbr></wbr><span><span>Descent</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1759361509%2FProperties%2F-1186984225"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.2/kotlin-stdlib-js" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js" data-active="" data-toggle=":stdlib_1.2/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.2/kotlin-stdlib-js"><a data-name="1759361509%2FProperties%2F-1186984225" anchor-label="actualBoundingBoxDescent" id="1759361509%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="actual-bounding-box-descent.html">actualBoundingBoxDescent</a><span class="token operator">: </span><a href="../../kotlin/-double/index.html#1846517330%2FMain%2F-1186984225">Double</a></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="1759361509%2FProperties%2F-1186984225" anchor-label="actualBoundingBoxDescent" id="1759361509%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-724953292%2FProperties%2F-1186984225" anchor-label="actualBoundingBoxLeft" id="-724953292%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.2/kotlin-stdlib-js" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="actual-bounding-box-left.html"><span>actual</span><wbr></wbr><span>Bounding</span><wbr></wbr><span>Box</span><wbr></wbr><span><span>Left</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-724953292%2FProperties%2F-1186984225"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.2/kotlin-stdlib-js" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js" data-active="" data-toggle=":stdlib_1.2/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.2/kotlin-stdlib-js"><a data-name="-724953292%2FProperties%2F-1186984225" anchor-label="actualBoundingBoxLeft" id="-724953292%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="actual-bounding-box-left.html">actualBoundingBoxLeft</a><span class="token operator">: </span><a href="../../kotlin/-double/index.html#1846517330%2FMain%2F-1186984225">Double</a></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-724953292%2FProperties%2F-1186984225" anchor-label="actualBoundingBoxLeft" id="-724953292%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="234692419%2FProperties%2F-1186984225" anchor-label="actualBoundingBoxRight" id="234692419%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.2/kotlin-stdlib-js" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="actual-bounding-box-right.html"><span>actual</span><wbr></wbr><span>Bounding</span><wbr></wbr><span>Box</span><wbr></wbr><span><span>Right</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="234692419%2FProperties%2F-1186984225"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.2/kotlin-stdlib-js" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js" data-active="" data-toggle=":stdlib_1.2/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.2/kotlin-stdlib-js"><a data-name="234692419%2FProperties%2F-1186984225" anchor-label="actualBoundingBoxRight" id="234692419%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="actual-bounding-box-right.html">actualBoundingBoxRight</a><span class="token operator">: </span><a href="../../kotlin/-double/index.html#1846517330%2FMain%2F-1186984225">Double</a></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="234692419%2FProperties%2F-1186984225" anchor-label="actualBoundingBoxRight" id="234692419%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1084174092%2FProperties%2F-1186984225" anchor-label="alphabeticBaseline" id="-1084174092%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.2/kotlin-stdlib-js" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="alphabetic-baseline.html"><span>alphabetic</span><wbr></wbr><span><span>Baseline</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1084174092%2FProperties%2F-1186984225"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.2/kotlin-stdlib-js" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js" data-active="" data-toggle=":stdlib_1.2/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.2/kotlin-stdlib-js"><a data-name="-1084174092%2FProperties%2F-1186984225" anchor-label="alphabeticBaseline" id="-1084174092%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="alphabetic-baseline.html">alphabeticBaseline</a><span class="token operator">: </span><a href="../../kotlin/-double/index.html#1846517330%2FMain%2F-1186984225">Double</a></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-1084174092%2FProperties%2F-1186984225" anchor-label="alphabeticBaseline" id="-1084174092%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1825950685%2FProperties%2F-1186984225" anchor-label="emHeightAscent" id="1825950685%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.2/kotlin-stdlib-js" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="em-height-ascent.html"><span>em</span><wbr></wbr><span>Height</span><wbr></wbr><span><span>Ascent</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1825950685%2FProperties%2F-1186984225"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.2/kotlin-stdlib-js" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js" data-active="" data-toggle=":stdlib_1.2/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.2/kotlin-stdlib-js"><a data-name="1825950685%2FProperties%2F-1186984225" anchor-label="emHeightAscent" id="1825950685%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="em-height-ascent.html">emHeightAscent</a><span class="token operator">: </span><a href="../../kotlin/-double/index.html#1846517330%2FMain%2F-1186984225">Double</a></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="1825950685%2FProperties%2F-1186984225" anchor-label="emHeightAscent" id="1825950685%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-371638327%2FProperties%2F-1186984225" anchor-label="emHeightDescent" id="-371638327%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.2/kotlin-stdlib-js" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="em-height-descent.html"><span>em</span><wbr></wbr><span>Height</span><wbr></wbr><span><span>Descent</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-371638327%2FProperties%2F-1186984225"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.2/kotlin-stdlib-js" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js" data-active="" data-toggle=":stdlib_1.2/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.2/kotlin-stdlib-js"><a data-name="-371638327%2FProperties%2F-1186984225" anchor-label="emHeightDescent" id="-371638327%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="em-height-descent.html">emHeightDescent</a><span class="token operator">: </span><a href="../../kotlin/-double/index.html#1846517330%2FMain%2F-1186984225">Double</a></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-371638327%2FProperties%2F-1186984225" anchor-label="emHeightDescent" id="-371638327%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1450029442%2FProperties%2F-1186984225" anchor-label="fontBoundingBoxAscent" id="1450029442%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.2/kotlin-stdlib-js" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="font-bounding-box-ascent.html"><span>font</span><wbr></wbr><span>Bounding</span><wbr></wbr><span>Box</span><wbr></wbr><span><span>Ascent</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1450029442%2FProperties%2F-1186984225"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.2/kotlin-stdlib-js" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js" data-active="" data-toggle=":stdlib_1.2/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.2/kotlin-stdlib-js"><a data-name="1450029442%2FProperties%2F-1186984225" anchor-label="fontBoundingBoxAscent" id="1450029442%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="font-bounding-box-ascent.html">fontBoundingBoxAscent</a><span class="token operator">: </span><a href="../../kotlin/-double/index.html#1846517330%2FMain%2F-1186984225">Double</a></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="1450029442%2FProperties%2F-1186984225" anchor-label="fontBoundingBoxAscent" id="1450029442%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="859705028%2FProperties%2F-1186984225" anchor-label="fontBoundingBoxDescent" id="859705028%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.2/kotlin-stdlib-js" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="font-bounding-box-descent.html"><span>font</span><wbr></wbr><span>Bounding</span><wbr></wbr><span>Box</span><wbr></wbr><span><span>Descent</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="859705028%2FProperties%2F-1186984225"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.2/kotlin-stdlib-js" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js" data-active="" data-toggle=":stdlib_1.2/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.2/kotlin-stdlib-js"><a data-name="859705028%2FProperties%2F-1186984225" anchor-label="fontBoundingBoxDescent" id="859705028%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="font-bounding-box-descent.html">fontBoundingBoxDescent</a><span class="token operator">: </span><a href="../../kotlin/-double/index.html#1846517330%2FMain%2F-1186984225">Double</a></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="859705028%2FProperties%2F-1186984225" anchor-label="fontBoundingBoxDescent" id="859705028%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1082312641%2FProperties%2F-1186984225" anchor-label="hangingBaseline" id="-1082312641%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.2/kotlin-stdlib-js" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="hanging-baseline.html"><span>hanging</span><wbr></wbr><span><span>Baseline</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1082312641%2FProperties%2F-1186984225"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.2/kotlin-stdlib-js" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js" data-active="" data-toggle=":stdlib_1.2/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.2/kotlin-stdlib-js"><a data-name="-1082312641%2FProperties%2F-1186984225" anchor-label="hangingBaseline" id="-1082312641%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="hanging-baseline.html">hangingBaseline</a><span class="token operator">: </span><a href="../../kotlin/-double/index.html#1846517330%2FMain%2F-1186984225">Double</a></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-1082312641%2FProperties%2F-1186984225" anchor-label="hangingBaseline" id="-1082312641%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1668634356%2FProperties%2F-1186984225" anchor-label="ideographicBaseline" id="-1668634356%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.2/kotlin-stdlib-js" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="ideographic-baseline.html"><span>ideographic</span><wbr></wbr><span><span>Baseline</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1668634356%2FProperties%2F-1186984225"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.2/kotlin-stdlib-js" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js" data-active="" data-toggle=":stdlib_1.2/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.2/kotlin-stdlib-js"><a data-name="-1668634356%2FProperties%2F-1186984225" anchor-label="ideographicBaseline" id="-1668634356%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="ideographic-baseline.html">ideographicBaseline</a><span class="token operator">: </span><a href="../../kotlin/-double/index.html#1846517330%2FMain%2F-1186984225">Double</a></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-1668634356%2FProperties%2F-1186984225" anchor-label="ideographicBaseline" id="-1668634356%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1788710674%2FProperties%2F-1186984225" anchor-label="width" id="-1788710674%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.2/kotlin-stdlib-js" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="width.html"><span><span>width</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1788710674%2FProperties%2F-1186984225"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.2/kotlin-stdlib-js" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js" data-active="" data-toggle=":stdlib_1.2/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.2/kotlin-stdlib-js"><a data-name="-1788710674%2FProperties%2F-1186984225" anchor-label="width" id="-1788710674%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="width.html">width</a><span class="token operator">: </span><a href="../../kotlin/-double/index.html#1846517330%2FMain%2F-1186984225">Double</a></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-1788710674%2FProperties%2F-1186984225" anchor-label="width" id="-1788710674%2FProperties%2F-1186984225" data-filterable-set=":stdlib_1.2/kotlin-stdlib-js"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+

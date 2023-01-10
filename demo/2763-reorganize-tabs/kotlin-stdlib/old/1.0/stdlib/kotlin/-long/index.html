@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Long</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+        <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+<link href="../../../styles/multimodule.css" rel="Stylesheet">
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>stdlib</span>
+            </a>
+    </div>
+    <div>
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;stdlib/kotlin/-long/index.html&quot;}">1.0</dokka-template-command>    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="stdlib::kotlin/Long///PointingToDeclaration//-874938664">
+  <div class="breadcrumbs"><a href="../../../index.html">stdlib</a><span class="delimiter">/</span><a href="../index.html">kotlin</a><span class="delimiter">/</span><span class="current">Long</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Long</span></span></h1>
+    <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+      <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">Long</a> : <a href="../-number/index.html">Number</a>, <a href="../-comparable/index.html">Comparable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">Long</a><span class="token operator">&gt; </span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/core/builtins/native/kotlin/Primitives.kt#L1057">source</a>)</span></span></div><p class="paragraph">Represents a 64-bit signed integer. On the JVM, non-nullable values of this type are represented as values of the primitive type <code class="lang-kotlin">long</code>.</p><span class="kdoc-tag"><h4 class="">Since Kotlin</h4>1.0</span></div>    </div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors,Types,Functions,Inherited Functions,Properties,Inherited Properties">Members</button><button class="section-tab" data-togglable="Constructors,Types,Functions,Inherited Functions,Properties,Inherited Properties,Extensions">Members + Extensions</button></div>
+    <div class="tabs-section-body">
+      <h2 class="" data-togglable="Types">Types</h2>
+      <div class="table" data-togglable="Types"><a data-name="-234682807%2FClasslikes%2F-874938664" anchor-label="Companion" id="-234682807%2FClasslikes%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Types" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-234682807%2FClasslikes%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="" data-togglable="Functions">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="641006478%2FFunctions%2F-874938664" anchor-label="and" id="641006478%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="and.html"><span><span>and</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="641006478%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="and.html"><span class="token function">and</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="brief "><p class="paragraph">Performs a bitwise AND operation between the two values.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-355366855%2FFunctions%2F-874938664" anchor-label="coerceAtLeast" id="-355366855%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin.ranges/coerce-at-least.html"><span>coerce</span><wbr></wbr><span>At</span><wbr></wbr><span><span>Least</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-355366855%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">Long</a><span class="token punctuation">.</span><a href="../../kotlin.ranges/coerce-at-least.html"><span class="token function">coerceAtLeast</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">minimumValue<span class="token operator">: </span><a href="index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="brief "><p class="paragraph">Ensures that this value is not less than the specified <a href="../../kotlin.ranges/coerce-at-least.html">minimumValue</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1240558115%2FFunctions%2F-874938664" anchor-label="coerceAtMost" id="-1240558115%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin.ranges/coerce-at-most.html"><span>coerce</span><wbr></wbr><span>At</span><wbr></wbr><span><span>Most</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1240558115%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">Long</a><span class="token punctuation">.</span><a href="../../kotlin.ranges/coerce-at-most.html"><span class="token function">coerceAtMost</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">maximumValue<span class="token operator">: </span><a href="index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="brief "><p class="paragraph">Ensures that this value is not greater than the specified <a href="../../kotlin.ranges/coerce-at-most.html">maximumValue</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-318479258%2FFunctions%2F-874938664" anchor-label="coerceIn" id="-318479258%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin.ranges/coerce-in.html"><span>coerce</span><wbr></wbr><span><span>In</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-318479258%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">Long</a><span class="token punctuation">.</span><a href="../../kotlin.ranges/coerce-in.html"><span class="token function">coerceIn</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">range<span class="token operator">: </span><a href="../../kotlin.ranges/-closed-range/index.html">ClosedRange</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">Long</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="brief "><p class="paragraph">Ensures that this value lies in the specified <a href="../../kotlin.ranges/coerce-in.html">range</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">Long</a><span class="token punctuation">.</span><a href="../../kotlin.ranges/coerce-in.html"><span class="token function">coerceIn</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">minimumValue<span class="token operator">: </span><a href="index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">maximumValue<span class="token operator">: </span><a href="index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="brief "><p class="paragraph">Ensures that this value lies in the specified range <a href="../../kotlin.ranges/coerce-in.html">minimumValue</a>..<a href="../../kotlin.ranges/coerce-in.html">maximumValue</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1972023564%2FFunctions%2F-874938664" anchor-label="compareTo" id="1972023564%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="compare-to.html"><span>compare</span><wbr></wbr><span><span>To</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1972023564%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="compare-to.html"><span class="token function">compareTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-byte/index.html">Byte</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-int/index.html">Int</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="compare-to.html"><span class="token function">compareTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-int/index.html">Int</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="compare-to.html"><span class="token function">compareTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-float/index.html">Float</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-int/index.html">Int</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="compare-to.html"><span class="token function">compareTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-int/index.html">Int</a></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator override </span><span class="token keyword">fun </span><a href="compare-to.html"><span class="token function">compareTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-int/index.html">Int</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="compare-to.html"><span class="token function">compareTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-short/index.html">Short</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Compares this value with the specified value for order. Returns zero if this value is equal to the specified other value, a negative number if it's less than other, or a positive number if it's greater than other.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="347565824%2FFunctions%2F-874938664" anchor-label="dec" id="347565824%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="dec.html"><span><span>dec</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="347565824%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="dec.html"><span class="token function">dec</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="brief "><p class="paragraph">Returns this value decremented by one.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="2025249646%2FFunctions%2F-874938664" anchor-label="div" id="2025249646%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="div.html"><span><span>div</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2025249646%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="div.html"><span class="token function">div</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-byte/index.html">Byte</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="div.html"><span class="token function">div</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="div.html"><span class="token function">div</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="div.html"><span class="token function">div</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-short/index.html">Short</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="brief "><p class="paragraph">Divides this value by the other value, truncating the result to an integer that is closer to zero.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="div.html"><span class="token function">div</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-double/index.html">Double</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="div.html"><span class="token function">div</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-float/index.html">Float</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-float/index.html">Float</a></div><div class="brief "><p class="paragraph">Divides this value by the other value.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1512653901%2FFunctions%2F-874938664" anchor-label="downTo" id="-1512653901%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin.ranges/down-to.html"><span>down</span><wbr></wbr><span><span>To</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1512653901%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="index.html">Long</a><span class="token punctuation">.</span><a href="../../kotlin.ranges/down-to.html"><span class="token function">downTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">to<span class="token operator">: </span><a href="../-byte/index.html">Byte</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlin.ranges/-long-progression/index.html">LongProgression</a></div><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="index.html">Long</a><span class="token punctuation">.</span><a href="../../kotlin.ranges/down-to.html"><span class="token function">downTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">to<span class="token operator">: </span><a href="../-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlin.ranges/-long-progression/index.html">LongProgression</a></div><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="index.html">Long</a><span class="token punctuation">.</span><a href="../../kotlin.ranges/down-to.html"><span class="token function">downTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">to<span class="token operator">: </span><a href="index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlin.ranges/-long-progression/index.html">LongProgression</a></div><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="index.html">Long</a><span class="token punctuation">.</span><a href="../../kotlin.ranges/down-to.html"><span class="token function">downTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">to<span class="token operator">: </span><a href="../-short/index.html">Short</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlin.ranges/-long-progression/index.html">LongProgression</a></div><div class="brief "><p class="paragraph">Returns a progression from this value down to the specified <a href="../../kotlin.ranges/down-to.html">to</a> value with the step -1.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-407754583%2FFunctions%2F-874938664" anchor-label="equals" id="-407754583%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="equals.html"><span><span>equals</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-407754583%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator override </span><span class="token keyword">fun </span><a href="equals.html"><span class="token function">equals</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-boolean/index.html">Boolean</a></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-861525340%2FFunctions%2F-874938664" anchor-label="inc" id="-861525340%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="inc.html"><span><span>inc</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-861525340%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="inc.html"><span class="token function">inc</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="brief "><p class="paragraph">Returns this value incremented by one.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-272149007%2FFunctions%2F-874938664" anchor-label="inv" id="-272149007%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="inv.html"><span><span>inv</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-272149007%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="inv.html"><span class="token function">inv</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="brief "><p class="paragraph">Inverts the bits in this value.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1634680044%2FFunctions%2F-874938664" anchor-label="minus" id="1634680044%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="minus.html"><span><span>minus</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1634680044%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="minus.html"><span class="token function">minus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-byte/index.html">Byte</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="minus.html"><span class="token function">minus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-double/index.html">Double</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="minus.html"><span class="token function">minus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-float/index.html">Float</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-float/index.html">Float</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="minus.html"><span class="token function">minus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="minus.html"><span class="token function">minus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="minus.html"><span class="token function">minus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-short/index.html">Short</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="brief "><p class="paragraph">Subtracts the other value from this value.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="2006937220%2FFunctions%2F-874938664" anchor-label="or" id="2006937220%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="or.html"><span><span>or</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2006937220%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="or.html"><span class="token function">or</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="brief "><p class="paragraph">Performs a bitwise OR operation between the two values.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1321197718%2FFunctions%2F-874938664" anchor-label="plus" id="1321197718%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="plus.html"><span><span>plus</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1321197718%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="plus.html"><span class="token function">plus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-byte/index.html">Byte</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="plus.html"><span class="token function">plus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-double/index.html">Double</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="plus.html"><span class="token function">plus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-float/index.html">Float</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-float/index.html">Float</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="plus.html"><span class="token function">plus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="plus.html"><span class="token function">plus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="plus.html"><span class="token function">plus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-short/index.html">Short</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="brief "><p class="paragraph">Adds the other value to this value.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="552806731%2FFunctions%2F-874938664" anchor-label="rangeTo" id="552806731%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="range-to.html"><span>range</span><wbr></wbr><span><span>To</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="552806731%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="range-to.html"><span class="token function">rangeTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-byte/index.html">Byte</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlin.ranges/-long-range/index.html">LongRange</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="range-to.html"><span class="token function">rangeTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlin.ranges/-long-range/index.html">LongRange</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="range-to.html"><span class="token function">rangeTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlin.ranges/-long-range/index.html">LongRange</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="range-to.html"><span class="token function">rangeTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-short/index.html">Short</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlin.ranges/-long-range/index.html">LongRange</a></div><div class="brief "><p class="paragraph">Creates a range from this value to the specified <a href="range-to.html">other</a> value.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-911848503%2FFunctions%2F-874938664" anchor-label="shl" id="-911848503%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="shl.html"><span><span>shl</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-911848503%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="shl.html"><span class="token function">shl</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bitCount<span class="token operator">: </span><a href="../-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="brief "><p class="paragraph">Shifts this value left by the <a href="shl.html">bitCount</a> number of bits.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2094948861%2FFunctions%2F-874938664" anchor-label="shr" id="-2094948861%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="shr.html"><span><span>shr</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2094948861%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="shr.html"><span class="token function">shr</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bitCount<span class="token operator">: </span><a href="../-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="brief "><p class="paragraph">Shifts this value right by the <a href="shr.html">bitCount</a> number of bits, filling the leftmost bits with copies of the sign bit.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="2092850968%2FFunctions%2F-874938664" anchor-label="times" id="2092850968%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="times.html"><span><span>times</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2092850968%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="times.html"><span class="token function">times</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-byte/index.html">Byte</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="times.html"><span class="token function">times</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-double/index.html">Double</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="times.html"><span class="token function">times</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-float/index.html">Float</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-float/index.html">Float</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="times.html"><span class="token function">times</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="times.html"><span class="token function">times</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="times.html"><span class="token function">times</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-short/index.html">Short</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="brief "><p class="paragraph">Multiplies this value by the other value.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1287450667%2FFunctions%2F-874938664" anchor-label="toByte" id="-1287450667%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="to-byte.html"><span>to</span><wbr></wbr><span><span>Byte</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1287450667%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-byte.html"><span class="token function">toByte</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-byte/index.html">Byte</a></div><div class="brief "><p class="paragraph">Converts this <a href="index.html">Long</a> value to <a href="../-byte/index.html">Byte</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1246334649%2FFunctions%2F-874938664" anchor-label="toChar" id="-1246334649%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="to-char.html"><span>to</span><wbr></wbr><span><span>Char</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1246334649%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-char.html"><span class="token function"><strike>toChar</strike></span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-char/index.html">Char</a></div><div class="brief "><p class="paragraph">Converts this <a href="index.html">Long</a> value to <a href="../-char/index.html">Char</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1761145132%2FFunctions%2F-874938664" anchor-label="toDouble" id="1761145132%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="to-double.html"><span>to</span><wbr></wbr><span><span>Double</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1761145132%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-double.html"><span class="token function">toDouble</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-double/index.html">Double</a></div><div class="brief "><p class="paragraph">Converts this <a href="index.html">Long</a> value to <a href="../-double/index.html">Double</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1688080577%2FFunctions%2F-874938664" anchor-label="toFloat" id="1688080577%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="to-float.html"><span>to</span><wbr></wbr><span><span>Float</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1688080577%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-float.html"><span class="token function">toFloat</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-float/index.html">Float</a></div><div class="brief "><p class="paragraph">Converts this <a href="index.html">Long</a> value to <a href="../-float/index.html">Float</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2047906162%2FFunctions%2F-874938664" anchor-label="toInt" id="-2047906162%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="to-int.html"><span>to</span><wbr></wbr><span><span>Int</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2047906162%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-int.html"><span class="token function">toInt</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Converts this <a href="index.html">Long</a> value to <a href="../-int/index.html">Int</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1811680031%2FFunctions%2F-874938664" anchor-label="toLong" id="-1811680031%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="to-long.html"><span>to</span><wbr></wbr><span><span>Long</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1811680031%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-long.html"><span class="token function">toLong</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="brief "><p class="paragraph">Returns this value.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1769647455%2FFunctions%2F-874938664" anchor-label="toShort" id="-1769647455%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="to-short.html"><span>to</span><wbr></wbr><span><span>Short</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1769647455%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-short.html"><span class="token function">toShort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-short/index.html">Short</a></div><div class="brief "><p class="paragraph">Converts this <a href="index.html">Long</a> value to <a href="../-short/index.html">Short</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="907564268%2FFunctions%2F-874938664" anchor-label="toString" id="907564268%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="to-string.html"><span>to</span><wbr></wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="907564268%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-string.html"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-string/index.html">String</a></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1898248631%2FFunctions%2F-874938664" anchor-label="unaryMinus" id="1898248631%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="unary-minus.html"><span>unary</span><wbr></wbr><span><span>Minus</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1898248631%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="unary-minus.html"><span class="token function">unaryMinus</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="brief "><p class="paragraph">Returns the negative of this value.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="790602169%2FFunctions%2F-874938664" anchor-label="unaryPlus" id="790602169%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="unary-plus.html"><span>unary</span><wbr></wbr><span><span>Plus</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="790602169%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="unary-plus.html"><span class="token function">unaryPlus</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="brief "><p class="paragraph">Returns this value.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2139503541%2FFunctions%2F-874938664" anchor-label="until" id="-2139503541%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin.ranges/until.html"><span><span>until</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2139503541%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="index.html">Long</a><span class="token punctuation">.</span><a href="../../kotlin.ranges/until.html"><span class="token function">until</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">to<span class="token operator">: </span><a href="../-byte/index.html">Byte</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlin.ranges/-long-range/index.html">LongRange</a></div><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="index.html">Long</a><span class="token punctuation">.</span><a href="../../kotlin.ranges/until.html"><span class="token function">until</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">to<span class="token operator">: </span><a href="../-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlin.ranges/-long-range/index.html">LongRange</a></div><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="index.html">Long</a><span class="token punctuation">.</span><a href="../../kotlin.ranges/until.html"><span class="token function">until</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">to<span class="token operator">: </span><a href="index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlin.ranges/-long-range/index.html">LongRange</a></div><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="index.html">Long</a><span class="token punctuation">.</span><a href="../../kotlin.ranges/until.html"><span class="token function">until</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">to<span class="token operator">: </span><a href="../-short/index.html">Short</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlin.ranges/-long-range/index.html">LongRange</a></div><div class="brief "><p class="paragraph">Returns a range from this value up to but excluding the specified <a href="../../kotlin.ranges/until.html">to</a> value.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1514842574%2FFunctions%2F-874938664" anchor-label="ushr" id="1514842574%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="ushr.html"><span><span>ushr</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1514842574%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="ushr.html"><span class="token function">ushr</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bitCount<span class="token operator">: </span><a href="../-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="brief "><p class="paragraph">Shifts this value right by the <a href="ushr.html">bitCount</a> number of bits, filling the leftmost bits with zeros.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1446289390%2FFunctions%2F-874938664" anchor-label="xor" id="-1446289390%2FFunctions%2F-874938664" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="xor.html"><span><span>xor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1446289390%2FFunctions%2F-874938664"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.0/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.0/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.0/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.0/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="xor.html"><span class="token function">xor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Long</a></div><div class="brief "><p class="paragraph">Performs a bitwise XOR operation between the two values.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+

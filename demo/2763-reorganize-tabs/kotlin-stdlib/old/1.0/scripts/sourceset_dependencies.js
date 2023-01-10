@@ -1,0 +1,1 @@
+sourceset_dependencies='{":stdlib_1.0/kotlin-stdlib-java-common":[],":stdlib_1.0/kotlin-stdlib-jdk7":[":stdlib_1.0/kotlin-stdlib-java-common"],":stdlib_1.0/kotlin-stdlib-jdk8":[":stdlib_1.0/kotlin-stdlib-java-common"]}'

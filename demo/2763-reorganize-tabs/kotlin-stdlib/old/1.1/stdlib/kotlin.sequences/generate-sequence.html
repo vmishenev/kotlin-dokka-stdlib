@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>generateSequence</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+        <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script src="https://unpkg.com/kotlin-playground@1"></script><script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+<link href="../../styles/multimodule.css" rel="Stylesheet">
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../index.html">
+                    <span>stdlib</span>
+            </a>
+    </div>
+    <div>
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;stdlib/kotlin.sequences/generate-sequence.html&quot;}">1.1</dokka-template-command>    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":stdlib_1.1/kotlin-stdlib-java-common">JVM</button>
+                <button class="platform-tag platform-selector js-like" data-active="" data-filter=":stdlib_1.1/kotlin-stdlib-js">JS</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="stdlib::kotlin.sequences//generateSequence/#kotlin.Function0[TypeParam(bounds=[kotlin.Any])?]/PointingToDeclaration//122488969">
+  <div class="breadcrumbs"><a href="../../index.html">stdlib</a><span class="delimiter">/</span><a href="index.html">kotlin.sequences</a><span class="delimiter">/</span><span class="current">generateSequence</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>generate</span><wbr></wbr><span><span>Sequence</span></span></h1>
+  </div>
+  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.1/kotlin-stdlib-java-common">JVM</button><button class="platform-bookmark" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js" data-toggle=":stdlib_1.1/kotlin-stdlib-js">JS</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.1/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="generate-sequence.html">T</a><span class="token operator"> : </span><a href="../kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="generate-sequence.html"><span class="token function">generateSequence</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">nextFunction<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="generate-sequence.html">T</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-sequence/index.html">Sequence</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="generate-sequence.html">T</a><span class="token operator">&gt;</span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/src/kotlin/collections/Sequences.kt#L640">source</a>)</span></span></div><p class="paragraph">Returns a sequence which invokes the function to calculate the next value on each iteration until the function returns <code class="lang-kotlin">null</code>.</p><p class="paragraph">The returned sequence is constrained to be iterated only once.</p><span class="kdoc-tag"><h4 class="">Since Kotlin</h4>1.0</span><h4 class="">See also</h4><div class="table" data-togglable="See also"><div class="table-row" data-togglable="See also" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="constrain-once.html"><span>constrain</span><wbr></wbr><span><span>Once</span></span></a></div></span></div><div></div></div></div><div class="table-row" data-togglable="See also" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><span data-unresolved-link="kotlin.sequences//sequence/#kotlin.coroutines.SuspendFunction1[kotlin.sequences.SequenceScope[TypeParam(bounds=[kotlin.Any?])],kotlin.Unit]/PointingToDeclaration/"><span><span>sequence</span></span></span></div></span></div><div></div></div></div></div><h4 class="">Samples</h4><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+import kotlin.test.*
+fun main() { 
+   //sampleStart 
+   var count = 3
+
+val sequence = generateSequence {
+    (count--).takeIf { it &gt; 0 } // will return null, when value becomes non-positive,
+                                // and that will terminate the sequence
+}
+
+println(sequence.toList()) // [3, 2, 1]
+
+// sequence.forEach {  }  // &lt;- iterating that sequence second time will fail 
+   //sampleEnd
+}</code></pre></div><hr><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="generate-sequence.html">T</a><span class="token operator"> : </span><a href="../kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="generate-sequence.html"><span class="token function">generateSequence</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">seed<span class="token operator">: </span><a href="generate-sequence.html">T</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">nextFunction<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="generate-sequence.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="generate-sequence.html">T</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-sequence/index.html">Sequence</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="generate-sequence.html">T</a><span class="token operator">&gt;</span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/src/kotlin/collections/Sequences.kt#L658">source</a>)</span></span></div><p class="paragraph">Returns a sequence defined by the starting value <a href="generate-sequence.html">seed</a> and the function <a href="generate-sequence.html">nextFunction</a>, which is invoked to calculate the next value based on the previous one on each iteration.</p><p class="paragraph">The sequence produces values until it encounters first <code class="lang-kotlin">null</code> value. If <a href="generate-sequence.html">seed</a> is <code class="lang-kotlin">null</code>, an empty sequence is produced.</p><p class="paragraph">The sequence can be iterated multiple times, each time starting with <a href="generate-sequence.html">seed</a>.</p><span class="kdoc-tag"><h4 class="">Since Kotlin</h4>1.0</span><h4 class="">See also</h4><div class="table" data-togglable="See also"><div class="table-row" data-togglable="See also" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><span data-unresolved-link="kotlin.sequences//sequence/#kotlin.coroutines.SuspendFunction1[kotlin.sequences.SequenceScope[TypeParam(bounds=[kotlin.Any?])],kotlin.Unit]/PointingToDeclaration/"><span><span>sequence</span></span></span></div></span></div><div></div></div></div></div><h4 class="">Samples</h4><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+import kotlin.test.*
+fun main() { 
+   //sampleStart 
+   fun fibonacci(): Sequence&lt;Int&gt; {
+    // fibonacci terms
+    // 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, ...
+    return generateSequence(Pair(0, 1), { Pair(it.second, it.first + it.second) }).map { it.first }
+}
+
+println(fibonacci().take(10).toList()) // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34] 
+   //sampleEnd
+}</code></pre></div><hr><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="generate-sequence.html">T</a><span class="token operator"> : </span><a href="../kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="generate-sequence.html"><span class="token function">generateSequence</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">seedFunction<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="generate-sequence.html">T</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">nextFunction<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="generate-sequence.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="generate-sequence.html">T</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-sequence/index.html">Sequence</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="generate-sequence.html">T</a><span class="token operator">&gt;</span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/src/kotlin/collections/Sequences.kt#L677">source</a>)</span></span></div><p class="paragraph">Returns a sequence defined by the function <a href="generate-sequence.html">seedFunction</a>, which is invoked to produce the starting value, and the <a href="generate-sequence.html">nextFunction</a>, which is invoked to calculate the next value based on the previous one on each iteration.</p><p class="paragraph">The sequence produces values until it encounters first <code class="lang-kotlin">null</code> value. If <a href="generate-sequence.html">seedFunction</a> returns <code class="lang-kotlin">null</code>, an empty sequence is produced.</p><p class="paragraph">The sequence can be iterated multiple times.</p><span class="kdoc-tag"><h4 class="">Since Kotlin</h4>1.0</span><h4 class="">See also</h4><div class="table" data-togglable="See also"><div class="table-row" data-togglable="See also" data-filterable-current=":stdlib_1.1/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.1/kotlin-stdlib-java-common"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><span data-unresolved-link="kotlin.sequences//sequence/#kotlin.coroutines.SuspendFunction1[kotlin.sequences.SequenceScope[TypeParam(bounds=[kotlin.Any?])],kotlin.Unit]/PointingToDeclaration/"><span><span>sequence</span></span></span></div></span></div><div></div></div></div></div><h4 class="">Samples</h4><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+import kotlin.test.*
+fun main() { 
+   //sampleStart 
+   class LinkedValue&lt;T&gt;(val value: T, val next: LinkedValue&lt;T&gt;? = null)
+
+fun &lt;T&gt; LinkedValue&lt;T&gt;?.asSequence(): Sequence&lt;LinkedValue&lt;T&gt;&gt; = generateSequence(
+    seedFunction = { this },
+    nextFunction = { it.next }
+)
+
+fun &lt;T&gt; LinkedValue&lt;T&gt;?.valueSequence(): Sequence&lt;T&gt; = asSequence().map { it.value }
+
+val singleItem = LinkedValue(42)
+val twoItems = LinkedValue(24, singleItem)
+
+println(twoItems.valueSequence().toList()) // [24, 42]
+println(singleItem.valueSequence().toList()) // [42]
+println(singleItem.next.valueSequence().toList()) // [] 
+   //sampleEnd
+}</code></pre></div></div><div class="content sourceset-dependent-content" data-togglable=":stdlib_1.1/kotlin-stdlib-js"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="generate-sequence.html">T</a><span class="token operator"> : </span><a href="../kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="generate-sequence.html"><span class="token function">generateSequence</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">nextFunction<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="generate-sequence.html">T</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-sequence/index.html">Sequence</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="generate-sequence.html">T</a><span class="token operator">&gt;</span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/src/kotlin/collections/Sequences.kt#L640">source</a>)</span></span></div><p class="paragraph">Returns a sequence which invokes the function to calculate the next value on each iteration until the function returns <code class="lang-kotlin">null</code>.</p><p class="paragraph">The returned sequence is constrained to be iterated only once.</p><span class="kdoc-tag"><h4 class="">Since Kotlin</h4>1.1</span><h4 class="">See also</h4><div class="table" data-togglable="See also"><div class="table-row" data-togglable="See also" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="constrain-once.html"><span>constrain</span><wbr></wbr><span><span>Once</span></span></a></div></span></div><div></div></div></div><div class="table-row" data-togglable="See also" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><span data-unresolved-link="kotlin.sequences//sequence/#kotlin.coroutines.SuspendFunction1[kotlin.sequences.SequenceScope[TypeParam(bounds=[kotlin.Any?])],kotlin.Unit]/PointingToDeclaration/"><span><span>sequence</span></span></span></div></span></div><div></div></div></div></div><h4 class="">Samples</h4><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+import kotlin.test.*
+fun main() { 
+   //sampleStart 
+   var count = 3
+
+val sequence = generateSequence {
+    (count--).takeIf { it &gt; 0 } // will return null, when value becomes non-positive,
+                                // and that will terminate the sequence
+}
+
+println(sequence.toList()) // [3, 2, 1]
+
+// sequence.forEach {  }  // &lt;- iterating that sequence second time will fail 
+   //sampleEnd
+}</code></pre></div><hr><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="generate-sequence.html">T</a><span class="token operator"> : </span><a href="../kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="generate-sequence.html"><span class="token function">generateSequence</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">seed<span class="token operator">: </span><a href="generate-sequence.html">T</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">nextFunction<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="generate-sequence.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="generate-sequence.html">T</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-sequence/index.html">Sequence</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="generate-sequence.html">T</a><span class="token operator">&gt;</span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/src/kotlin/collections/Sequences.kt#L658">source</a>)</span></span></div><p class="paragraph">Returns a sequence defined by the starting value <a href="generate-sequence.html">seed</a> and the function <a href="generate-sequence.html">nextFunction</a>, which is invoked to calculate the next value based on the previous one on each iteration.</p><p class="paragraph">The sequence produces values until it encounters first <code class="lang-kotlin">null</code> value. If <a href="generate-sequence.html">seed</a> is <code class="lang-kotlin">null</code>, an empty sequence is produced.</p><p class="paragraph">The sequence can be iterated multiple times, each time starting with <a href="generate-sequence.html">seed</a>.</p><span class="kdoc-tag"><h4 class="">Since Kotlin</h4>1.1</span><h4 class="">See also</h4><div class="table" data-togglable="See also"><div class="table-row" data-togglable="See also" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><span data-unresolved-link="kotlin.sequences//sequence/#kotlin.coroutines.SuspendFunction1[kotlin.sequences.SequenceScope[TypeParam(bounds=[kotlin.Any?])],kotlin.Unit]/PointingToDeclaration/"><span><span>sequence</span></span></span></div></span></div><div></div></div></div></div><h4 class="">Samples</h4><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+import kotlin.test.*
+fun main() { 
+   //sampleStart 
+   fun fibonacci(): Sequence&lt;Int&gt; {
+    // fibonacci terms
+    // 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, ...
+    return generateSequence(Pair(0, 1), { Pair(it.second, it.first + it.second) }).map { it.first }
+}
+
+println(fibonacci().take(10).toList()) // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34] 
+   //sampleEnd
+}</code></pre></div><hr><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="generate-sequence.html">T</a><span class="token operator"> : </span><a href="../kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="generate-sequence.html"><span class="token function">generateSequence</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">seedFunction<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="generate-sequence.html">T</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">nextFunction<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="generate-sequence.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="generate-sequence.html">T</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-sequence/index.html">Sequence</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="generate-sequence.html">T</a><span class="token operator">&gt;</span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/src/kotlin/collections/Sequences.kt#L677">source</a>)</span></span></div><p class="paragraph">Returns a sequence defined by the function <a href="generate-sequence.html">seedFunction</a>, which is invoked to produce the starting value, and the <a href="generate-sequence.html">nextFunction</a>, which is invoked to calculate the next value based on the previous one on each iteration.</p><p class="paragraph">The sequence produces values until it encounters first <code class="lang-kotlin">null</code> value. If <a href="generate-sequence.html">seedFunction</a> returns <code class="lang-kotlin">null</code>, an empty sequence is produced.</p><p class="paragraph">The sequence can be iterated multiple times.</p><span class="kdoc-tag"><h4 class="">Since Kotlin</h4>1.1</span><h4 class="">See also</h4><div class="table" data-togglable="See also"><div class="table-row" data-togglable="See also" data-filterable-current=":stdlib_1.1/kotlin-stdlib-js" data-filterable-set=":stdlib_1.1/kotlin-stdlib-js"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><span data-unresolved-link="kotlin.sequences//sequence/#kotlin.coroutines.SuspendFunction1[kotlin.sequences.SequenceScope[TypeParam(bounds=[kotlin.Any?])],kotlin.Unit]/PointingToDeclaration/"><span><span>sequence</span></span></span></div></span></div><div></div></div></div></div><h4 class="">Samples</h4><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+
+import kotlin.test.*
+fun main() { 
+   //sampleStart 
+   class LinkedValue&lt;T&gt;(val value: T, val next: LinkedValue&lt;T&gt;? = null)
+
+fun &lt;T&gt; LinkedValue&lt;T&gt;?.asSequence(): Sequence&lt;LinkedValue&lt;T&gt;&gt; = generateSequence(
+    seedFunction = { this },
+    nextFunction = { it.next }
+)
+
+fun &lt;T&gt; LinkedValue&lt;T&gt;?.valueSequence(): Sequence&lt;T&gt; = asSequence().map { it.value }
+
+val singleItem = LinkedValue(42)
+val twoItems = LinkedValue(24, singleItem)
+
+println(twoItems.valueSequence().toList()) // [24, 42]
+println(singleItem.valueSequence().toList()) // [42]
+println(singleItem.next.valueSequence().toList()) // [] 
+   //sampleEnd
+}</code></pre></div></div>  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+

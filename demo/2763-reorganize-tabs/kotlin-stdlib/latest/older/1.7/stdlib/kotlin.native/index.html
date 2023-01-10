@@ -1,0 +1,1038 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>kotlin.native</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+        <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../styles/multimodule.css" rel="Stylesheet">
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../index.html">
+                    <span>stdlib</span>
+            </a>
+    </div>
+    <div>
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;stdlib/kotlin.native/index.html&quot;}"><div class="versions-dropdown">
+  <div class="versions-dropdown-button">1.7</div>
+  <div class="versions-dropdown-data"><a href="../../../../stdlib/kotlin.native/index.html">1.8</a><a href="index.html">1.7</a><a href="../../../1.6/stdlib/kotlin.native/index.html">1.6</a><a href="../../../1.5/stdlib/kotlin.native/index.html">1.5</a><a href="../../../1.4/stdlib/kotlin.native/index.html">1.4</a><a href="../../../1.3/stdlib/kotlin.native/index.html">1.3</a><a href="../../../1.2/stdlib/kotlin.native/index.html">1.2</a><a href="../../../1.1/stdlib/kotlin.native/index.html">1.1</a><a href="../../../1.0/stdlib/kotlin.native/index.html">1.0</a></div>
+</div>
+</dokka-template-command>    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":stdlib_1.7/kotlin-stdlib-common">Common</button>
+                <button class="platform-tag platform-selector native-like" data-active="" data-filter=":stdlib_1.7/kotlin-stdlib-native">Native</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="stdlib::kotlin.native////PointingToDeclaration//1936500620">
+  <div class="breadcrumbs"><a href="../../index.html">stdlib</a><span class="delimiter">/</span><span class="current">kotlin.native</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Functions,Extensions">Functions</button></div>
+    <div class="tabs-section-body">
+      <h2 class="">Types</h2>
+      <div class="table" data-togglable="Types"><a data-name="1882563377%2FClasslikes%2F-1831056522" anchor-label="BitSet" id="1882563377%2FClasslikes%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Types" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-bit-set/index.html"><span>Bit</span><wbr><span><span>Set</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1882563377%2FClasslikes%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">class </span><a href="-bit-set/index.html">BitSet</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">size<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token operator"> = </span>ELEMENT_SIZE</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">A vector of bits growing if necessary and allowing one to set/clear/read bits from it by a bit index.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="949370446%2FClasslikes%2F1936500620" anchor-label="CName" id="949370446%2FClasslikes%2F1936500620" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common :stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Types" data-filterable-current=":stdlib_1.7/kotlin-stdlib-common :stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common :stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-c-name/index.html"><span><span>CName</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="949370446%2FClasslikes%2F1936500620"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-common">Common</button><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-common"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../kotlin.annotation/-target/index.html"><span class="token annotation builtin">Target</span></a><span class="token punctuation">(</span><span>allowedTargets<span class="token operator"> = </span><span class="token punctuation">[</span><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.FUNCTION///PointingToDeclaration/">AnnotationTarget.FUNCTION</span></span><wbr><span class="token punctuation">]</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">expect </span><span class="token keyword">annotation class </span><a href="-c-name/index.html">CName</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>externName<span class="token operator">: </span><a href="../kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">""</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>shortName<span class="token operator">: </span><a href="../kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">""</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Makes top level function available from C/C++ code with the given name.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.5</div></div><div class="content sourceset-dependent-content" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../kotlin.annotation/-target/index.html"><span class="token annotation builtin">Target</span></a><span class="token punctuation">(</span><span>allowedTargets<span class="token operator"> = </span><span class="token punctuation">[</span><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.FUNCTION///PointingToDeclaration/">AnnotationTarget.FUNCTION</span></span><wbr><span class="token punctuation">]</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">actual </span><span class="token keyword">annotation class </span><a href="-c-name/index.html">CName</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>externName<span class="token operator">: </span><a href="../kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">""</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>shortName<span class="token operator">: </span><a href="../kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">""</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Makes top level function available from C/C++ code with the given name.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1963819103%2FClasslikes%2F-1831056522" anchor-label="CpuArchitecture" id="-1963819103%2FClasslikes%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Types" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-cpu-architecture/index.html"><span>Cpu</span><wbr><span><span>Architecture</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1963819103%2FClasslikes%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-cpu-architecture/index.html">CpuArchitecture</a> : <a href="../kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-cpu-architecture/index.html">CpuArchitecture</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Central Processor Unit architecture.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-85653532%2FClasslikes%2F-1831056522" anchor-label="EagerInitialization" id="-85653532%2FClasslikes%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Types" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-eager-initialization/index.html"><span>Eager</span><wbr><span><span>Initialization</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-85653532%2FClasslikes%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../kotlin.annotation/-target/index.html"><span class="token annotation builtin">Target</span></a><span class="token punctuation">(</span><span>allowedTargets<span class="token operator"> = </span><span class="token punctuation">[</span><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.PROPERTY///PointingToDeclaration/">AnnotationTarget.PROPERTY</span></span><wbr><span class="token punctuation">]</span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlin/ExperimentalStdlibApi///PointingToDeclaration/"><span class="token annotation builtin">ExperimentalStdlibApi</span></span></div></div><span class="token keyword">annotation class </span><a href="-eager-initialization/index.html"><strike>EagerInitialization</strike></a></div><div class="brief "><p class="paragraph">Forces a top-level property to be initialized eagerly, opposed to lazily on the first access to file and/or property. This annotation can be used as temporal migration assistance during the transition from the previous Kotlin/Native initialization scheme "eager by default" to the new one, "lazy by default".</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="663968241%2FClasslikes%2F-1831056522" anchor-label="FileFailedToInitializeException" id="663968241%2FClasslikes%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Types" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-file-failed-to-initialize-exception/index.html"><span>File</span><wbr><span>Failed</span><wbr><span>To</span><wbr><span>Initialize</span><wbr><span><span>Exception</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="663968241%2FClasslikes%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlin/ExperimentalStdlibApi///PointingToDeclaration/"><span class="token annotation builtin">ExperimentalStdlibApi</span></span></div></div><span class="token keyword">class </span><a href="-file-failed-to-initialize-exception/index.html">FileFailedToInitializeException</a> : <a href="../kotlin/-runtime-exception/index.html">RuntimeException</a></div><div class="brief "><p class="paragraph">Exception thrown when there was an error during file initalization.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1362973653%2FClasslikes%2F1936500620" anchor-label="FreezingIsDeprecated" id="1362973653%2FClasslikes%2F1936500620" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common :stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Types" data-filterable-current=":stdlib_1.7/kotlin-stdlib-common :stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common :stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-freezing-is-deprecated/index.html"><span>Freezing</span><wbr><span>Is</span><wbr><span><span>Deprecated</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1362973653%2FClasslikes%2F1936500620"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-common">Common</button><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-common"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../kotlin.annotation/-target/index.html"><span class="token annotation builtin">Target</span></a><span class="token punctuation">(</span><span>allowedTargets<span class="token operator"> = </span><span class="token punctuation">[</span><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.CLASS///PointingToDeclaration/">AnnotationTarget.CLASS</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.ANNOTATION_CLASS///PointingToDeclaration/">AnnotationTarget.ANNOTATION_CLASS</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.PROPERTY///PointingToDeclaration/">AnnotationTarget.PROPERTY</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.FIELD///PointingToDeclaration/">AnnotationTarget.FIELD</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.LOCAL_VARIABLE///PointingToDeclaration/">AnnotationTarget.LOCAL_VARIABLE</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.VALUE_PARAMETER///PointingToDeclaration/">AnnotationTarget.VALUE_PARAMETER</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.CONSTRUCTOR///PointingToDeclaration/">AnnotationTarget.CONSTRUCTOR</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.FUNCTION///PointingToDeclaration/">AnnotationTarget.FUNCTION</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.PROPERTY_GETTER///PointingToDeclaration/">AnnotationTarget.PROPERTY_GETTER</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.PROPERTY_SETTER///PointingToDeclaration/">AnnotationTarget.PROPERTY_SETTER</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.TYPEALIAS///PointingToDeclaration/">AnnotationTarget.TYPEALIAS</span></span><wbr><span class="token punctuation">]</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">expect </span><span class="token keyword">annotation class </span><a href="-freezing-is-deprecated/index.html">FreezingIsDeprecated</a></div><div class="brief "><p class="paragraph">Freezing API is deprecated since 1.7.20.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.7</div></div><div class="content sourceset-dependent-content" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../kotlin.annotation/-target/index.html"><span class="token annotation builtin">Target</span></a><span class="token punctuation">(</span><span>allowedTargets<span class="token operator"> = </span><span class="token punctuation">[</span><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.CLASS///PointingToDeclaration/">AnnotationTarget.CLASS</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.ANNOTATION_CLASS///PointingToDeclaration/">AnnotationTarget.ANNOTATION_CLASS</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.PROPERTY///PointingToDeclaration/">AnnotationTarget.PROPERTY</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.FIELD///PointingToDeclaration/">AnnotationTarget.FIELD</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.LOCAL_VARIABLE///PointingToDeclaration/">AnnotationTarget.LOCAL_VARIABLE</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.VALUE_PARAMETER///PointingToDeclaration/">AnnotationTarget.VALUE_PARAMETER</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.CONSTRUCTOR///PointingToDeclaration/">AnnotationTarget.CONSTRUCTOR</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.FUNCTION///PointingToDeclaration/">AnnotationTarget.FUNCTION</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.PROPERTY_GETTER///PointingToDeclaration/">AnnotationTarget.PROPERTY_GETTER</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.PROPERTY_SETTER///PointingToDeclaration/">AnnotationTarget.PROPERTY_SETTER</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.TYPEALIAS///PointingToDeclaration/">AnnotationTarget.TYPEALIAS</span></span><wbr><span class="token punctuation">]</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">actual </span><span class="token keyword">annotation class </span><a href="-freezing-is-deprecated/index.html">FreezingIsDeprecated</a></div><div class="brief "><p class="paragraph">Freezing API is deprecated since 1.7.20.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.7</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-543087642%2FClasslikes%2F1936500620" anchor-label="HiddenFromObjC" id="-543087642%2FClasslikes%2F1936500620" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common :stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Types" data-filterable-current=":stdlib_1.7/kotlin-stdlib-common :stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common :stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-hidden-from-obj-c/index.html"><span>Hidden</span><wbr><span>From</span><wbr><span>Obj</span><wbr><span><span>C</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-543087642%2FClasslikes%2F1936500620"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-common">Common</button><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-common"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="-hides-from-obj-c/index.html"><span class="token annotation builtin">HidesFromObjC</span></a></div><div class="block"><span class="token annotation builtin">@</span><a href="../kotlin.annotation/-target/index.html"><span class="token annotation builtin">Target</span></a><span class="token punctuation">(</span><span>allowedTargets<span class="token operator"> = </span><span class="token punctuation">[</span><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.PROPERTY///PointingToDeclaration/">AnnotationTarget.PROPERTY</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.FUNCTION///PointingToDeclaration/">AnnotationTarget.FUNCTION</span></span><wbr><span class="token punctuation">]</span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="../kotlin.experimental/-experimental-obj-c-refinement/index.html"><span class="token annotation builtin">ExperimentalObjCRefinement</span></a></div></div><span class="token keyword">expect </span><span class="token keyword">annotation class </span><a href="-hidden-from-obj-c/index.html">HiddenFromObjC</a></div><div class="brief "><p class="paragraph">Instructs the Kotlin compiler to remove this function or property from the public Objective-C API.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.2</div></div><div class="content sourceset-dependent-content" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="-hides-from-obj-c/index.html"><span class="token annotation builtin">HidesFromObjC</span></a></div><div class="block"><span class="token annotation builtin">@</span><a href="../kotlin.annotation/-target/index.html"><span class="token annotation builtin">Target</span></a><span class="token punctuation">(</span><span>allowedTargets<span class="token operator"> = </span><span class="token punctuation">[</span><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.PROPERTY///PointingToDeclaration/">AnnotationTarget.PROPERTY</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.FUNCTION///PointingToDeclaration/">AnnotationTarget.FUNCTION</span></span><wbr><span class="token punctuation">]</span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlin.experimental/ExperimentalObjCRefinement///PointingToDeclaration/"><span class="token annotation builtin">ExperimentalObjCRefinement</span></span></div></div><span class="token keyword">actual </span><span class="token keyword">annotation class </span><a href="-hidden-from-obj-c/index.html">HiddenFromObjC</a></div><div class="brief "><p class="paragraph">Instructs the Kotlin compiler to remove this function or property from the public Objective-C API.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="889150325%2FClasslikes%2F1936500620" anchor-label="HidesFromObjC" id="889150325%2FClasslikes%2F1936500620" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common :stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Types" data-filterable-current=":stdlib_1.7/kotlin-stdlib-common :stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common :stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-hides-from-obj-c/index.html"><span>Hides</span><wbr><span>From</span><wbr><span>Obj</span><wbr><span><span>C</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="889150325%2FClasslikes%2F1936500620"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-common">Common</button><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-common"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../kotlin.annotation/-target/index.html"><span class="token annotation builtin">Target</span></a><span class="token punctuation">(</span><span>allowedTargets<span class="token operator"> = </span><span class="token punctuation">[</span><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.ANNOTATION_CLASS///PointingToDeclaration/">AnnotationTarget.ANNOTATION_CLASS</span></span><wbr><span class="token punctuation">]</span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="../kotlin.experimental/-experimental-obj-c-refinement/index.html"><span class="token annotation builtin">ExperimentalObjCRefinement</span></a></div></div><span class="token keyword">expect </span><span class="token keyword">annotation class </span><a href="-hides-from-obj-c/index.html">HidesFromObjC</a></div><div class="brief "><p class="paragraph">Meta-annotation that instructs the Kotlin compiler to remove the annotated function or property from the public Objective-C API.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.2</div></div><div class="content sourceset-dependent-content" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../kotlin.annotation/-target/index.html"><span class="token annotation builtin">Target</span></a><span class="token punctuation">(</span><span>allowedTargets<span class="token operator"> = </span><span class="token punctuation">[</span><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.ANNOTATION_CLASS///PointingToDeclaration/">AnnotationTarget.ANNOTATION_CLASS</span></span><wbr><span class="token punctuation">]</span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlin.experimental/ExperimentalObjCRefinement///PointingToDeclaration/"><span class="token annotation builtin">ExperimentalObjCRefinement</span></span></div></div><span class="token keyword">actual </span><span class="token keyword">annotation class </span><a href="-hides-from-obj-c/index.html">HidesFromObjC</a></div><div class="brief "><p class="paragraph">Meta-annotation that instructs the Kotlin compiler to remove the annotated function or property from the public Objective-C API.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-881510979%2FClasslikes%2F-1831056522" anchor-label="ImmutableBlob" id="-881510979%2FClasslikes%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Types" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-immutable-blob/index.html"><span>Immutable</span><wbr><span><span>Blob</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-881510979%2FClasslikes%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">class </span><a href="-immutable-blob/index.html">ImmutableBlob</a></div><div class="brief "><p class="paragraph">An immutable compile-time array of bytes.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-120609902%2FClasslikes%2F-1831056522" anchor-label="IncorrectDereferenceException" id="-120609902%2FClasslikes%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Types" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-incorrect-dereference-exception/index.html"><span>Incorrect</span><wbr><span>Dereference</span><wbr><span><span>Exception</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-120609902%2FClasslikes%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">class </span><a href="-incorrect-dereference-exception/index.html">IncorrectDereferenceException</a> : <a href="../kotlin/-runtime-exception/index.html">RuntimeException</a></div><div class="brief "><p class="paragraph">Exception thrown when top level variable is accessed from incorrect execution context.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-241552844%2FClasslikes%2F-1831056522" anchor-label="MemoryModel" id="-241552844%2FClasslikes%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Types" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-memory-model/index.html"><span>Memory</span><wbr><span><span>Model</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-241552844%2FClasslikes%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-memory-model/index.html">MemoryModel</a> : <a href="../kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-memory-model/index.html">MemoryModel</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Memory model.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1709669743%2FClasslikes%2F1936500620" anchor-label="ObjCName" id="1709669743%2FClasslikes%2F1936500620" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common :stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Types" data-filterable-current=":stdlib_1.7/kotlin-stdlib-common :stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common :stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-obj-c-name/index.html"><span>Obj</span><wbr><span><span>CName</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1709669743%2FClasslikes%2F1936500620"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-common">Common</button><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-common"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../kotlin.annotation/-target/index.html"><span class="token annotation builtin">Target</span></a><span class="token punctuation">(</span><span>allowedTargets<span class="token operator"> = </span><span class="token punctuation">[</span><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.CLASS///PointingToDeclaration/">AnnotationTarget.CLASS</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.PROPERTY///PointingToDeclaration/">AnnotationTarget.PROPERTY</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.VALUE_PARAMETER///PointingToDeclaration/">AnnotationTarget.VALUE_PARAMETER</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.FUNCTION///PointingToDeclaration/">AnnotationTarget.FUNCTION</span></span><wbr><span class="token punctuation">]</span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="../kotlin.experimental/-experimental-obj-c-name/index.html"><span class="token annotation builtin">ExperimentalObjCName</span></a></div></div><span class="token keyword">expect </span><span class="token keyword">annotation class </span><a href="-obj-c-name/index.html">ObjCName</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>name<span class="token operator">: </span><a href="../kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">""</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>swiftName<span class="token operator">: </span><a href="../kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">""</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>exact<span class="token operator">: </span><a href="../kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Instructs the Kotlin compiler to use a custom Objective-C and/or Swift name for this class, property, parameter or function.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.2</div></div><div class="content sourceset-dependent-content" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../kotlin.annotation/-target/index.html"><span class="token annotation builtin">Target</span></a><span class="token punctuation">(</span><span>allowedTargets<span class="token operator"> = </span><span class="token punctuation">[</span><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.CLASS///PointingToDeclaration/">AnnotationTarget.CLASS</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.PROPERTY///PointingToDeclaration/">AnnotationTarget.PROPERTY</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.VALUE_PARAMETER///PointingToDeclaration/">AnnotationTarget.VALUE_PARAMETER</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.FUNCTION///PointingToDeclaration/">AnnotationTarget.FUNCTION</span></span><wbr><span class="token punctuation">]</span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlin.experimental/ExperimentalObjCName///PointingToDeclaration/"><span class="token annotation builtin">ExperimentalObjCName</span></span></div></div><span class="token keyword">actual </span><span class="token keyword">annotation class </span><a href="-obj-c-name/index.html">ObjCName</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>name<span class="token operator">: </span><a href="../kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">""</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>swiftName<span class="token operator">: </span><a href="../kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">""</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>exact<span class="token operator">: </span><a href="../kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Instructs the Kotlin compiler to use a custom Objective-C and/or Swift name for this class, property, parameter or function.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="125436670%2FClasslikes%2F-1831056522" anchor-label="OsFamily" id="125436670%2FClasslikes%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Types" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-os-family/index.html"><span>Os</span><wbr><span><span>Family</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="125436670%2FClasslikes%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-os-family/index.html">OsFamily</a> : <a href="../kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-os-family/index.html">OsFamily</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Operating system family.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-758429869%2FClasslikes%2F-1831056522" anchor-label="Platform" id="-758429869%2FClasslikes%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Types" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-platform/index.html"><span><span>Platform</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-758429869%2FClasslikes%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">object </span><a href="-platform/index.html">Platform</a></div><div class="brief "><p class="paragraph">Object describing the current platform program executes upon.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1061938114%2FClasslikes%2F1936500620" anchor-label="RefinesInSwift" id="-1061938114%2FClasslikes%2F1936500620" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common :stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Types" data-filterable-current=":stdlib_1.7/kotlin-stdlib-common :stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common :stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-refines-in-swift/index.html"><span>Refines</span><wbr><span>In</span><wbr><span><span>Swift</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1061938114%2FClasslikes%2F1936500620"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-common">Common</button><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-common"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../kotlin.annotation/-target/index.html"><span class="token annotation builtin">Target</span></a><span class="token punctuation">(</span><span>allowedTargets<span class="token operator"> = </span><span class="token punctuation">[</span><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.ANNOTATION_CLASS///PointingToDeclaration/">AnnotationTarget.ANNOTATION_CLASS</span></span><wbr><span class="token punctuation">]</span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="../kotlin.experimental/-experimental-obj-c-refinement/index.html"><span class="token annotation builtin">ExperimentalObjCRefinement</span></a></div></div><span class="token keyword">expect </span><span class="token keyword">annotation class </span><a href="-refines-in-swift/index.html">RefinesInSwift</a></div><div class="brief "><p class="paragraph">Meta-annotation that instructs the Kotlin compiler to mark the annotated function or property as <code class="lang-kotlin">swift_private</code> in the generated Objective-C API.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.2</div></div><div class="content sourceset-dependent-content" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../kotlin.annotation/-target/index.html"><span class="token annotation builtin">Target</span></a><span class="token punctuation">(</span><span>allowedTargets<span class="token operator"> = </span><span class="token punctuation">[</span><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.ANNOTATION_CLASS///PointingToDeclaration/">AnnotationTarget.ANNOTATION_CLASS</span></span><wbr><span class="token punctuation">]</span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlin.experimental/ExperimentalObjCRefinement///PointingToDeclaration/"><span class="token annotation builtin">ExperimentalObjCRefinement</span></span></div></div><span class="token keyword">actual </span><span class="token keyword">annotation class </span><a href="-refines-in-swift/index.html">RefinesInSwift</a></div><div class="brief "><p class="paragraph">Meta-annotation that instructs the Kotlin compiler to mark the annotated function or property as <code class="lang-kotlin">swift_private</code> in the generated Objective-C API.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-780354909%2FClasslikes%2F-1831056522" anchor-label="ReportUnhandledExceptionHook" id="-780354909%2FClasslikes%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Types" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#-780354909%2FClasslikes%2F-1831056522"><span>Report</span><wbr><span>Unhandled</span><wbr><span>Exception</span><wbr><span><span>Hook</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-780354909%2FClasslikes%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="index.html#-780354909%2FClasslikes%2F-1831056522">ReportUnhandledExceptionHook</a><span class="token operator"> = </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="../kotlin/-throwable/index.html">Throwable</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../kotlin/-unit/index.html">Unit</a></div><div class="brief "><p class="paragraph">Typealias describing custom exception reporting hook.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1045811135%2FClasslikes%2F-1831056522" anchor-label="Retain" id="-1045811135%2FClasslikes%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Types" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-retain/index.html"><span><span>Retain</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1045811135%2FClasslikes%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../kotlin.annotation/-target/index.html"><span class="token annotation builtin">Target</span></a><span class="token punctuation">(</span><span>allowedTargets<span class="token operator"> = </span><span class="token punctuation">[</span><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.FUNCTION///PointingToDeclaration/">AnnotationTarget.FUNCTION</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.CLASS///PointingToDeclaration/">AnnotationTarget.CLASS</span></span><wbr><span class="token punctuation">]</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">annotation class </span><a href="-retain/index.html">Retain</a></div><div class="brief "><p class="paragraph">Preserve the function entry point during global optimizations.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="2141134791%2FClasslikes%2F-1831056522" anchor-label="RetainForTarget" id="2141134791%2FClasslikes%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Types" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-retain-for-target/index.html"><span>Retain</span><wbr><span>For</span><wbr><span><span>Target</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2141134791%2FClasslikes%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../kotlin.annotation/-target/index.html"><span class="token annotation builtin">Target</span></a><span class="token punctuation">(</span><span>allowedTargets<span class="token operator"> = </span><span class="token punctuation">[</span><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.FUNCTION///PointingToDeclaration/">AnnotationTarget.FUNCTION</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.CLASS///PointingToDeclaration/">AnnotationTarget.CLASS</span></span><wbr><span class="token punctuation">]</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">annotation class </span><a href="-retain-for-target/index.html">RetainForTarget</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>target<span class="token operator">: </span><a href="../kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Preserve the function entry point during global optimizations, only for the given target.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-376164658%2FClasslikes%2F1936500620" anchor-label="ShouldRefineInSwift" id="-376164658%2FClasslikes%2F1936500620" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common :stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Types" data-filterable-current=":stdlib_1.7/kotlin-stdlib-common :stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common :stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-should-refine-in-swift/index.html"><span>Should</span><wbr><span>Refine</span><wbr><span>In</span><wbr><span><span>Swift</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-376164658%2FClasslikes%2F1936500620"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-common">Common</button><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-common"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="-refines-in-swift/index.html"><span class="token annotation builtin">RefinesInSwift</span></a></div><div class="block"><span class="token annotation builtin">@</span><a href="../kotlin.annotation/-target/index.html"><span class="token annotation builtin">Target</span></a><span class="token punctuation">(</span><span>allowedTargets<span class="token operator"> = </span><span class="token punctuation">[</span><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.PROPERTY///PointingToDeclaration/">AnnotationTarget.PROPERTY</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.FUNCTION///PointingToDeclaration/">AnnotationTarget.FUNCTION</span></span><wbr><span class="token punctuation">]</span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="../kotlin.experimental/-experimental-obj-c-refinement/index.html"><span class="token annotation builtin">ExperimentalObjCRefinement</span></a></div></div><span class="token keyword">expect </span><span class="token keyword">annotation class </span><a href="-should-refine-in-swift/index.html">ShouldRefineInSwift</a></div><div class="brief "><p class="paragraph">Instructs the Kotlin compiler to mark this function or property as <code class="lang-kotlin">swift_private</code> in the generated Objective-C API.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.2</div></div><div class="content sourceset-dependent-content" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="-refines-in-swift/index.html"><span class="token annotation builtin">RefinesInSwift</span></a></div><div class="block"><span class="token annotation builtin">@</span><a href="../kotlin.annotation/-target/index.html"><span class="token annotation builtin">Target</span></a><span class="token punctuation">(</span><span>allowedTargets<span class="token operator"> = </span><span class="token punctuation">[</span><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.PROPERTY///PointingToDeclaration/">AnnotationTarget.PROPERTY</span><span class="token punctuation">, </span></span><wbr><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.FUNCTION///PointingToDeclaration/">AnnotationTarget.FUNCTION</span></span><wbr><span class="token punctuation">]</span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlin.experimental/ExperimentalObjCRefinement///PointingToDeclaration/"><span class="token annotation builtin">ExperimentalObjCRefinement</span></span></div></div><span class="token keyword">actual </span><span class="token keyword">annotation class </span><a href="-should-refine-in-swift/index.html">ShouldRefineInSwift</a></div><div class="brief "><p class="paragraph">Instructs the Kotlin compiler to mark this function or property as <code class="lang-kotlin">swift_private</code> in the generated Objective-C API.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2087352253%2FClasslikes%2F-1831056522" anchor-label="SymbolName" id="-2087352253%2FClasslikes%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Types" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-symbol-name/index.html"><span>Symbol</span><wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2087352253%2FClasslikes%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../kotlin.annotation/-target/index.html"><span class="token annotation builtin">Target</span></a><span class="token punctuation">(</span><span>allowedTargets<span class="token operator"> = </span><span class="token punctuation">[</span><span><span data-unresolved-link="kotlin.annotation/AnnotationTarget.FUNCTION///PointingToDeclaration/">AnnotationTarget.FUNCTION</span></span><wbr><span class="token punctuation">]</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">annotation class </span><a href="-symbol-name/index.html">SymbolName</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>name<span class="token operator">: </span><a href="../kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">This is a dangerous deprecated and internal annotation. Please avoid using it.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1244309256%2FClasslikes%2F-1831056522" anchor-label="Vector128" id="1244309256%2FClasslikes%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Types" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-vector128/index.html"><span><span>Vector128</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1244309256%2FClasslikes%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">class </span><a href="-vector128/index.html">Vector128</a></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="-981125342%2FFunctions%2F-1831056522" anchor-label="asCPointer" id="-981125342%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="as-c-pointer.html"><span>as</span><wbr><span><span>CPointer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-981125342%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-immutable-blob/index.html">ImmutableBlob</a><span class="token punctuation">.</span><a href="as-c-pointer.html"><span class="token function">asCPointer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">offset<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlinx.cinterop/-c-pointer/index.html">CPointer</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../kotlinx.cinterop/index.html#374342160%2FClasslikes%2F-1831056522">ByteVar</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns stable C pointer to data at certain <a href="as-c-pointer.html">offset</a>, useful as a way to pass resource to C APIs.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1915183115%2FFunctions%2F-1831056522" anchor-label="asUCPointer" id="1915183115%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="as-u-c-pointer.html"><span>as</span><wbr><span><span>UCPointer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1915183115%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-immutable-blob/index.html">ImmutableBlob</a><span class="token punctuation">.</span><a href="as-u-c-pointer.html"><span class="token function">asUCPointer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">offset<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlinx.cinterop/-c-pointer/index.html">CPointer</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../kotlinx.cinterop/index.html#2023838313%2FClasslikes%2F-1831056522">UByteVar</a><span class="token operator">&gt;</span></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="588868488%2FFunctions%2F-1831056522" anchor-label="deinitRuntimeIfNeeded" id="588868488%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="deinit-runtime-if-needed.html"><span>deinit</span><wbr><span>Runtime</span><wbr><span>If</span><wbr><span><span>Needed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="588868488%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="deinit-runtime-if-needed.html"><span class="token function"><strike>deinitRuntimeIfNeeded</strike></span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Deinitializes Kotlin runtime for the current thread, if was inited. Cannot be called from Kotlin frames holding references, thus deprecated.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="988015748%2FFunctions%2F-1831056522" anchor-label="getCharAt" id="988015748%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-char-at.html"><span>get</span><wbr><span>Char</span><wbr><span><span>At</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="988015748%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">.</span><a href="get-char-at.html"><span class="token function">getCharAt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">index<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlin/-char/index.html">Char</a></div><div class="brief "><p class="paragraph">Gets <a href="../kotlin/-char/index.html">Char</a> out of the <a href="../kotlin/-byte-array/index.html">ByteArray</a> byte buffer at specified index <a href="get-char-at.html">index</a></p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1902796951%2FFunctions%2F-1831056522" anchor-label="getDoubleAt" id="-1902796951%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-double-at.html"><span>get</span><wbr><span>Double</span><wbr><span><span>At</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1902796951%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">.</span><a href="get-double-at.html"><span class="token function">getDoubleAt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">index<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlin/-double/index.html">Double</a></div><div class="brief "><p class="paragraph">Gets <a href="../kotlin/-double/index.html">Double</a> out of the <a href="../kotlin/-byte-array/index.html">ByteArray</a> byte buffer at specified index <a href="get-double-at.html">index</a></p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1655778462%2FFunctions%2F-1831056522" anchor-label="getFloatAt" id="-1655778462%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-float-at.html"><span>get</span><wbr><span>Float</span><wbr><span><span>At</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1655778462%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">.</span><a href="get-float-at.html"><span class="token function">getFloatAt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">index<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlin/-float/index.html">Float</a></div><div class="brief "><p class="paragraph">Gets <a href="../kotlin/-float/index.html">Float</a> out of the <a href="../kotlin/-byte-array/index.html">ByteArray</a> byte buffer at specified index <a href="get-float-at.html">index</a></p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1179350993%2FFunctions%2F-1831056522" anchor-label="getIntAt" id="-1179350993%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-int-at.html"><span>get</span><wbr><span>Int</span><wbr><span><span>At</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1179350993%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">.</span><a href="get-int-at.html"><span class="token function">getIntAt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">index<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Gets <a href="../kotlin/-int/index.html">Int</a> out of the <a href="../kotlin/-byte-array/index.html">ByteArray</a> byte buffer at specified index <a href="get-int-at.html">index</a></p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1884396258%2FFunctions%2F-1831056522" anchor-label="getLongAt" id="-1884396258%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-long-at.html"><span>get</span><wbr><span>Long</span><wbr><span><span>At</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1884396258%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">.</span><a href="get-long-at.html"><span class="token function">getLongAt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">index<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">Gets <a href="../kotlin/-long/index.html">Long</a> out of the <a href="../kotlin/-byte-array/index.html">ByteArray</a> byte buffer at specified index <a href="get-long-at.html">index</a></p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-308116158%2FFunctions%2F-1831056522" anchor-label="getShortAt" id="-308116158%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-short-at.html"><span>get</span><wbr><span>Short</span><wbr><span><span>At</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-308116158%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">.</span><a href="get-short-at.html"><span class="token function">getShortAt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">index<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlin/-short/index.html">Short</a></div><div class="brief "><p class="paragraph">Gets <a href="../kotlin/-short/index.html">Short</a> out of the <a href="../kotlin/-byte-array/index.html">ByteArray</a> byte buffer at specified index <a href="get-short-at.html">index</a></p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="19652029%2FFunctions%2F-1831056522" anchor-label="getStackTraceAddresses" id="19652029%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-stack-trace-addresses.html"><span>get</span><wbr><span>Stack</span><wbr><span>Trace</span><wbr><span><span>Addresses</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="19652029%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-throwable/index.html">Throwable</a><span class="token punctuation">.</span><a href="get-stack-trace-addresses.html"><span class="token function">getStackTraceAddresses</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../kotlin/-long/index.html">Long</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns a list of stack trace addresses representing the stack trace pertaining to this throwable.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1252972865%2FFunctions%2F-1831056522" anchor-label="getUByteAt" id="1252972865%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-u-byte-at.html"><span>get</span><wbr><span>UByte</span><wbr><span><span>At</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1252972865%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlin/ExperimentalUnsignedTypes///PointingToDeclaration/"><span class="token annotation builtin">ExperimentalUnsignedTypes</span></span></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">.</span><a href="get-u-byte-at.html"><span class="token function">getUByteAt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">index<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlin/-u-byte/index.html#-1824594782%2FMain%2F-1831056522">UByte</a></div><div class="brief "><p class="paragraph">Gets <a href="../kotlin/-u-byte/index.html#-1824594782%2FMain%2F-1831056522">UByte</a> out of the <a href="../kotlin/-byte-array/index.html">ByteArray</a> byte buffer at specified index <a href="get-u-byte-at.html">index</a></p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="121100064%2FFunctions%2F-1831056522" anchor-label="getUIntAt" id="121100064%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-u-int-at.html"><span>get</span><wbr><span>UInt</span><wbr><span><span>At</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="121100064%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlin/ExperimentalUnsignedTypes///PointingToDeclaration/"><span class="token annotation builtin">ExperimentalUnsignedTypes</span></span></div></div><span class="token keyword">external </span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">.</span><a href="get-u-int-at.html"><span class="token function">getUIntAt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">index<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlin/-u-int/index.html#-72429687%2FMain%2F-1831056522">UInt</a></div><div class="brief "><p class="paragraph">Gets <a href="../kotlin/-u-int/index.html#-72429687%2FMain%2F-1831056522">UInt</a> out of the <a href="../kotlin/-byte-array/index.html">ByteArray</a> byte buffer at specified index <a href="get-u-int-at.html">index</a></p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-225119155%2FFunctions%2F-1831056522" anchor-label="getULongAt" id="-225119155%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-u-long-at.html"><span>get</span><wbr><span>ULong</span><wbr><span><span>At</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-225119155%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlin/ExperimentalUnsignedTypes///PointingToDeclaration/"><span class="token annotation builtin">ExperimentalUnsignedTypes</span></span></div></div><span class="token keyword">external </span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">.</span><a href="get-u-long-at.html"><span class="token function">getULongAt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">index<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlin/-u-long/index.html#1946143150%2FMain%2F-1831056522">ULong</a></div><div class="brief "><p class="paragraph">Gets <a href="../kotlin/-u-long/index.html#1946143150%2FMain%2F-1831056522">ULong</a> out of the <a href="../kotlin/-byte-array/index.html">ByteArray</a> byte buffer at specified index <a href="get-u-long-at.html">index</a></p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1481450908%2FFunctions%2F-1831056522" anchor-label="getUnhandledExceptionHook" id="1481450908%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-unhandled-exception-hook.html"><span>get</span><wbr><span>Unhandled</span><wbr><span>Exception</span><wbr><span><span>Hook</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1481450908%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlin/ExperimentalStdlibApi///PointingToDeclaration/"><span class="token annotation builtin">ExperimentalStdlibApi</span></span></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-unhandled-exception-hook.html"><span class="token function">getUnhandledExceptionHook</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html#-780354909%2FClasslikes%2F-1831056522">ReportUnhandledExceptionHook</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Returns a user-defined unhandled exception hook set by <a href="set-unhandled-exception-hook.html">setUnhandledExceptionHook</a> or <code class="lang-kotlin">null</code> if no user-defined hooks were set.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.6</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-410133517%2FFunctions%2F-1831056522" anchor-label="getUShortAt" id="-410133517%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-u-short-at.html"><span>get</span><wbr><span>UShort</span><wbr><span><span>At</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-410133517%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlin/ExperimentalUnsignedTypes///PointingToDeclaration/"><span class="token annotation builtin">ExperimentalUnsignedTypes</span></span></div></div><span class="token keyword">external </span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">.</span><a href="get-u-short-at.html"><span class="token function">getUShortAt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">index<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlin/-u-short/index.html#1406348764%2FMain%2F-1831056522">UShort</a></div><div class="brief "><p class="paragraph">Gets <a href="../kotlin/-u-short/index.html#1406348764%2FMain%2F-1831056522">UShort</a> out of the <a href="../kotlin/-byte-array/index.html">ByteArray</a> byte buffer at specified index <a href="get-u-short-at.html">index</a></p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-448552516%2FFunctions%2F-1831056522" anchor-label="identityHashCode" id="-448552516%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="identity-hash-code.html"><span>identity</span><wbr><span>Hash</span><wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-448552516%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="../kotlin/-any/index.html">Any</a><span class="token operator">?</span><span class="token punctuation">.</span><a href="identity-hash-code.html"><span class="token function">identityHashCode</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Compute stable wrt potential object relocations by the memory manager identity hash code.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-430213843%2FFunctions%2F-1831056522" anchor-label="immutableBlobOf" id="-430213843%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="immutable-blob-of.html"><span>immutable</span><wbr><span>Blob</span><wbr><span><span>Of</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-430213843%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="immutable-blob-of.html"><span class="token function">immutableBlobOf</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>elements<span class="token operator">: </span><a href="../kotlin/-short/index.html">Short</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-immutable-blob/index.html">ImmutableBlob</a></div><div class="brief "><p class="paragraph">Creates <a href="-immutable-blob/index.html">ImmutableBlob</a> out of compile-time constant data.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1578069383%2FFunctions%2F-1831056522" anchor-label="initRuntimeIfNeeded" id="1578069383%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="init-runtime-if-needed.html"><span>init</span><wbr><span>Runtime</span><wbr><span>If</span><wbr><span><span>Needed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1578069383%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="init-runtime-if-needed.html"><span class="token function">initRuntimeIfNeeded</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Initializes Kotlin runtime for the current thread, if not inited already.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1357316697%2FFunctions%2F-1831056522" anchor-label="isExperimentalMM" id="-1357316697%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="is-experimental-m-m.html"><span>is</span><wbr><span>Experimental</span><wbr><span><span>MM</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1357316697%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlin/ExperimentalStdlibApi///PointingToDeclaration/"><span class="token annotation builtin">ExperimentalStdlibApi</span></span></div></div><span class="token keyword">external </span><span class="token keyword">fun </span><a href="is-experimental-m-m.html"><span class="token function">isExperimentalMM</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlin/-boolean/index.html">Boolean</a></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="520070131%2FFunctions%2F-1831056522" anchor-label="processUnhandledException" id="520070131%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="process-unhandled-exception.html"><span>process</span><wbr><span>Unhandled</span><wbr><span><span>Exception</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="520070131%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlin/ExperimentalStdlibApi///PointingToDeclaration/"><span class="token annotation builtin">ExperimentalStdlibApi</span></span></div></div><span class="token keyword">external </span><span class="token keyword">fun </span><a href="process-unhandled-exception.html"><span class="token function">processUnhandledException</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">throwable<span class="token operator">: </span><a href="../kotlin/-throwable/index.html">Throwable</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Performs the default processing of unhandled exception.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.6</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1043156536%2FFunctions%2F-1831056522" anchor-label="setCharAt" id="1043156536%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-char-at.html"><span>set</span><wbr><span>Char</span><wbr><span><span>At</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1043156536%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">.</span><a href="set-char-at.html"><span class="token function">setCharAt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">index<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="../kotlin/-char/index.html">Char</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets <a href="../kotlin/-char/index.html">Char</a> out of the <a href="../kotlin/-byte-array/index.html">ByteArray</a> byte buffer at specified index <a href="set-char-at.html">index</a></p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="815276354%2FFunctions%2F-1831056522" anchor-label="setDoubleAt" id="815276354%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-double-at.html"><span>set</span><wbr><span>Double</span><wbr><span><span>At</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="815276354%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">.</span><a href="set-double-at.html"><span class="token function">setDoubleAt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">index<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="../kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets <a href="../kotlin/-double/index.html">Double</a> out of the <a href="../kotlin/-byte-array/index.html">ByteArray</a> byte buffer at specified index <a href="set-double-at.html">index</a></p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1607038690%2FFunctions%2F-1831056522" anchor-label="setFloatAt" id="1607038690%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-float-at.html"><span>set</span><wbr><span>Float</span><wbr><span><span>At</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1607038690%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">.</span><a href="set-float-at.html"><span class="token function">setFloatAt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">index<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="../kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets <a href="../kotlin/-float/index.html">Float</a> out of the <a href="../kotlin/-byte-array/index.html">ByteArray</a> byte buffer at specified index <a href="set-float-at.html">index</a></p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-974849726%2FFunctions%2F-1831056522" anchor-label="setIntAt" id="-974849726%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-int-at.html"><span>set</span><wbr><span>Int</span><wbr><span><span>At</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-974849726%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">.</span><a href="set-int-at.html"><span class="token function">setIntAt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">index<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets <a href="../kotlin/-int/index.html">Int</a> out of the <a href="../kotlin/-byte-array/index.html">ByteArray</a> byte buffer at specified index <a href="set-int-at.html">index</a></p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1929162260%2FFunctions%2F-1831056522" anchor-label="setLongAt" id="-1929162260%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-long-at.html"><span>set</span><wbr><span>Long</span><wbr><span><span>At</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1929162260%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">.</span><a href="set-long-at.html"><span class="token function">setLongAt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">index<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="../kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets <a href="../kotlin/-long/index.html">Long</a> out of the <a href="../kotlin/-byte-array/index.html">ByteArray</a> byte buffer at specified index <a href="set-long-at.html">index</a></p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2057565470%2FFunctions%2F-1831056522" anchor-label="setShortAt" id="-2057565470%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-short-at.html"><span>set</span><wbr><span>Short</span><wbr><span><span>At</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2057565470%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">.</span><a href="set-short-at.html"><span class="token function">setShortAt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">index<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="../kotlin/-short/index.html">Short</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets <a href="../kotlin/-short/index.html">Short</a> out of the <a href="../kotlin/-byte-array/index.html">ByteArray</a> byte buffer at specified index <a href="set-short-at.html">index</a></p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1450867074%2FFunctions%2F-1831056522" anchor-label="setUByteAt" id="1450867074%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-u-byte-at.html"><span>set</span><wbr><span>UByte</span><wbr><span><span>At</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1450867074%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">.</span><a href="set-u-byte-at.html"><span class="token function">setUByteAt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">index<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="../kotlin/-u-byte/index.html#-1824594782%2FMain%2F-1831056522">UByte</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets <a href="../kotlin/-u-byte/index.html#-1824594782%2FMain%2F-1831056522">UByte</a> out of the <a href="../kotlin/-byte-array/index.html">ByteArray</a> byte buffer at specified index <a href="set-u-byte-at.html">index</a></p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1096592784%2FFunctions%2F-1831056522" anchor-label="setUIntAt" id="-1096592784%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-u-int-at.html"><span>set</span><wbr><span>UInt</span><wbr><span><span>At</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1096592784%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">.</span><a href="set-u-int-at.html"><span class="token function">setUIntAt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">index<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="../kotlin/-u-int/index.html#-72429687%2FMain%2F-1831056522">UInt</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets <a href="../kotlin/-u-int/index.html#-72429687%2FMain%2F-1831056522">UInt</a> out of the <a href="../kotlin/-byte-array/index.html">ByteArray</a> byte buffer at specified index <a href="set-u-int-at.html">index</a></p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="948726274%2FFunctions%2F-1831056522" anchor-label="setULongAt" id="948726274%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-u-long-at.html"><span>set</span><wbr><span>ULong</span><wbr><span><span>At</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="948726274%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlin/ExperimentalUnsignedTypes///PointingToDeclaration/"><span class="token annotation builtin">ExperimentalUnsignedTypes</span></span></div></div><span class="token keyword">external </span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">.</span><a href="set-u-long-at.html"><span class="token function">setULongAt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">index<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="../kotlin/-u-long/index.html#1946143150%2FMain%2F-1831056522">ULong</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets <a href="../kotlin/-u-long/index.html#1946143150%2FMain%2F-1831056522">ULong</a> out of the <a href="../kotlin/-byte-array/index.html">ByteArray</a> byte buffer at specified index <a href="set-u-long-at.html">index</a></p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1340624439%2FFunctions%2F-1831056522" anchor-label="setUnhandledExceptionHook" id="-1340624439%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-unhandled-exception-hook.html"><span>set</span><wbr><span>Unhandled</span><wbr><span>Exception</span><wbr><span><span>Hook</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1340624439%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-unhandled-exception-hook.html"><span class="token function">setUnhandledExceptionHook</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">hook<span class="token operator">: </span><a href="index.html#-780354909%2FClasslikes%2F-1831056522">ReportUnhandledExceptionHook</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html#-780354909%2FClasslikes%2F-1831056522">ReportUnhandledExceptionHook</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Installs an unhandled exception hook and returns an old hook, or <code class="lang-kotlin">null</code> if no user-defined hooks were previously set.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-933982634%2FFunctions%2F-1831056522" anchor-label="setUShortAt" id="-933982634%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-u-short-at.html"><span>set</span><wbr><span>UShort</span><wbr><span><span>At</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-933982634%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlin/ExperimentalUnsignedTypes///PointingToDeclaration/"><span class="token annotation builtin">ExperimentalUnsignedTypes</span></span></div></div><span class="token keyword">external </span><span class="token keyword">fun </span><a href="../kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">.</span><a href="set-u-short-at.html"><span class="token function">setUShortAt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">index<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="../kotlin/-u-short/index.html#1406348764%2FMain%2F-1831056522">UShort</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets <a href="../kotlin/-u-short/index.html#1406348764%2FMain%2F-1831056522">UShort</a> out of the <a href="../kotlin/-byte-array/index.html">ByteArray</a> byte buffer at specified index <a href="set-u-short-at.html">index</a></p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="449457563%2FFunctions%2F-1831056522" anchor-label="terminateWithUnhandledException" id="449457563%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="terminate-with-unhandled-exception.html"><span>terminate</span><wbr><span>With</span><wbr><span>Unhandled</span><wbr><span><span>Exception</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="449457563%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlin/ExperimentalStdlibApi///PointingToDeclaration/"><span class="token annotation builtin">ExperimentalStdlibApi</span></span></div></div><span class="token keyword">external </span><span class="token keyword">fun </span><a href="terminate-with-unhandled-exception.html"><span class="token function">terminateWithUnhandledException</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">throwable<span class="token operator">: </span><a href="../kotlin/-throwable/index.html">Throwable</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlin/-nothing/index.html">Nothing</a></div><div class="inline-comment"><b>Since Kotlin </b>1.6</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-494684551%2FFunctions%2F-1831056522" anchor-label="toByteArray" id="-494684551%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="to-byte-array.html"><span>to</span><wbr><span>Byte</span><wbr><span><span>Array</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-494684551%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="-immutable-blob/index.html">ImmutableBlob</a><span class="token punctuation">.</span><a href="to-byte-array.html"><span class="token function">toByteArray</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">startIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">endIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token operator"> = </span>size</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlin/-byte-array/index.html">ByteArray</a></div><div class="brief "><p class="paragraph">Copies the data from this blob into a new <a href="../kotlin/-byte-array/index.html">ByteArray</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="116709104%2FFunctions%2F-1831056522" anchor-label="toUByteArray" id="116709104%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="to-u-byte-array.html"><span>to</span><wbr><span>UByte</span><wbr><span><span>Array</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="116709104%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlin/ExperimentalUnsignedTypes///PointingToDeclaration/"><span class="token annotation builtin">ExperimentalUnsignedTypes</span></span></div></div><span class="token keyword">external </span><span class="token keyword">fun </span><a href="-immutable-blob/index.html">ImmutableBlob</a><span class="token punctuation">.</span><a href="to-u-byte-array.html"><span class="token function">toUByteArray</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">startIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">endIndex<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token operator"> = </span>size</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../kotlin/-u-byte-array/index.html#-66951609%2FConstructors%2F-1831056522">UByteArray</a></div><div class="brief "><p class="paragraph">Copies the data from this blob into a new <a href="../kotlin/-u-byte-array/index.html#-66951609%2FConstructors%2F-1831056522">UByteArray</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="560250316%2FFunctions%2F-1831056522" anchor-label="vectorOf" id="560250316%2FFunctions%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="vector-of.html"><span>vector</span><wbr><span><span>Of</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="560250316%2FFunctions%2F-1831056522"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="vector-of.html"><span class="token function">vectorOf</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">f0<span class="token operator">: </span><a href="../kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">f1<span class="token operator">: </span><a href="../kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">f2<span class="token operator">: </span><a href="../kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">f3<span class="token operator">: </span><a href="../kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-vector128/index.html">Vector128</a></div><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="vector-of.html"><span class="token function">vectorOf</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">f0<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">f1<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">f2<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">f3<span class="token operator">: </span><a href="../kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-vector128/index.html">Vector128</a></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+
+

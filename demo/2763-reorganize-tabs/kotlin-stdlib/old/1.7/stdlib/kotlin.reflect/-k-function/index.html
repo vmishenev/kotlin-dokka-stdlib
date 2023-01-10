@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>KFunction</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+        <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+<link href="../../../styles/multimodule.css" rel="Stylesheet">
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>stdlib</span>
+            </a>
+    </div>
+    <div>
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;stdlib/kotlin.reflect/-k-function/index.html&quot;}">1.7</dokka-template-command>    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":stdlib_1.7/kotlin-stdlib-common">Common</button>
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button>
+                <button class="platform-tag platform-selector js-like" data-active="" data-filter=":stdlib_1.7/kotlin-stdlib-js">JS</button>
+                <button class="platform-tag platform-selector native-like" data-active="" data-filter=":stdlib_1.7/kotlin-stdlib-native">Native</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="stdlib::kotlin.reflect/KFunction///PointingToDeclaration//-247855651">
+  <div class="breadcrumbs"><a href="../../../index.html">stdlib</a><span class="delimiter">/</span><a href="../index.html">kotlin.reflect</a><span class="delimiter">/</span><span class="current">KFunction</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>KFunction</span></span></h1>
+    <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+      <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-common">Common</button><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-js" data-filterable-set=":stdlib_1.7/kotlin-stdlib-js" data-toggle=":stdlib_1.7/kotlin-stdlib-js">JS</button><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-common"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">interface </span><a href="index.html">KFunction</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="index.html">R</a><span class="token operator">&gt;</span> : <a href="../-k-callable/index.html">KCallable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">R</a><span class="token operator">&gt; </span>, <a href="../../kotlin/-function/index.html">Function</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">R</a><span class="token operator">&gt; </span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/src/kotlin/reflect/KFunction.kt#L11">source</a>)</span></span></div><p class="paragraph">Represents a function with introspection capabilities.</p><span class="kdoc-tag"><h4 class="">Since Kotlin</h4>1.2</span></div><div class="content sourceset-dependent-content" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">interface </span><a href="index.html">KFunction</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="index.html">R</a><span class="token operator">&gt;</span> : <a href="../-k-callable/index.html">KCallable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">R</a><span class="token operator">&gt; </span>, <a href="../../kotlin/-function/index.html#1212776363%2FMain%2F-2103839439">Function</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">R</a><span class="token operator">&gt; </span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/jvm/src/kotlin/reflect/KFunction.kt#L11">source</a>)</span></span></div><p class="paragraph">Represents a function with introspection capabilities.</p><span class="kdoc-tag"><h4 class="">Since Kotlin</h4>1.0</span><h4 class="">Inheritors</h4><div class="table" data-togglable="Inheritors"><div class="table-row" data-togglable="Inheritors" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-k-property/-getter/index.html">Getter</a></div></span></div><div></div></div></div><div class="table-row" data-togglable="Inheritors" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-k-mutable-property/-setter/index.html">Setter</a></div></span></div><div></div></div></div></div></div><div class="content sourceset-dependent-content" data-togglable=":stdlib_1.7/kotlin-stdlib-js"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">interface </span><a href="index.html">KFunction</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="index.html">R</a><span class="token operator">&gt;</span> : <a href="../-k-callable/index.html">KCallable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">R</a><span class="token operator">&gt; </span>, <span data-unresolved-link="kotlin/Function///PointingToDeclaration/">Function</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">R</a><span class="token operator">&gt; </span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib/js/src/kotlin/reflect/KFunction.kt#L11">source</a>)</span></span></div><p class="paragraph">Represents a function with introspection capabilities.</p><span class="kdoc-tag"><h4 class="">Since Kotlin</h4>1.1</span></div><div class="content sourceset-dependent-content" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">interface </span><a href="index.html">KFunction</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="index.html">R</a><span class="token operator">&gt;</span> : <a href="../-k-callable/index.html">KCallable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">R</a><span class="token operator">&gt; </span>, <a href="../../kotlin/-function/index.html">Function</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">R</a><span class="token operator">&gt; </span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/JetBrains/kotlin/tree/master/kotlin-native/runtime/src/main/kotlin/kotlin/reflect/KFunction.kt#L8">source</a>)</span></span></div><span class="kdoc-tag"><h4 class="">Since Kotlin</h4>1.3</span></div>    </div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors,Types,Functions,Inherited Functions,Properties,Inherited Properties">Members</button><button class="section-tab" data-togglable="Constructors,Types,Functions,Inherited Functions,Properties,Inherited Properties,Extensions">Members + Extensions</button></div>
+    <div class="tabs-section-body">
+      <h2 class="" data-togglable="Functions">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="-34901982%2FFunctions%2F-2103839439" anchor-label="call" id="-34901982%2FFunctions%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-k-callable/call.html"><span><span>call</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-34901982%2FFunctions%2F-2103839439"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-k-callable/call.html"><span class="token function">call</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>args<span class="token operator">: </span><span data-unresolved-link="kotlin/Any///PointingToDeclaration/">Any</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">R</a></div><div class="brief "><p class="paragraph">Calls this callable with the specified list of arguments and returns the result. Throws an exception if the number of specified arguments is not equal to the size of <a href="../-k-callable/parameters.html">parameters</a>, or if their types do not match the types of the parameters.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-712249581%2FFunctions%2F-2103839439" anchor-label="callBy" id="-712249581%2FFunctions%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Functions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-k-callable/call-by.html"><span>call</span><wbr></wbr><span><span>By</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-712249581%2FFunctions%2F-2103839439"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-k-callable/call-by.html"><span class="token function">callBy</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">args<span class="token operator">: </span><a href="../../kotlin.collections/-map/index.html#-2086531844%2FMain%2F-2103839439">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-k-parameter/index.html">KParameter</a><span class="token punctuation">, </span><span class="token keyword"></span><span data-unresolved-link="kotlin/Any///PointingToDeclaration/">Any</span><span class="token operator">?</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">R</a></div><div class="brief "><p class="paragraph">Calls this callable with the specified mapping of parameters to arguments and returns the result. If a parameter is not found in the mapping and is not optional (as per <a href="../-k-parameter/is-optional.html">KParameter.isOptional</a>), or its type does not match the type of the provided value, an exception is thrown.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1297800087%2FFunctions%2F-2103839439" anchor-label="callSuspend" id="1297800087%2FFunctions%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin.reflect.full/call-suspend.html"><span>call</span><wbr></wbr><span><span>Suspend</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1297800087%2FFunctions%2F-2103839439"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlin.reflect.full/call-suspend.html">R</a><span class="token operator">&gt; </span><a href="../-k-callable/index.html">KCallable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlin.reflect.full/call-suspend.html">R</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../kotlin.reflect.full/call-suspend.html"><span class="token function">callSuspend</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>args<span class="token operator">: </span><span data-unresolved-link="kotlin/Any///PointingToDeclaration/">Any</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlin.reflect.full/call-suspend.html">R</a></div><div class="brief "><p class="paragraph">Calls a callable in the current suspend context. If the callable is not a suspend function, behaves as <a href="../-k-callable/call.html">KCallable.call</a>. Otherwise, calls the suspend function with current continuation.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1424785414%2FFunctions%2F-2103839439" anchor-label="callSuspendBy" id="-1424785414%2FFunctions%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin.reflect.full/call-suspend-by.html"><span>call</span><wbr></wbr><span>Suspend</span><wbr></wbr><span><span>By</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1424785414%2FFunctions%2F-2103839439"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlin.reflect.full/call-suspend-by.html">R</a><span class="token operator">&gt; </span><a href="../-k-callable/index.html">KCallable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlin.reflect.full/call-suspend-by.html">R</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../kotlin.reflect.full/call-suspend-by.html"><span class="token function">callSuspendBy</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">args<span class="token operator">: </span><a href="../../kotlin.collections/-map/index.html#-2086531844%2FMain%2F-2103839439">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-k-parameter/index.html">KParameter</a><span class="token punctuation">, </span><span class="token keyword"></span><span data-unresolved-link="kotlin/Any///PointingToDeclaration/">Any</span><span class="token operator">?</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlin.reflect.full/call-suspend-by.html">R</a></div><div class="brief "><p class="paragraph">Calls a callable in the current suspend context. If the callable is not a suspend function, behaves as <a href="../-k-callable/call-by.html">KCallable.callBy</a>. Otherwise, calls the suspend function with current continuation.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1857582119%2FFunctions%2F-2103839439" anchor-label="findAnnotation" id="-1857582119%2FFunctions%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin.reflect.full/find-annotation.html"><span>find</span><wbr></wbr><span><span>Annotation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1857582119%2FFunctions%2F-2103839439"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlin.reflect.full/find-annotation.html">T</a><span class="token operator"> : </span><span data-unresolved-link="kotlin/Annotation///PointingToDeclaration/">Annotation</span><span class="token operator">&gt; </span><a href="../-k-annotated-element/index.html">KAnnotatedElement</a><span class="token punctuation">.</span><a href="../../kotlin.reflect.full/find-annotation.html"><span class="token function">findAnnotation</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlin.reflect.full/find-annotation.html">T</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Returns an annotation of the given type on this element.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="371596031%2FFunctions%2F-2103839439" anchor-label="findAnnotations" id="371596031%2FFunctions%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin.reflect.full/find-annotations.html"><span>find</span><wbr></wbr><span><span>Annotations</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="371596031%2FFunctions%2F-2103839439"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlin.reflect.full/find-annotations.html">T</a><span class="token operator"> : </span><span data-unresolved-link="kotlin/Annotation///PointingToDeclaration/">Annotation</span><span class="token operator">&gt; </span><a href="../-k-annotated-element/index.html">KAnnotatedElement</a><span class="token punctuation">.</span><a href="../../kotlin.reflect.full/find-annotations.html"><span class="token function">findAnnotations</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlin.collections/-list/index.html#-154227828%2FMain%2F-2103839439">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlin.reflect.full/find-annotations.html">T</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlin.reflect.full/find-annotations.html">T</a><span class="token operator"> : </span><span data-unresolved-link="kotlin/Annotation///PointingToDeclaration/">Annotation</span><span class="token operator">&gt; </span><a href="../-k-annotated-element/index.html">KAnnotatedElement</a><span class="token punctuation">.</span><a href="../../kotlin.reflect.full/find-annotations.html"><span class="token function">findAnnotations</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">klass<span class="token operator">: </span><a href="../-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlin.reflect.full/find-annotations.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlin.collections/-list/index.html#-154227828%2FMain%2F-2103839439">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlin.reflect.full/find-annotations.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns all annotations of the given type on this element, including individually applied annotations as well as repeated annotations.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.7</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="609076823%2FFunctions%2F-2103839439" anchor-label="findParameterByName" id="609076823%2FFunctions%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin.reflect.full/find-parameter-by-name.html"><span>find</span><wbr></wbr><span>Parameter</span><wbr></wbr><span>By</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="609076823%2FFunctions%2F-2103839439"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-k-callable/index.html">KCallable</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../kotlin.reflect.full/find-parameter-by-name.html"><span class="token function">findParameterByName</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="../../kotlin/-string/index.html#992936466%2FConstructors%2F-2103839439">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-k-parameter/index.html">KParameter</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Returns the parameter of this callable with the given name, or <code class="lang-kotlin">null</code> if there's no such parameter.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-928803502%2FFunctions%2F-2103839439" anchor-label="hasAnnotation" id="-928803502%2FFunctions%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin.reflect.full/has-annotation.html"><span>has</span><wbr></wbr><span><span>Annotation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-928803502%2FFunctions%2F-2103839439"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlin.reflect.full/has-annotation.html">T</a><span class="token operator"> : </span><span data-unresolved-link="kotlin/Annotation///PointingToDeclaration/">Annotation</span><span class="token operator">&gt; </span><a href="../-k-annotated-element/index.html">KAnnotatedElement</a><span class="token punctuation">.</span><a href="../../kotlin.reflect.full/has-annotation.html"><span class="token function">hasAnnotation</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">Returns true if this element is annotated with an annotation of type <a href="../../kotlin.reflect.full/has-annotation.html">T</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.4</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1028107758%2FFunctions%2F-2103839439" anchor-label="reflect" id="-1028107758%2FFunctions%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin.reflect.jvm/reflect.html"><span><span>reflect</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1028107758%2FFunctions%2F-2103839439"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../kotlin.reflect.jvm/-experimental-reflection-on-lambdas/index.html"><span class="token annotation builtin">ExperimentalReflectionOnLambdas</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlin.reflect.jvm/reflect.html">R</a><span class="token operator">&gt; </span><a href="../../kotlin/-function/index.html#1212776363%2FMain%2F-2103839439">Function</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlin.reflect.jvm/reflect.html">R</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../kotlin.reflect.jvm/reflect.html"><span class="token function">reflect</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">KFunction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlin.reflect.jvm/reflect.html">R</a><span class="token operator">&gt;</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">This is an experimental API. Given a class for a compiled Kotlin lambda or a function expression, returns a <a href="index.html">KFunction</a> instance providing introspection capabilities for that lambda or function expression and its parameters. Not all features are currently supported, in particular KCallable.call and KCallable.callBy will fail at the moment.</p></div><div class="inline-comment"><b>Since Kotlin </b>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="" data-togglable="Properties">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="-2032788584%2FProperties%2F-2103839439" anchor-label="annotations" id="-2032788584%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-k-annotated-element/annotations.html"><span><span>annotations</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2032788584%2FProperties%2F-2103839439"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><a data-name="-2032788584%2FProperties%2F-2103839439" anchor-label="annotations" id="-2032788584%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-k-annotated-element/annotations.html">annotations</a><span class="token operator">: </span><a href="../../kotlin.collections/-list/index.html#-154227828%2FMain%2F-2103839439">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="kotlin/Annotation///PointingToDeclaration/">Annotation</span><span class="token operator">&gt;</span></div><div class="brief "><a data-name="-2032788584%2FProperties%2F-2103839439" anchor-label="annotations" id="-2032788584%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><p class="paragraph">Annotations which are present on this element.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-2032788584%2FProperties%2F-2103839439" anchor-label="annotations" id="-2032788584%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="573647024%2FProperties%2F-2103839439" anchor-label="extensionReceiverParameter" id="573647024%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin.reflect.full/extension-receiver-parameter.html"><span>extension</span><wbr></wbr><span>Receiver</span><wbr></wbr><span><span>Parameter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="573647024%2FProperties%2F-2103839439"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Extensions">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><a data-name="573647024%2FProperties%2F-2103839439" anchor-label="extensionReceiverParameter" id="573647024%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../-k-callable/index.html">KCallable</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../kotlin.reflect.full/extension-receiver-parameter.html">extensionReceiverParameter</a><span class="token operator">: </span><a href="../-k-parameter/index.html">KParameter</a><span class="token operator">?</span></div><div class="brief "><a data-name="573647024%2FProperties%2F-2103839439" anchor-label="extensionReceiverParameter" id="573647024%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><p class="paragraph">Returns a parameter representing the extension receiver instance needed to call this callable, or <code class="lang-kotlin">null</code> if this callable is not an extension.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="573647024%2FProperties%2F-2103839439" anchor-label="extensionReceiverParameter" id="573647024%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1694825329%2FProperties%2F-2103839439" anchor-label="instanceParameter" id="-1694825329%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin.reflect.full/instance-parameter.html"><span>instance</span><wbr></wbr><span><span>Parameter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1694825329%2FProperties%2F-2103839439"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Extensions">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><a data-name="-1694825329%2FProperties%2F-2103839439" anchor-label="instanceParameter" id="-1694825329%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../-k-callable/index.html">KCallable</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../kotlin.reflect.full/instance-parameter.html">instanceParameter</a><span class="token operator">: </span><a href="../-k-parameter/index.html">KParameter</a><span class="token operator">?</span></div><div class="brief "><a data-name="-1694825329%2FProperties%2F-2103839439" anchor-label="instanceParameter" id="-1694825329%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><p class="paragraph">Returns a parameter representing the <code class="lang-kotlin">this</code> instance needed to call this callable, or <code class="lang-kotlin">null</code> if this callable is not a member of a class and thus doesn't take such parameter.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-1694825329%2FProperties%2F-2103839439" anchor-label="instanceParameter" id="-1694825329%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-412885274%2FProperties%2F-2103839439" anchor-label="isAbstract" id="-412885274%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-k-callable/is-abstract.html"><span>is</span><wbr></wbr><span><span>Abstract</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-412885274%2FProperties%2F-2103839439"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><a data-name="-412885274%2FProperties%2F-2103839439" anchor-label="isAbstract" id="-412885274%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-k-callable/is-abstract.html">isAbstract</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><a data-name="-412885274%2FProperties%2F-2103839439" anchor-label="isAbstract" id="-412885274%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><p class="paragraph"><code class="lang-kotlin">true</code> if this callable is <code class="lang-kotlin">abstract</code>.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-412885274%2FProperties%2F-2103839439" anchor-label="isAbstract" id="-412885274%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1830165621%2FProperties%2F-2103839439" anchor-label="isAccessible" id="-1830165621%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin.reflect.jvm/is-accessible.html"><span>is</span><wbr></wbr><span><span>Accessible</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1830165621%2FProperties%2F-2103839439"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Extensions">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><a data-name="-1830165621%2FProperties%2F-2103839439" anchor-label="isAccessible" id="-1830165621%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="../-k-callable/index.html">KCallable</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../kotlin.reflect.jvm/is-accessible.html">isAccessible</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><a data-name="-1830165621%2FProperties%2F-2103839439" anchor-label="isAccessible" id="-1830165621%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><p class="paragraph">Provides a way to suppress JVM access checks for a callable.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-1830165621%2FProperties%2F-2103839439" anchor-label="isAccessible" id="-1830165621%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1896636029%2FProperties%2F-2103839439" anchor-label="isExternal" id="1896636029%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="is-external.html"><span>is</span><wbr></wbr><span><span>External</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1896636029%2FProperties%2F-2103839439"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><a data-name="1896636029%2FProperties%2F-2103839439" anchor-label="isExternal" id="1896636029%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="is-external.html">isExternal</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><a data-name="1896636029%2FProperties%2F-2103839439" anchor-label="isExternal" id="1896636029%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><p class="paragraph"><code class="lang-kotlin">true</code> if this function is <code class="lang-kotlin">external</code>. See the <a href="https://kotlinlang.org/docs/reference/java-interop.html#using-jni-with-kotlin">Kotlin language documentation</a> for more information.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="1896636029%2FProperties%2F-2103839439" anchor-label="isExternal" id="1896636029%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1156105692%2FProperties%2F-2103839439" anchor-label="isFinal" id="1156105692%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-k-callable/is-final.html"><span>is</span><wbr></wbr><span><span>Final</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1156105692%2FProperties%2F-2103839439"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><a data-name="1156105692%2FProperties%2F-2103839439" anchor-label="isFinal" id="1156105692%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-k-callable/is-final.html">isFinal</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><a data-name="1156105692%2FProperties%2F-2103839439" anchor-label="isFinal" id="1156105692%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><p class="paragraph"><code class="lang-kotlin">true</code> if this callable is <code class="lang-kotlin">final</code>.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="1156105692%2FProperties%2F-2103839439" anchor-label="isFinal" id="1156105692%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="131567778%2FProperties%2F-2103839439" anchor-label="isInfix" id="131567778%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="is-infix.html"><span>is</span><wbr></wbr><span><span>Infix</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="131567778%2FProperties%2F-2103839439"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><a data-name="131567778%2FProperties%2F-2103839439" anchor-label="isInfix" id="131567778%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="is-infix.html">isInfix</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><a data-name="131567778%2FProperties%2F-2103839439" anchor-label="isInfix" id="131567778%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><p class="paragraph"><code class="lang-kotlin">true</code> if this function is <code class="lang-kotlin">infix</code>. See the <a href="https://kotlinlang.org/docs/reference/functions.html#infix-notation">Kotlin language documentation</a> for more information.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="131567778%2FProperties%2F-2103839439" anchor-label="isInfix" id="131567778%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-246951377%2FProperties%2F-2103839439" anchor-label="isInline" id="-246951377%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="is-inline.html"><span>is</span><wbr></wbr><span><span>Inline</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-246951377%2FProperties%2F-2103839439"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><a data-name="-246951377%2FProperties%2F-2103839439" anchor-label="isInline" id="-246951377%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="is-inline.html">isInline</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><a data-name="-246951377%2FProperties%2F-2103839439" anchor-label="isInline" id="-246951377%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><p class="paragraph"><code class="lang-kotlin">true</code> if this function is <code class="lang-kotlin">inline</code>. See the <a href="https://kotlinlang.org/docs/reference/inline-functions.html">Kotlin language documentation</a> for more information.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-246951377%2FProperties%2F-2103839439" anchor-label="isInline" id="-246951377%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2140167362%2FProperties%2F-2103839439" anchor-label="isOpen" id="-2140167362%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-k-callable/is-open.html"><span>is</span><wbr></wbr><span><span>Open</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2140167362%2FProperties%2F-2103839439"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><a data-name="-2140167362%2FProperties%2F-2103839439" anchor-label="isOpen" id="-2140167362%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-k-callable/is-open.html">isOpen</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><a data-name="-2140167362%2FProperties%2F-2103839439" anchor-label="isOpen" id="-2140167362%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><p class="paragraph"><code class="lang-kotlin">true</code> if this callable is <code class="lang-kotlin">open</code>.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-2140167362%2FProperties%2F-2103839439" anchor-label="isOpen" id="-2140167362%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-46690364%2FProperties%2F-2103839439" anchor-label="isOperator" id="-46690364%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="is-operator.html"><span>is</span><wbr></wbr><span><span>Operator</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-46690364%2FProperties%2F-2103839439"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><a data-name="-46690364%2FProperties%2F-2103839439" anchor-label="isOperator" id="-46690364%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="is-operator.html">isOperator</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><a data-name="-46690364%2FProperties%2F-2103839439" anchor-label="isOperator" id="-46690364%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><p class="paragraph"><code class="lang-kotlin">true</code> if this function is <code class="lang-kotlin">operator</code>. See the <a href="https://kotlinlang.org/docs/reference/operator-overloading.html">Kotlin language documentation</a> for more information.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-46690364%2FProperties%2F-2103839439" anchor-label="isOperator" id="-46690364%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="268040566%2FProperties%2F-2103839439" anchor-label="isSuspend" id="268040566%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="is-suspend.html"><span>is</span><wbr></wbr><span><span>Suspend</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="268040566%2FProperties%2F-2103839439"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><a data-name="268040566%2FProperties%2F-2103839439" anchor-label="isSuspend" id="268040566%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="is-suspend.html">isSuspend</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><a data-name="268040566%2FProperties%2F-2103839439" anchor-label="isSuspend" id="268040566%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><p class="paragraph"><code class="lang-kotlin">true</code> if this is a suspending function.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="268040566%2FProperties%2F-2103839439" anchor-label="isSuspend" id="268040566%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1808120547%2FProperties%2F-2103839439" anchor-label="javaConstructor" id="1808120547%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin.reflect.jvm/java-constructor.html"><span>java</span><wbr></wbr><span><span>Constructor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1808120547%2FProperties%2F-2103839439"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Extensions">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><a data-name="1808120547%2FProperties%2F-2103839439" anchor-label="javaConstructor" id="1808120547%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlin.reflect.jvm/java-constructor.html">T</a><span class="token operator">&gt; </span><a href="index.html">KFunction</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlin.reflect.jvm/java-constructor.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../kotlin.reflect.jvm/java-constructor.html">javaConstructor</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Constructor.html">Constructor</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlin.reflect.jvm/java-constructor.html">T</a><span class="token operator">&gt;</span><span class="token operator">?</span></div><div class="brief "><a data-name="1808120547%2FProperties%2F-2103839439" anchor-label="javaConstructor" id="1808120547%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><p class="paragraph">Returns a Java <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Constructor.html">Constructor</a> instance corresponding to the given Kotlin function, or <code class="lang-kotlin">null</code> if this function is not a constructor or cannot be represented by a Java <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Constructor.html">Constructor</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="1808120547%2FProperties%2F-2103839439" anchor-label="javaConstructor" id="1808120547%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="770190030%2FProperties%2F-2103839439" anchor-label="javaMethod" id="770190030%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin.reflect.jvm/java-method.html"><span>java</span><wbr></wbr><span><span>Method</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="770190030%2FProperties%2F-2103839439"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Extensions">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><a data-name="770190030%2FProperties%2F-2103839439" anchor-label="javaMethod" id="770190030%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="index.html">KFunction</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../kotlin.reflect.jvm/java-method.html">javaMethod</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Method.html">Method</a><span class="token operator">?</span></div><div class="brief "><a data-name="770190030%2FProperties%2F-2103839439" anchor-label="javaMethod" id="770190030%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><p class="paragraph">Returns a Java <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Method.html">Method</a> instance corresponding to the given Kotlin function, or <code class="lang-kotlin">null</code> if this function is a constructor or cannot be represented by a Java <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Method.html">Method</a>.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="770190030%2FProperties%2F-2103839439" anchor-label="javaMethod" id="770190030%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-49799065%2FProperties%2F-247855651" anchor-label="name" id="-49799065%2FProperties%2F-247855651" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common :stdlib_1.7/kotlin-stdlib-java-common :stdlib_1.7/kotlin-stdlib-js :stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.7/kotlin-stdlib-common :stdlib_1.7/kotlin-stdlib-java-common :stdlib_1.7/kotlin-stdlib-js :stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common :stdlib_1.7/kotlin-stdlib-java-common :stdlib_1.7/kotlin-stdlib-js :stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-k-callable/name.html"><span><span>name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-49799065%2FProperties%2F-247855651"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-common">Common</button><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-js" data-filterable-set=":stdlib_1.7/kotlin-stdlib-js" data-toggle=":stdlib_1.7/kotlin-stdlib-js">JS</button><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-common"><a data-name="-49799065%2FProperties%2F-247855651" anchor-label="name" id="-49799065%2FProperties%2F-247855651" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common :stdlib_1.7/kotlin-stdlib-java-common :stdlib_1.7/kotlin-stdlib-js :stdlib_1.7/kotlin-stdlib-native"></a><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-k-callable/name.html">name</a><span class="token operator">: </span><a href="../../kotlin/-string/index.html">String</a></div><div class="brief "><a data-name="-49799065%2FProperties%2F1451026850" anchor-label="name" id="-49799065%2FProperties%2F1451026850" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common"></a><p class="paragraph">The name of this callable as it was declared in the source code. If the callable has no name, a special invented name is created. Nameless callables include:</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-49799065%2FProperties%2F1451026850" anchor-label="name" id="-49799065%2FProperties%2F1451026850" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common"></a>1.2</div></div><div class="content sourceset-dependent-content" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><a data-name="-49799065%2FProperties%2F-247855651" anchor-label="name" id="-49799065%2FProperties%2F-247855651" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common :stdlib_1.7/kotlin-stdlib-java-common :stdlib_1.7/kotlin-stdlib-js :stdlib_1.7/kotlin-stdlib-native"></a><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-k-callable/name.html">name</a><span class="token operator">: </span><a href="../../kotlin/-string/index.html#992936466%2FConstructors%2F-2103839439">String</a></div><div class="brief "><a data-name="-49799065%2FProperties%2F-2103839439" anchor-label="name" id="-49799065%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><p class="paragraph">The name of this callable as it was declared in the source code. If the callable has no name, a special invented name is created. Nameless callables include:</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-49799065%2FProperties%2F-2103839439" anchor-label="name" id="-49799065%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>1.0</div></div><div class="content sourceset-dependent-content" data-togglable=":stdlib_1.7/kotlin-stdlib-js"><a data-name="-49799065%2FProperties%2F-247855651" anchor-label="name" id="-49799065%2FProperties%2F-247855651" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common :stdlib_1.7/kotlin-stdlib-java-common :stdlib_1.7/kotlin-stdlib-js :stdlib_1.7/kotlin-stdlib-native"></a><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-k-callable/name.html">name</a><span class="token operator">: </span><a href="../../kotlin/-string/index.html#992936466%2FConstructors%2F864499876">String</a></div><div class="brief "><a data-name="-49799065%2FProperties%2F864499876" anchor-label="name" id="-49799065%2FProperties%2F864499876" data-filterable-set=":stdlib_1.7/kotlin-stdlib-js"></a><p class="paragraph">The name of this callable as it was declared in the source code. If the callable has no name, a special invented name is created. Nameless callables include:</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-49799065%2FProperties%2F864499876" anchor-label="name" id="-49799065%2FProperties%2F864499876" data-filterable-set=":stdlib_1.7/kotlin-stdlib-js"></a>1.1</div></div><div class="content sourceset-dependent-content" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><a data-name="-49799065%2FProperties%2F-247855651" anchor-label="name" id="-49799065%2FProperties%2F-247855651" data-filterable-set=":stdlib_1.7/kotlin-stdlib-common :stdlib_1.7/kotlin-stdlib-java-common :stdlib_1.7/kotlin-stdlib-js :stdlib_1.7/kotlin-stdlib-native"></a><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-k-callable/name.html">name</a><span class="token operator">: </span><a href="../../kotlin/-string/index.html">String</a></div><div class="brief "><a data-name="-49799065%2FProperties%2F-1831056522" anchor-label="name" id="-49799065%2FProperties%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a><p class="paragraph">The name of this callable as it was declared in the source code. If the callable has no name, a special invented name is created. Nameless callables include:</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-49799065%2FProperties%2F-1831056522" anchor-label="name" id="-49799065%2FProperties%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-513286616%2FProperties%2F-2103839439" anchor-label="parameters" id="-513286616%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-k-callable/parameters.html"><span><span>parameters</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-513286616%2FProperties%2F-2103839439"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><a data-name="-513286616%2FProperties%2F-2103839439" anchor-label="parameters" id="-513286616%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-k-callable/parameters.html">parameters</a><span class="token operator">: </span><a href="../../kotlin.collections/-list/index.html#-154227828%2FMain%2F-2103839439">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-k-parameter/index.html">KParameter</a><span class="token operator">&gt;</span></div><div class="brief "><a data-name="-513286616%2FProperties%2F-2103839439" anchor-label="parameters" id="-513286616%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><p class="paragraph">Parameters required to make a call to this callable. If this callable requires a <code class="lang-kotlin">this</code> instance or an extension receiver parameter, they come first in the list in that order.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-513286616%2FProperties%2F-2103839439" anchor-label="parameters" id="-513286616%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>1.0</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-880923768%2FProperties%2F998359835" anchor-label="returnType" id="-880923768%2FProperties%2F998359835" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common :stdlib_1.7/kotlin-stdlib-native"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common :stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common :stdlib_1.7/kotlin-stdlib-native">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-k-callable/return-type.html"><span>return</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-880923768%2FProperties%2F998359835"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-native" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native" data-toggle=":stdlib_1.7/kotlin-stdlib-native">Native</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><a data-name="-880923768%2FProperties%2F998359835" anchor-label="returnType" id="-880923768%2FProperties%2F998359835" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common :stdlib_1.7/kotlin-stdlib-native"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-k-callable/return-type.html">returnType</a><span class="token operator">: </span><a href="../-k-type/index.html">KType</a></div><div class="brief "><a data-name="-880923768%2FProperties%2F-2103839439" anchor-label="returnType" id="-880923768%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><p class="paragraph">The type of values returned by this callable.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-880923768%2FProperties%2F-2103839439" anchor-label="returnType" id="-880923768%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>1.0</div></div><div class="content sourceset-dependent-content" data-togglable=":stdlib_1.7/kotlin-stdlib-native"><a data-name="-880923768%2FProperties%2F998359835" anchor-label="returnType" id="-880923768%2FProperties%2F998359835" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common :stdlib_1.7/kotlin-stdlib-native"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-k-callable/return-type.html">returnType</a><span class="token operator">: </span><a href="../-k-type/index.html">KType</a></div><div class="brief "><a data-name="-880923768%2FProperties%2F-1831056522" anchor-label="returnType" id="-880923768%2FProperties%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a><p class="paragraph">The type of values returned by this callable.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-880923768%2FProperties%2F-1831056522" anchor-label="returnType" id="-880923768%2FProperties%2F-1831056522" data-filterable-set=":stdlib_1.7/kotlin-stdlib-native"></a>1.3</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1443288562%2FProperties%2F-2103839439" anchor-label="typeParameters" id="-1443288562%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-k-callable/type-parameters.html"><span>type</span><wbr></wbr><span><span>Parameters</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1443288562%2FProperties%2F-2103839439"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><a data-name="-1443288562%2FProperties%2F-2103839439" anchor-label="typeParameters" id="-1443288562%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-k-callable/type-parameters.html">typeParameters</a><span class="token operator">: </span><a href="../../kotlin.collections/-list/index.html#-154227828%2FMain%2F-2103839439">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-k-type-parameter/index.html#1341395822%2FMain%2F-2103839439">KTypeParameter</a><span class="token operator">&gt;</span></div><div class="brief "><a data-name="-1443288562%2FProperties%2F-2103839439" anchor-label="typeParameters" id="-1443288562%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><p class="paragraph">The list of type parameters of this callable.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="-1443288562%2FProperties%2F-2103839439" anchor-label="typeParameters" id="-1443288562%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1291523958%2FProperties%2F-2103839439" anchor-label="valueParameters" id="1291523958%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-togglable="Extensions" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../kotlin.reflect.full/value-parameters.html"><span>value</span><wbr></wbr><span><span>Parameters</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1291523958%2FProperties%2F-2103839439"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Extensions">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><a data-name="1291523958%2FProperties%2F-2103839439" anchor-label="valueParameters" id="1291523958%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../-k-callable/index.html">KCallable</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../kotlin.reflect.full/value-parameters.html">valueParameters</a><span class="token operator">: </span><a href="../../kotlin.collections/-list/index.html#-154227828%2FMain%2F-2103839439">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-k-parameter/index.html">KParameter</a><span class="token operator">&gt;</span></div><div class="brief "><a data-name="1291523958%2FProperties%2F-2103839439" anchor-label="valueParameters" id="1291523958%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><p class="paragraph">Returns parameters of this callable, excluding the <code class="lang-kotlin">this</code> instance and the extension receiver parameter.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="1291523958%2FProperties%2F-2103839439" anchor-label="valueParameters" id="1291523958%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="101014016%2FProperties%2F-2103839439" anchor-label="visibility" id="101014016%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>
+        <div class="table-row" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-k-callable/visibility.html"><span><span>visibility</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="101014016%2FProperties%2F-2103839439"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":stdlib_1.7/kotlin-stdlib-java-common" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common" data-active="" data-toggle=":stdlib_1.7/kotlin-stdlib-java-common">JVM</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":stdlib_1.7/kotlin-stdlib-java-common"><a data-name="101014016%2FProperties%2F-2103839439" anchor-label="visibility" id="101014016%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-k-callable/visibility.html">visibility</a><span class="token operator">: </span><a href="../-k-visibility/index.html">KVisibility</a><span class="token operator">?</span></div><div class="brief "><a data-name="101014016%2FProperties%2F-2103839439" anchor-label="visibility" id="101014016%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a><p class="paragraph">Visibility of this callable, or <code class="lang-kotlin">null</code> if its visibility cannot be represented in Kotlin.</p></div><div class="inline-comment"><b>Since Kotlin </b><a data-name="101014016%2FProperties%2F-2103839439" anchor-label="visibility" id="101014016%2FProperties%2F-2103839439" data-filterable-set=":stdlib_1.7/kotlin-stdlib-java-common"></a>1.1</div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+
